@@ -1,0 +1,2 @@
+date,student_id,source,type,skill,question_id,error_reason,correct_clue,next_review_date,status
+2026-05-21,SAMPLE,diagnostic,vocabulary,vocabulary,q1,只背中文意思沒有記英文用法,improve = make better,2026-05-22,open

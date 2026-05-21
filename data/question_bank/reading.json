@@ -1,0 +1,22 @@
+[
+  {
+    "id": "reading_seed_001",
+    "moduleId": "reading",
+    "level": "A2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:data center",
+    "topic": "AI and climate",
+    "focus": "main idea",
+    "passage": "AI data centers require large amounts of electricity. Some companies say they will use cleaner energy, but local residents worry about noise, water use, and carbon emissions.",
+    "question": "What is the main idea of the passage?",
+    "options": [
+      "AI data centers create both energy opportunities and local concerns.",
+      "Local residents never care about technology.",
+      "Cleaner energy has solved every climate problem.",
+      "Noise is the only issue caused by data centers."
+    ],
+    "answer": "AI data centers create both energy opportunities and local concerns.",
+    "explanation": "The passage mentions electricity, cleaner energy, and local concerns, so the answer must cover both benefits and worries.",
+    "tags": ["AI", "climate", "main idea"]
+  }
+]

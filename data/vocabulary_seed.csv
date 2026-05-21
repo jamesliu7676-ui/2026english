@@ -1,0 +1,16 @@
+word,part_of_speech,level,meaning_zh,exam_tag,example,collocation,confusion,review_stage,error_count
+improve,verb,A1,改善;進步,學習與成長,Daily review can improve your reading speed.,improve ability,prove,0,0
+review,verb/noun,A1,複習;評論,學習策略,Students should review their mistakes after practice.,review mistakes,preview,0,0
+require,verb,A2,需要;要求,閱讀常見字,This method requires patience and discipline.,require effort,request,0,0
+although,conjunction,A2,雖然,轉折連接詞,Although the test was difficult, Mia remained calm.,although + clause,though,0,0
+therefore,adverb,A2,因此,因果連接詞,He practiced every day; therefore, he improved quickly.,therefore + result,however,0,0
+however,adverb,A2,然而,轉折連接詞,The method saves time; however, it requires discipline.,however + contrast,therefore,0,0
+infer,verb,B1,推論,閱讀題型,You can infer the answer from the second paragraph.,infer from,imply,0,0
+evidence,noun,B1,證據,閱讀題型,Good answers must be supported by evidence in the passage.,strong evidence,proof,0,0
+strategy,noun,B1,策略,考試技巧,A clear strategy helps students use time wisely.,test strategy,method,0,0
+discipline,noun,B1,自律,學習態度,Improvement requires discipline and regular practice.,self-discipline,disciple,0,0
+context,noun,B1,上下文,閱讀技巧,Use the context to guess the meaning of unknown words.,context clue,content,0,0
+accurate,adjective,B1,精確的,作文修正,Accurate word choice makes writing clearer.,accurate answer,correct,0,0
+confuse,verb,B1,混淆,易錯字,Many students confuse affect with effect.,confuse A with B,confusing,0,0
+identify,verb,B1,辨認;找出,閱讀技巧,Identify the main idea before reading the options.,identify the main idea,identity,0,0
+summarize,verb,B1,摘要,閱讀輸出,Summarize each paragraph in one short sentence.,summarize a passage,summary,0,0

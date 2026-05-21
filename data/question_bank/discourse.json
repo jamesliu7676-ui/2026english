@@ -1,0 +1,22 @@
+[
+  {
+    "id": "discourse_seed_001",
+    "moduleId": "discourse",
+    "level": "B1",
+    "sourceType": "manual",
+    "sourceRef": "question_module_examples.json",
+    "topic": "vocabulary learning",
+    "focus": "sentence insertion",
+    "passage": "Many students memorize long vocabulary lists. ____. As a result, they may know a word in isolation but fail to understand it in a passage.",
+    "question": "Which sentence best fits the blank?",
+    "options": [
+      "However, they often spend too little time seeing the words in context.",
+      "For example, some birds can fly long distances.",
+      "In contrast, water boils at a high temperature.",
+      "Therefore, the weather was sunny all day."
+    ],
+    "answer": "However, they often spend too little time seeing the words in context.",
+    "explanation": "The next sentence contrasts memorizing words with failing to use them in context, so 'However' creates the correct relation.",
+    "tags": ["context", "transition", "sentence insertion"]
+  }
+]

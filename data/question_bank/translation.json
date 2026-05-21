@@ -1,0 +1,22 @@
+[
+  {
+    "id": "translation_seed_001",
+    "moduleId": "translation",
+    "level": "B1",
+    "sourceType": "manual",
+    "sourceRef": "question_module_examples.json",
+    "topic": "mistake review",
+    "focus": "translation",
+    "passage": "",
+    "question": "Translate into English: 定期複習錯題可以幫助學生避免重複犯錯。",
+    "options": [
+      "Reviewing mistakes regularly can help students avoid repeating errors.",
+      "Review mistakes regular can help students avoid repeat errors.",
+      "Students avoid errors because reviewing mistake regular.",
+      "Regular mistakes help students repeating review."
+    ],
+    "answer": "Reviewing mistakes regularly can help students avoid repeating errors.",
+    "explanation": "Use a gerund phrase as the subject: 'Reviewing mistakes regularly'. Use 'avoid + V-ing'.",
+    "tags": ["translation", "gerund", "avoid"]
+  }
+]

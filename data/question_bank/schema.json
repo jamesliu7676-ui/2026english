@@ -1,0 +1,20 @@
+{
+  "required": [
+    "id",
+    "moduleId",
+    "level",
+    "sourceType",
+    "sourceRef",
+    "topic",
+    "focus",
+    "passage",
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "tags"
+  ],
+  "levels": ["A1", "A2", "B1", "B2"],
+  "sourceTypes": ["past_exam", "news", "manual", "diagnostic_error"],
+  "moduleIds": ["reading", "discourse", "cloze", "fill_blank", "translation"]
+}

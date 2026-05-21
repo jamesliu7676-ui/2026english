@@ -1,0 +1,67 @@
+[
+  {
+    "moduleId": "reading",
+    "moduleName": "閱讀測驗",
+    "level": "A2",
+    "passage": "AI data centers require large amounts of electricity. Some companies say they will use cleaner energy, but local residents worry about noise, water use, and carbon emissions.",
+    "question": "What is the main idea of the passage?",
+    "options": [
+      "AI data centers create both energy opportunities and local concerns.",
+      "Local residents never care about technology.",
+      "Cleaner energy has solved every climate problem.",
+      "Noise is the only issue caused by data centers."
+    ],
+    "answer": "AI data centers create both energy opportunities and local concerns.",
+    "focus": "main idea"
+  },
+  {
+    "moduleId": "discourse",
+    "moduleName": "篇章結構",
+    "level": "B1",
+    "passage": "Many students memorize long vocabulary lists. ____. As a result, they may know a word in isolation but fail to understand it in a passage.",
+    "question": "Which sentence best fits the blank?",
+    "options": [
+      "However, they often spend too little time seeing the words in context.",
+      "For example, some birds can fly long distances.",
+      "In contrast, water boils at a high temperature.",
+      "Therefore, the weather was sunny all day."
+    ],
+    "answer": "However, they often spend too little time seeing the words in context.",
+    "focus": "sentence insertion"
+  },
+  {
+    "moduleId": "cloze",
+    "moduleName": "文意選填",
+    "level": "A2",
+    "passage": "Energy security has become an important issue because supply disruptions can affect prices and daily life.",
+    "question": "Which word is closest in meaning to disruptions?",
+    "options": ["interruptions", "celebrations", "solutions", "traditions"],
+    "answer": "interruptions",
+    "focus": "context meaning"
+  },
+  {
+    "moduleId": "fill_blank",
+    "moduleName": "填字/綜合測驗",
+    "level": "A2",
+    "passage": "Students should review mistakes ______ they can avoid repeating them.",
+    "question": "Choose the best word for the blank.",
+    "options": ["so that", "even if", "unless", "before"],
+    "answer": "so that",
+    "focus": "purpose connector"
+  },
+  {
+    "moduleId": "translation",
+    "moduleName": "翻譯與寫作",
+    "level": "B1",
+    "passage": "",
+    "question": "Translate into English: 定期複習錯題可以幫助學生避免重複犯錯。",
+    "options": [
+      "Reviewing mistakes regularly can help students avoid repeating errors.",
+      "Review mistakes regular can help students avoid repeat errors.",
+      "Students avoid errors because reviewing mistake regular.",
+      "Regular mistakes help students repeating review."
+    ],
+    "answer": "Reviewing mistakes regularly can help students avoid repeating errors.",
+    "focus": "translation"
+  }
+]

@@ -1,0 +1,1199 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>高中學測英文能力快篩</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17212b;
+      --muted: #5d6b78;
+      --line: #d8e0e7;
+      --paper: #f6f8fb;
+      --panel: #ffffff;
+      --primary: #0b6b61;
+      --primary-strong: #084e48;
+      --accent: #bf5b04;
+      --blue: #1b5f9e;
+      --danger: #b42318;
+      --ok: #15803d;
+      --shadow: 0 14px 35px rgba(22, 33, 43, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", "Noto Sans TC", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+
+    header {
+      background: #12333d;
+      color: #fff;
+      border-bottom: 5px solid var(--accent);
+    }
+
+    .hero {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 34px 0 28px;
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 24px;
+      align-items: end;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .hero p {
+      margin: 0;
+      color: #dce8ea;
+      max-width: 720px;
+      font-size: 1rem;
+    }
+
+    .hero-meta {
+      display: grid;
+      gap: 10px;
+      justify-items: stretch;
+    }
+
+    .metric {
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      padding: 12px 14px;
+      min-height: 72px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 1.45rem;
+      line-height: 1.1;
+    }
+
+    .metric span {
+      color: #dce8ea;
+      font-size: 0.9rem;
+    }
+
+    main {
+      width: min(1120px, calc(100% - 32px));
+      margin: 24px auto 48px;
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 22px;
+    }
+
+    aside {
+      align-self: start;
+      position: sticky;
+      top: 16px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      padding: 16px;
+    }
+
+    .progress-title {
+      margin: 0 0 10px;
+      font-weight: 700;
+    }
+
+    .progress-bar {
+      height: 10px;
+      background: #e8eef3;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+    .progress-fill {
+      width: 0%;
+      height: 100%;
+      background: var(--primary);
+      transition: width 0.2s ease;
+    }
+
+    .score-list {
+      display: grid;
+      gap: 8px;
+      margin: 14px 0;
+    }
+
+    .score-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid #edf1f4;
+      padding-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .score-row span:last-child {
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .content {
+      display: grid;
+      gap: 18px;
+    }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.35rem;
+      line-height: 1.25;
+    }
+
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 1.04rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    label {
+      display: grid;
+      gap: 6px;
+      font-weight: 700;
+      color: #24313c;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid #cbd5df;
+      background: #fff;
+      color: var(--ink);
+      padding: 9px 10px;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 96px;
+      resize: vertical;
+    }
+
+    .hint {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .question {
+      border-top: 1px solid #e7edf2;
+      padding-top: 16px;
+      margin-top: 16px;
+    }
+
+    .question:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .question p {
+      margin: 0 0 10px;
+      font-weight: 700;
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 44px;
+      border: 1px solid #d7e0e8;
+      padding: 9px 10px;
+      font-weight: 500;
+      cursor: pointer;
+      background: #fbfcfd;
+    }
+
+    .option:hover {
+      border-color: var(--primary);
+      background: #f0f8f6;
+    }
+
+    .option input {
+      width: 18px;
+      height: 18px;
+      min-height: 18px;
+      accent-color: var(--primary);
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    button {
+      min-height: 44px;
+      border: 0;
+      padding: 10px 16px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      background: var(--primary);
+      color: #fff;
+    }
+
+    button:hover {
+      background: var(--primary-strong);
+    }
+
+    button.secondary {
+      background: #e8eef3;
+      color: var(--ink);
+    }
+
+    button.secondary:hover {
+      background: #dbe5ed;
+    }
+
+    .result {
+      display: none;
+      border-left: 5px solid var(--primary);
+      background: #f7fbfa;
+    }
+
+    .result.visible {
+      display: block;
+    }
+
+    .result-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .result-box {
+      border: 1px solid #cfe0dc;
+      background: #fff;
+      padding: 14px;
+      min-height: 112px;
+    }
+
+    .result-box strong {
+      display: block;
+      color: var(--primary-strong);
+      font-size: 1.5rem;
+      line-height: 1.1;
+    }
+
+    .plan {
+      display: grid;
+      gap: 8px;
+      padding-left: 20px;
+    }
+
+    .report-box {
+      margin-top: 14px;
+    }
+
+    .report-box textarea {
+      min-height: 180px;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 0.92rem;
+      background: #fbfcfd;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 3px 9px;
+      background: #eaf4f2;
+      color: var(--primary-strong);
+      font-weight: 700;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    .frequency-controls {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 12px 0 16px;
+    }
+
+    .frequency-controls button {
+      min-height: 38px;
+      background: #e8eef3;
+      color: var(--ink);
+      padding: 8px 12px;
+    }
+
+    .frequency-controls button.active {
+      background: var(--blue);
+      color: #fff;
+    }
+
+    .frequency-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .frequency-item {
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 12px;
+      min-height: 126px;
+    }
+
+    .frequency-item.high {
+      border-left: 6px solid #b42318;
+    }
+
+    .frequency-item.medium {
+      border-left: 6px solid #bf5b04;
+    }
+
+    .frequency-item.low {
+      border-left: 6px solid #15803d;
+    }
+
+    .frequency-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: start;
+      margin-bottom: 8px;
+    }
+
+    .frequency-term {
+      font-weight: 800;
+      font-size: 1.05rem;
+      overflow-wrap: anywhere;
+    }
+
+    .frequency-badge {
+      white-space: nowrap;
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: #fff;
+      padding: 3px 8px;
+    }
+
+    .frequency-badge.high {
+      background: #b42318;
+    }
+
+    .frequency-badge.medium {
+      background: #bf5b04;
+    }
+
+    .frequency-badge.low {
+      background: #15803d;
+    }
+
+    .frequency-actions {
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .known-btn {
+      min-height: 36px;
+      padding: 7px 10px;
+      background: #edf4f2;
+      color: var(--primary-strong);
+      border: 1px solid #c5dcd7;
+    }
+
+    .known-btn:hover {
+      background: #d9ebe7;
+    }
+
+    .warning {
+      color: var(--danger);
+      font-weight: 700;
+    }
+
+    .small {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 860px) {
+      .hero,
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        position: static;
+      }
+
+      .form-grid,
+      .result-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .frequency-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .options {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div>
+        <h1>高中學測英文能力快篩</h1>
+        <p>用 20 分鐘找出最影響學測英文分數的弱點，接著把練習集中在核心單字、句構、閱讀理解、翻譯作文與考試策略。</p>
+      </div>
+      <div class="hero-meta" aria-label="快篩資訊">
+        <div class="metric">
+          <strong>5</strong>
+          <span>能力面向</span>
+        </div>
+        <div class="metric">
+          <strong>7 天</strong>
+          <span>第一輪補強建議</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <aside>
+      <p class="progress-title">完成進度</p>
+      <div class="progress-bar" aria-hidden="true">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <p id="progressText" class="small">尚未開始</p>
+      <div class="score-list">
+        <div class="score-row"><span>單字</span><span id="scoreVocabulary">0 / 4</span></div>
+        <div class="score-row"><span>文法句構</span><span id="scoreGrammar">0 / 4</span></div>
+        <div class="score-row"><span>閱讀</span><span id="scoreReading">0 / 4</span></div>
+        <div class="score-row"><span>作文輸出</span><span id="scoreWriting">0 / 4</span></div>
+        <div class="score-row"><span>考試策略</span><span id="scoreStrategy">0 / 4</span></div>
+      </div>
+      <p class="small">不填學生真名，請用班級代碼、座號或匿名 ID。</p>
+    </aside>
+
+    <div class="content">
+      <section>
+        <h2>學生資料</h2>
+        <div class="form-grid">
+          <label>
+            匿名 ID
+            <input id="studentId" type="text" placeholder="例如 A班-12">
+          </label>
+          <label>
+            考試目標
+            <select id="goal">
+              <option value="高中學測英文" selected>高中學測英文</option>
+            </select>
+          </label>
+          <label>
+            診斷難度
+            <select id="diagnosticLevel">
+              <option value="A1">A1 學測基礎補洞</option>
+              <option value="A2" selected>A2 學測核心題</option>
+              <option value="B1">B1 學測閱讀推論</option>
+              <option value="B2">B2 學測高分挑戰</option>
+            </select>
+          </label>
+          <label>
+            每日可練習時間
+            <select id="dailyTime">
+              <option value="20">20 分鐘</option>
+              <option value="30" selected>30 分鐘</option>
+              <option value="45">45 分鐘</option>
+              <option value="60">60 分鐘</option>
+            </select>
+          </label>
+        </div>
+        <p class="hint">這份快篩以高中學測英文為目標，只做學習診斷，不取代正式模考或校內成績。</p>
+      </section>
+
+      <section id="quiz">
+        <h2>能力快篩</h2>
+        <div id="questions"></div>
+      </section>
+
+      <section>
+        <h2>近五年歷屆試題高頻項目</h2>
+        <p class="hint" id="frequencyMeta">依出現頻率標示：紅色高頻、橘色中頻、綠色低頻。</p>
+        <div class="frequency-controls" aria-label="高頻項目分類">
+          <button type="button" class="active" data-frequency-filter="word">單字</button>
+          <button type="button" data-frequency-filter="phrase">片語</button>
+          <button type="button" data-frequency-filter="grammar">文法</button>
+          <button type="button" data-reset-known="exam-frequency">復原熟悉項目</button>
+        </div>
+        <div class="frequency-grid" id="frequencyGrid"></div>
+      </section>
+
+      <section>
+        <h2>近兩個月新聞時事關鍵字</h2>
+        <p class="hint" id="newsKeywordMeta">英文雜誌與英文報導優先，補足時事用字。</p>
+        <div class="frequency-grid" id="newsKeywordGrid"></div>
+      </section>
+
+      <section>
+        <h2>近五年題型統計出題參考</h2>
+        <p class="hint" id="questionTypeMeta">依 111-115 學年度英文試題題型比例，作為題庫擴充參考。</p>
+        <div class="frequency-grid" id="questionTypeGrid"></div>
+      </section>
+
+      <section>
+        <h2>題型訓練模組</h2>
+        <p class="hint" id="questionModuleMeta">依學測英文題型建立可擴充題庫。</p>
+        <div class="frequency-grid" id="questionModuleGrid"></div>
+      </section>
+
+      <section>
+        <h2>作文與翻譯輸出</h2>
+        <label>
+          用英文寫 3-5 句：你最近最需要改善的讀書習慣是什麼？
+          <textarea id="writingInput" placeholder="Write 3-5 English sentences here."></textarea>
+        </label>
+        <p class="hint">此欄不自動評分，但會納入練習建議。老師或家長可觀察句子完整度、時態、連接詞與單字精準度。</p>
+      </section>
+
+      <section>
+        <div class="actions">
+          <button type="button" id="calculateBtn">產生診斷結果</button>
+          <button type="button" class="secondary" id="shuffleBtn">重新抽題</button>
+          <button type="button" class="secondary" id="resetBtn">重新填寫</button>
+          <span id="message" class="warning" role="status"></span>
+        </div>
+      </section>
+
+      <section class="result" id="resultPanel" aria-live="polite">
+        <h2>診斷結果</h2>
+        <div id="profileTags"></div>
+        <div class="result-grid">
+          <div class="result-box">
+            <span>總分</span>
+            <strong id="totalScore">0 / 20</strong>
+            <p id="levelText" class="small"></p>
+          </div>
+          <div class="result-box">
+            <span>優先補強</span>
+            <strong id="priorityText">-</strong>
+            <p class="small">先補最卡分的能力。</p>
+          </div>
+          <div class="result-box">
+            <span>建議節奏</span>
+            <strong id="paceText">30 分鐘</strong>
+            <p class="small">短時間、高回收，比一次做很多更有效。</p>
+          </div>
+        </div>
+        <h3>7 天訓練安排</h3>
+        <ol class="plan" id="planList"></ol>
+        <div class="report-box">
+          <label>
+            診斷摘要
+            <textarea id="reportText" readonly></textarea>
+          </label>
+          <p class="hint">可貼到錯題本、週檢討，或交給老師/家長做後續追蹤。</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="question-bank.js"></script>
+  <script src="frequency-data.js"></script>
+  <script src="news-keywords.js"></script>
+  <script src="question-type-stats.js"></script>
+  <script src="question-modules.js"></script>
+  <script>
+    const questionBankFallback = [
+      {
+        skill: "vocabulary",
+        text: "The word “improve” is closest in meaning to:",
+        answer: "make better",
+        options: ["make better", "make worse", "forget", "borrow"]
+      },
+      {
+        skill: "vocabulary",
+        text: "Choose the best word: Students should review vocabulary ______.",
+        answer: "regularly",
+        options: ["regularly", "rare", "recent", "realize"]
+      },
+      {
+        skill: "vocabulary",
+        text: "Which pair is most easily confused by learners?",
+        answer: "affect / effect",
+        options: ["table / chair", "affect / effect", "blue / green", "run / walk"]
+      },
+      {
+        skill: "vocabulary",
+        text: "The phrase “pay attention to” means:",
+        answer: "focus on",
+        options: ["focus on", "pay money", "look after money", "arrive late"]
+      },
+      {
+        skill: "grammar",
+        text: "Choose the correct sentence.",
+        answer: "She has studied English for three years.",
+        options: [
+          "She has studied English for three years.",
+          "She have studied English since three years.",
+          "She studied English since three years.",
+          "She studying English for three years."
+        ]
+      },
+      {
+        skill: "grammar",
+        text: "If it rains tomorrow, we ______ at home.",
+        answer: "will stay",
+        options: ["will stay", "stayed", "staying", "have stayed"]
+      },
+      {
+        skill: "grammar",
+        text: "The book ______ on the desk is mine.",
+        answer: "lying",
+        options: ["lying", "lies", "lay", "to lie"]
+      },
+      {
+        skill: "grammar",
+        text: "Which sentence has the clearest cause-effect relation?",
+        answer: "Because he practiced every day, his reading speed improved.",
+        options: [
+          "Because he practiced every day, his reading speed improved.",
+          "He practiced every day his reading speed.",
+          "His reading speed because practiced every day.",
+          "Every day improved because he reading."
+        ]
+      },
+      {
+        skill: "reading",
+        text: "Reading clue: “Although the test was difficult, Mia remained calm.” What does “although” show?",
+        answer: "contrast",
+        options: ["contrast", "time order", "example", "location"]
+      },
+      {
+        skill: "reading",
+        text: "In a long reading passage, what should you usually identify first?",
+        answer: "main idea",
+        options: ["main idea", "every unknown word", "font size", "the longest sentence"]
+      },
+      {
+        skill: "reading",
+        text: "The sentence “This method saves time; however, it requires discipline.” The second part gives:",
+        answer: "a limitation",
+        options: ["a limitation", "the same idea", "a place", "a person"]
+      },
+      {
+        skill: "reading",
+        text: "When a question asks “What can be inferred?”, you should choose the answer that is:",
+        answer: "supported but not directly stated",
+        options: ["supported but not directly stated", "copied word for word", "unrelated", "always the longest"]
+      },
+      {
+        skill: "writing",
+        text: "Choose the best topic sentence.",
+        answer: "Daily review helps students remember vocabulary longer.",
+        options: [
+          "Daily review helps students remember vocabulary longer.",
+          "Vocabulary and students and review.",
+          "I like English because good.",
+          "Review is a thing."
+        ]
+      },
+      {
+        skill: "writing",
+        text: "Which connector best shows a result?",
+        answer: "therefore",
+        options: ["therefore", "although", "before", "for example"]
+      },
+      {
+        skill: "writing",
+        text: "Choose the clearest translation: 我需要改善我的閱讀速度。",
+        answer: "I need to improve my reading speed.",
+        options: [
+          "I need to improve my reading speed.",
+          "I need improve my read fast.",
+          "I am need better reading speed.",
+          "My reading speed need good."
+        ]
+      },
+      {
+        skill: "writing",
+        text: "Which revision is strongest?",
+        answer: "I made many mistakes, so I reviewed them after class.",
+        options: [
+          "I made many mistakes, so I reviewed them after class.",
+          "I mistakes many, review class.",
+          "Mistakes are reviewed after class because many.",
+          "I reviewed many after class mistake."
+        ]
+      },
+      {
+        skill: "strategy",
+        text: "The most efficient way to use wrong answers is to:",
+        answer: "record the reason and review similar questions",
+        options: [
+          "record the reason and review similar questions",
+          "erase them immediately",
+          "only check the answer letter",
+          "avoid the same topic forever"
+        ]
+      },
+      {
+        skill: "strategy",
+        text: "If a reading passage is hard, the first move should be:",
+        answer: "find topic, keywords, and question targets",
+        options: [
+          "find topic, keywords, and question targets",
+          "translate every word first",
+          "give up and guess",
+          "read only the last sentence"
+        ]
+      },
+      {
+        skill: "strategy",
+        text: "For a student with little time, the best daily practice is:",
+        answer: "short practice plus old mistake review",
+        options: [
+          "short practice plus old mistake review",
+          "only new difficult words",
+          "one long session per month",
+          "copy grammar rules without questions"
+        ]
+      },
+      {
+        skill: "strategy",
+        text: "Before an exam, practice should be closest to:",
+        answer: "real question format and timed review",
+        options: [
+          "real question format and timed review",
+          "random videos only",
+          "beautiful notes only",
+          "memorizing without testing"
+        ]
+      }
+    ];
+
+    let questionData = [];
+
+    const skillLabels = {
+      vocabulary: "單字",
+      grammar: "文法句構",
+      reading: "閱讀",
+      writing: "作文輸出",
+      strategy: "考試策略"
+    };
+
+    const questionsEl = document.getElementById("questions");
+    const progressFill = document.getElementById("progressFill");
+    const progressText = document.getElementById("progressText");
+    const message = document.getElementById("message");
+    const frequencyGrid = document.getElementById("frequencyGrid");
+    const frequencyMeta = document.getElementById("frequencyMeta");
+    const newsKeywordGrid = document.getElementById("newsKeywordGrid");
+    const newsKeywordMeta = document.getElementById("newsKeywordMeta");
+    const questionTypeGrid = document.getElementById("questionTypeGrid");
+    const questionTypeMeta = document.getElementById("questionTypeMeta");
+    const questionModuleGrid = document.getElementById("questionModuleGrid");
+    const questionModuleMeta = document.getElementById("questionModuleMeta");
+    const visibleFrequencyLimit = 6;
+    let currentFrequencyType = "word";
+
+    function createQuestionSet() {
+      const selectedLevel = document.getElementById("diagnosticLevel").value;
+      if (window.pickDiagnosticQuestions) {
+        const picked = window.pickDiagnosticQuestions(selectedLevel);
+        if (picked.length === 20) return picked;
+      }
+      return [...questionBankFallback].sort(() => Math.random() - 0.5);
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function shuffleCurrentQuestions() {
+      questionData = createQuestionSet();
+      renderQuestions();
+      document.getElementById("resultPanel").classList.remove("visible");
+      message.textContent = "已重新抽題。";
+      updateProgress();
+    }
+
+    function renderQuestions() {
+      questionsEl.innerHTML = questionData.map((question, index) => {
+        const options = question.options.map((option) => `
+          <label class="option">
+            <input type="radio" name="q${index}" value="${escapeHtml(option)}">
+            <span>${escapeHtml(option)}</span>
+          </label>
+        `).join("");
+
+        return `
+          <div class="question">
+            <p>${index + 1}. <span class="tag">${skillLabels[question.skill]} ${question.level || ""}</span>${escapeHtml(question.text)}</p>
+            <div class="options">${options}</div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function levelText(level) {
+      if (level === "high") return "高頻";
+      if (level === "medium") return "中頻";
+      return "低頻";
+    }
+
+    function knownStorageKey(type) {
+      return `gsat-known-frequency-${type}`;
+    }
+
+    function frequencyItemKey(item) {
+      return `${item.type}:${item.text}`;
+    }
+
+    function readKnownItems(type) {
+      try {
+        return new Set(JSON.parse(localStorage.getItem(knownStorageKey(type)) || "[]"));
+      } catch (_error) {
+        return new Set();
+      }
+    }
+
+    function writeKnownItems(type, knownItems) {
+      localStorage.setItem(knownStorageKey(type), JSON.stringify([...knownItems]));
+    }
+
+    function renderFrequencyItems(type = "word") {
+      currentFrequencyType = type;
+      const knownItems = readKnownItems(type);
+      const allItems = (window.examFrequencyItems || [])
+        .filter((item) => item.type === type)
+        .sort((a, b) => b.frequency - a.frequency);
+      const items = allItems
+        .filter((item) => !knownItems.has(frequencyItemKey(item)))
+        .slice(0, visibleFrequencyLimit);
+
+      if (window.examFrequencyMeta) {
+        frequencyMeta.textContent = `${window.examFrequencyMeta.sourceRange}，已熟悉 ${knownItems.size} / ${allItems.length}；紅色高頻、橘色中頻、綠色低頻。`;
+      }
+
+      if (items.length === 0) {
+        frequencyGrid.innerHTML = `
+          <article class="frequency-item low">
+            <div class="frequency-term">目前這一類都標記為熟悉</div>
+            <p class="small">可以切換其他分類，或按「復原熟悉項目」重新練習。</p>
+          </article>
+        `;
+        return;
+      }
+
+      frequencyGrid.innerHTML = items.map((item) => `
+        <article class="frequency-item ${escapeHtml(item.level)}">
+          <div class="frequency-head">
+            <div class="frequency-term">${escapeHtml(item.text)}</div>
+            <span class="frequency-badge ${escapeHtml(item.level)}">${levelText(item.level)} ${item.frequency}</span>
+          </div>
+          <div><strong>重點：</strong>${escapeHtml(item.meaning)}</div>
+          <p class="small">${escapeHtml(item.example)}</p>
+          <div class="frequency-actions">
+            <button type="button" class="known-btn" data-known-frequency="${escapeHtml(frequencyItemKey(item))}">已熟悉，換下一個</button>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderNewsKeywords() {
+      if (window.newsKeywordMeta) {
+        newsKeywordMeta.textContent = `${window.newsKeywordMeta.target}，${window.newsKeywordMeta.sourcePreference}。`;
+      }
+      newsKeywordGrid.innerHTML = (window.newsKeywordItems || []).map((item) => `
+        <article class="frequency-item ${escapeHtml(item.weight)}">
+          <div class="frequency-head">
+            <div class="frequency-term">${escapeHtml(item.keyword)}</div>
+            <span class="frequency-badge ${escapeHtml(item.weight)}">${levelText(item.weight)}</span>
+          </div>
+          <div><strong>主題：</strong>${escapeHtml(item.topic)}</div>
+          <div><strong>中文：</strong>${escapeHtml(item.meaning)}</div>
+          <p class="small">${escapeHtml(item.example)}</p>
+          <p class="small">來源：${escapeHtml(item.sourceName)}</p>
+        </article>
+      `).join("");
+    }
+
+    function renderQuestionTypeStats() {
+      if (window.questionTypeStatsMeta) {
+        questionTypeMeta.textContent = `${window.questionTypeStatsMeta.target}；此比例用於題庫擴充參考。`;
+      }
+      questionTypeGrid.innerHTML = (window.questionTypeStats || []).map((item) => `
+        <article class="frequency-item ${escapeHtml(item.weight)}">
+          <div class="frequency-head">
+            <div class="frequency-term">${escapeHtml(item.type)}</div>
+            <span class="frequency-badge ${escapeHtml(item.weight)}">${item.percent}%</span>
+          </div>
+          <div><strong>統計量：</strong>${item.count}</div>
+          <p class="small">${escapeHtml(item.note)}</p>
+        </article>
+      `).join("");
+    }
+
+    function renderQuestionModules() {
+      if (window.questionModuleMeta) {
+        questionModuleMeta.textContent = `${window.questionModuleMeta.sourceBasis}；每個模組可獨立擴題與練習。`;
+      }
+      const examples = window.questionModuleExamples || [];
+      questionModuleGrid.innerHTML = (window.questionModules || []).map((module) => {
+        const example = examples.find((item) => item.moduleId === module.id);
+        const focus = module.focus.map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("");
+        return `
+          <article class="frequency-item ${escapeHtml(module.weight)}">
+            <div class="frequency-head">
+              <div class="frequency-term">${escapeHtml(module.name)}</div>
+              <span class="frequency-badge ${escapeHtml(module.weight)}">${module.percent}%</span>
+            </div>
+            <div><strong>對應題型：</strong>${escapeHtml(module.examType)}</div>
+            <div><strong>先做：</strong>${escapeHtml(module.firstGoal)}</div>
+            <div>${focus}</div>
+            ${example ? `<p class="small"><strong>種子題：</strong>${escapeHtml(example.question)}</p>` : ""}
+          </article>
+        `;
+      }).join("");
+    }
+
+    function getScores() {
+      const scores = {
+        vocabulary: 0,
+        grammar: 0,
+        reading: 0,
+        writing: 0,
+        strategy: 0
+      };
+      let answered = 0;
+
+      questionData.forEach((question, index) => {
+        const selected = document.querySelector(`input[name="q${index}"]:checked`);
+        if (!selected) return;
+        answered += 1;
+        if (selected.value === question.answer) {
+          scores[question.skill] += 1;
+        }
+      });
+
+      return { scores, answered };
+    }
+
+    function updateProgress() {
+      const { scores, answered } = getScores();
+      const percent = Math.round((answered / questionData.length) * 100);
+      progressFill.style.width = `${percent}%`;
+      progressText.textContent = answered === 0 ? "尚未開始" : `已完成 ${answered} / ${questionData.length} 題`;
+
+      Object.entries(scores).forEach(([skill, score]) => {
+        const id = `score${skill.charAt(0).toUpperCase()}${skill.slice(1)}`;
+        document.getElementById(id).textContent = `${score} / 4`;
+      });
+    }
+
+    function buildPlan(priority, dailyTime) {
+      const base = {
+        vocabulary: [
+          "第 1 天：整理錯的學測核心單字與片語，每個字補一個閱讀型例句。",
+          "第 2 天：用主動回想測 30 個高頻學測字，不會的進錯題回收。",
+          "第 3 天：把單字放進學測短文語境，練習用上下文猜意思。"
+        ],
+        grammar: [
+          "第 1 天：回收錯題中的時態、連接詞、分詞構句與關係子句。",
+          "第 2 天：每天做 10 題學測綜合測驗句構判斷，錯題改寫成正確句。",
+          "第 3 天：用 5 個學測常見句型造句，確認主詞、動詞與修飾語位置。"
+        ],
+        reading: [
+          "第 1 天：練習先看學測題幹，再抓段落主旨、轉折詞與指涉線索。",
+          "第 2 天：做一篇限時學測閱讀，標出原因、對比、結論與作者態度。",
+          "第 3 天：整理學測主旨、細節、推論與語意題的錯誤原因。"
+        ],
+        writing: [
+          "第 1 天：每天寫 3 句完整英文，先求文法正確，再接到學測作文段落。",
+          "第 2 天：練習學測作文常用 topic sentence、because、therefore、however。",
+          "第 3 天：把翻譯與作文錯句改成正確句，建立個人句型庫。"
+        ],
+        strategy: [
+          "第 1 天：建立學測錯題本欄位：題型、錯因、正確線索、複習日。",
+          "第 2 天：做 15 分鐘限時練習，練習選擇題配速、跳題與回頭檢查。",
+          "第 3 天：把錯題依單字、句構、閱讀線索、翻譯作文與粗心分類。"
+        ]
+      };
+
+      const plan = [
+        ...base[priority].slice(0, 3),
+        `第 4 天：用 ${dailyTime} 分鐘完成一份學測混合練習，至少 30% 時間回收舊錯題。`,
+        "第 5 天：針對第二弱項做小量練習，避免只補一個面向。",
+        "第 6 天：做一份限時閱讀或綜合測驗，記錄花最多時間的題型。",
+        "第 7 天：重測本快篩或相似題，更新下週的學測優先補強項。"
+      ];
+
+      return plan;
+    }
+
+    function buildReport(scores, total, level, priority, second, plan) {
+      const studentId = document.getElementById("studentId").value.trim() || "未填";
+      const goal = document.getElementById("goal").value;
+      const diagnosticLevel = document.getElementById("diagnosticLevel").value;
+      const dailyTime = document.getElementById("dailyTime").value;
+      const writing = document.getElementById("writingInput").value.trim() || "未填";
+      const scoreLines = Object.entries(scores)
+        .map(([skill, score]) => `- ${skillLabels[skill]}：${score}/4`)
+        .join("\n");
+      const planLines = plan.map((item, index) => `${index + 1}. ${item}`).join("\n");
+
+      return [
+        "# 高中學測英文能力快篩摘要",
+        "",
+        `- 日期：${new Date().toLocaleDateString("zh-TW")}`,
+        `- 學生匿名 ID：${studentId}`,
+        `- 考試目標：${goal}`,
+        `- 診斷難度：${diagnosticLevel}`,
+        `- 每日可練習時間：${dailyTime} 分鐘`,
+        `- 總分：${total}/20`,
+        `- 階段判讀：${level}`,
+        `- 優先補強：${skillLabels[priority]}`,
+        `- 第二補強：${skillLabels[second]}`,
+        "",
+        "## 各面向得分",
+        scoreLines,
+        "",
+        "## 作文輸出",
+        writing,
+        "",
+        "## 7 天訓練安排",
+        planLines
+      ].join("\n");
+    }
+
+    function calculate() {
+      const { scores, answered } = getScores();
+      if (answered < questionData.length) {
+        message.textContent = `還有 ${questionData.length - answered} 題尚未作答。`;
+        return;
+      }
+
+      message.textContent = "";
+      const total = Object.values(scores).reduce((sum, score) => sum + score, 0);
+      const sorted = Object.entries(scores).sort((a, b) => a[1] - b[1]);
+      const priority = sorted[0][0];
+      const second = sorted[1][0];
+      const dailyTime = document.getElementById("dailyTime").value;
+
+      let level = "基礎補強期";
+      if (total >= 17) level = "考前精修期";
+      else if (total >= 13) level = "穩定拉分期";
+      else if (total >= 9) level = "漏洞修補期";
+
+      const weakTags = sorted
+        .filter(([, score]) => score <= 2)
+        .map(([skill]) => `<span class="tag">${skillLabels[skill]}需補強</span>`)
+        .join("");
+
+      document.getElementById("profileTags").innerHTML = weakTags || '<span class="tag">整體基礎穩定</span>';
+      document.getElementById("totalScore").textContent = `${total} / 20`;
+      document.getElementById("levelText").textContent = level;
+      document.getElementById("priorityText").textContent = skillLabels[priority];
+      document.getElementById("paceText").textContent = `${dailyTime} 分鐘`;
+      const plan = buildPlan(priority, dailyTime);
+      document.getElementById("planList").innerHTML = plan
+        .map((item, index) => {
+          if (index === 4) return `<li>${item}目前第二弱項是「${skillLabels[second]}」。</li>`;
+          return `<li>${item}</li>`;
+        })
+        .join("");
+      document.getElementById("reportText").value = buildReport(scores, total, level, priority, second, plan);
+
+      document.getElementById("resultPanel").classList.add("visible");
+      document.getElementById("resultPanel").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function resetForm() {
+      document.querySelectorAll("input[type='radio']").forEach((input) => {
+        input.checked = false;
+      });
+      document.getElementById("writingInput").value = "";
+      document.getElementById("studentId").value = "";
+      document.getElementById("resultPanel").classList.remove("visible");
+      message.textContent = "";
+      updateProgress();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    questionData = createQuestionSet();
+    renderQuestions();
+    renderFrequencyItems();
+    renderNewsKeywords();
+    renderQuestionTypeStats();
+    renderQuestionModules();
+    updateProgress();
+    document.getElementById("quiz").addEventListener("change", updateProgress);
+    document.getElementById("diagnosticLevel").addEventListener("change", shuffleCurrentQuestions);
+    document.getElementById("calculateBtn").addEventListener("click", calculate);
+    document.getElementById("shuffleBtn").addEventListener("click", shuffleCurrentQuestions);
+    document.getElementById("resetBtn").addEventListener("click", resetForm);
+    frequencyGrid.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-known-frequency]");
+      if (!button) return;
+      const knownItems = readKnownItems(currentFrequencyType);
+      knownItems.add(button.dataset.knownFrequency);
+      writeKnownItems(currentFrequencyType, knownItems);
+      renderFrequencyItems(currentFrequencyType);
+    });
+    document.querySelectorAll("[data-frequency-filter]").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll("[data-frequency-filter]").forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+        renderFrequencyItems(button.dataset.frequencyFilter);
+      });
+    });
+    document.querySelector("[data-reset-known='exam-frequency']").addEventListener("click", () => {
+      localStorage.removeItem(knownStorageKey(currentFrequencyType));
+      renderFrequencyItems(currentFrequencyType);
+    });
+  </script>
+</body>
+</html>

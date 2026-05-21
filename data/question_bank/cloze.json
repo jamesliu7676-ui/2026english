@@ -1,0 +1,17 @@
+[
+  {
+    "id": "cloze_seed_001",
+    "moduleId": "cloze",
+    "level": "A2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:supply disruption",
+    "topic": "global economy",
+    "focus": "context meaning",
+    "passage": "Energy security has become an important issue because supply disruptions can affect prices and daily life.",
+    "question": "Which word is closest in meaning to disruptions?",
+    "options": ["interruptions", "celebrations", "solutions", "traditions"],
+    "answer": "interruptions",
+    "explanation": "A disruption is something that interrupts the normal operation of a system.",
+    "tags": ["energy security", "context clue", "vocabulary"]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "fill_blank_seed_001",
+    "moduleId": "fill_blank",
+    "level": "A2",
+    "sourceType": "manual",
+    "sourceRef": "question_module_examples.json",
+    "topic": "mistake review",
+    "focus": "purpose connector",
+    "passage": "Students should review mistakes ______ they can avoid repeating them.",
+    "question": "Choose the best word for the blank.",
+    "options": ["so that", "even if", "unless", "before"],
+    "answer": "so that",
+    "explanation": "'So that' introduces purpose: students review mistakes in order to avoid repeating them.",
+    "tags": ["connector", "purpose", "grammar"]
+  }
+]

@@ -1,0 +1,5 @@
+type,count,percent,question_bank_weight,diagnostic_note
+詞彙與語意,123,71.1,high,單字題庫與語意判斷題優先增加
+閱讀理解,35,20.2,medium,閱讀題需維持固定比例並加入推論與主旨題
+寫作表達,9,5.2,low,用翻譯與短句輸出補強非選能力
+篇章與文意,6,3.5,low,用轉折詞、句子排序與文意銜接題補強

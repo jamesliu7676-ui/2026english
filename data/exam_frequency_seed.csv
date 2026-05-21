@@ -1,0 +1,49 @@
+﻿type,text,frequency,level,meaning,example
+word,people,58,high,人們,Students should recognize 'people' quickly in GSAT reading passages.
+word,time,38,high,時間,Students should recognize 'time' quickly in GSAT reading passages.
+word,century,35,high,世紀,Students should recognize 'century' quickly in GSAT reading passages.
+word,water,23,high,水,Students should recognize 'water' quickly in GSAT reading passages.
+word,however,23,high,然而,Students should recognize 'however' quickly in GSAT reading passages.
+word,human,22,high,人類的;人類,Students should recognize 'human' quickly in GSAT reading passages.
+word,body,22,high,身體,Students should recognize 'body' quickly in GSAT reading passages.
+word,world,21,high,世界,Students should recognize 'world' quickly in GSAT reading passages.
+word,show,19,medium,顯示;展示,Students should recognize 'show' quickly in GSAT reading passages.
+word,thus,18,medium,因此,Students should recognize 'thus' quickly in GSAT reading passages.
+word,country,18,medium,國家,Students should recognize 'country' quickly in GSAT reading passages.
+word,since,17,medium,自從;因為,Students should recognize 'since' quickly in GSAT reading passages.
+word,small,16,medium,小的,Students should recognize 'small' quickly in GSAT reading passages.
+word,help,16,medium,幫助,Students should recognize 'help' quickly in GSAT reading passages.
+word,until,15,medium,直到,Students should recognize 'until' quickly in GSAT reading passages.
+word,true,15,medium,真實的,Students should recognize 'true' quickly in GSAT reading passages.
+word,study,15,medium,研究;學習,Students should recognize 'study' quickly in GSAT reading passages.
+word,today,14,low,今日;現今,Students should recognize 'today' quickly in GSAT reading passages.
+word,popular,14,low,受歡迎的,Students should recognize 'popular' quickly in GSAT reading passages.
+word,early,14,low,早期的;早的,Students should recognize 'early' quickly in GSAT reading passages.
+word,different,14,low,不同的,Students should recognize 'different' quickly in GSAT reading passages.
+word,because,13,low,因為,Students should recognize 'because' quickly in GSAT reading passages.
+word,almost,13,low,幾乎,Students should recognize 'almost' quickly in GSAT reading passages.
+word,need,12,low,需要,Students should recognize 'need' quickly in GSAT reading passages.
+phrase,such as,18,high,例如,Students should understand how to use 'such as' in a reading passage.
+phrase,according to,12,high,根據,Students should understand how to use 'according to' in a reading passage.
+phrase,in order to,4,high,為了,Students should understand how to use 'in order to' in a reading passage.
+phrase,instead of,4,high,而不是,Students should understand how to use 'instead of' in a reading passage.
+phrase,as well as,3,high,以及,Students should understand how to use 'as well as' in a reading passage.
+phrase,at least,2,medium,至少,Students should understand how to use 'at least' in a reading passage.
+phrase,because of,2,medium,因為,Students should understand how to use 'because of' in a reading passage.
+phrase,as a result,2,medium,因此,Students should understand how to use 'as a result' in a reading passage.
+phrase,focus on,2,medium,專注於,Students should understand how to use 'focus on' in a reading passage.
+phrase,rather than,1,medium,而不是,Students should understand how to use 'rather than' in a reading passage.
+phrase,in addition,1,medium,此外,Students should understand how to use 'in addition' in a reading passage.
+phrase,come up with,1,medium,想出,Students should understand how to use 'come up with' in a reading passage.
+phrase,find out,1,low,找出,Students should understand how to use 'find out' in a reading passage.
+phrase,deal with,1,low,處理,Students should understand how to use 'deal with' in a reading passage.
+phrase,lead to,1,low,導致,Students should understand how to use 'lead to' in a reading passage.
+phrase,depend on,1,low,取決於,Students should understand how to use 'depend on' in a reading passage.
+grammar,infinitive purpose,470,high,不定詞表目的,Practice this grammar point in a GSAT-style sentence: infinitive purpose.
+grammar,relative clauses,285,high,關係子句,Practice this grammar point in a GSAT-style sentence: relative clauses.
+grammar,modal auxiliaries,143,high,情態助動詞,Practice this grammar point in a GSAT-style sentence: modal auxiliaries.
+grammar,passive voice,135,medium,被動語態,Practice this grammar point in a GSAT-style sentence: passive voice.
+grammar,transition words,79,medium,轉折、因果、補充連接詞,Practice this grammar point in a GSAT-style sentence: transition words.
+grammar,comparatives,7,medium,比較級,Practice this grammar point in a GSAT-style sentence: comparatives.
+grammar,conditional sentences,3,low,條件句,Practice this grammar point in a GSAT-style sentence: conditional sentences.
+grammar,participial phrases,1,low,分詞構句,Practice this grammar point in a GSAT-style sentence: participial phrases.
