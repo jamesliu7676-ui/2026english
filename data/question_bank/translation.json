@@ -18,5 +18,185 @@
     "answer": "Reviewing mistakes regularly can help students avoid repeating errors.",
     "explanation": "Use a gerund phrase as the subject: 'Reviewing mistakes regularly'. Use 'avoid + V-ing'.",
     "tags": ["translation", "gerund", "avoid"]
+  },
+  {
+    "id": "translation_002",
+    "moduleId": "translation",
+    "level": "A2",
+    "sourceType": "manual",
+    "sourceRef": "source_strategy.md",
+    "topic": "vocabulary learning",
+    "focus": "translation",
+    "passage": "",
+    "question": "Translate into English: 學生應該在文章中學習單字，而不是只背中文意思。",
+    "options": [
+      "Students should learn words in passages instead of only memorizing Chinese meanings.",
+      "Students should learn words passage instead only memorize Chinese meaning.",
+      "Students are learn words in passages instead memorize Chinese.",
+      "Students should in passage learning words but Chinese meanings only."
+    ],
+    "answer": "Students should learn words in passages instead of only memorizing Chinese meanings.",
+    "explanation": "Use 'should + base verb' and 'instead of + V-ing'.",
+    "tags": ["translation", "instead of", "vocabulary"]
+  },
+  {
+    "id": "translation_003",
+    "moduleId": "translation",
+    "level": "B1",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:carbon emissions",
+    "topic": "AI and climate",
+    "focus": "translation",
+    "passage": "",
+    "question": "Translate into English: 如果資料中心使用化石燃料，碳排放可能會增加。",
+    "options": [
+      "If data centers use fossil fuels, carbon emissions may increase.",
+      "If data centers using fossil fuels, carbon emissions maybe increase.",
+      "Carbon emissions may increase if fossil fuels uses data centers.",
+      "Data centers use fossil fuels because carbon emissions increase maybe."
+    ],
+    "answer": "If data centers use fossil fuels, carbon emissions may increase.",
+    "explanation": "Use an if-clause with present tense and 'may + base verb' in the main clause.",
+    "tags": ["translation", "if clause", "carbon emissions"]
+  },
+  {
+    "id": "translation_004",
+    "moduleId": "translation",
+    "level": "B1",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:tariff",
+    "topic": "global trade",
+    "focus": "sentence combining",
+    "passage": "Imported goods became more expensive. Consumers bought fewer of them.",
+    "question": "Combine the two sentences with as a result.",
+    "options": [
+      "Imported goods became more expensive; as a result, consumers bought fewer of them.",
+      "Imported goods became more expensive although consumers bought fewer of them.",
+      "As a result imported goods because consumers bought fewer.",
+      "Consumers bought fewer imported goods before more expensive."
+    ],
+    "answer": "Imported goods became more expensive; as a result, consumers bought fewer of them.",
+    "explanation": "'As a result' introduces the effect of imported goods becoming more expensive.",
+    "tags": ["sentence combining", "as a result", "tariff"]
+  },
+  {
+    "id": "translation_005",
+    "moduleId": "translation",
+    "level": "B2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:energy transition",
+    "topic": "energy policy",
+    "focus": "concession",
+    "passage": "",
+    "question": "Translate into English: 雖然再生能源正在成長，許多國家仍然需要時間完成能源轉型。",
+    "options": [
+      "Although renewable energy is growing, many countries still need time to complete the energy transition.",
+      "Because renewable energy is growing, many countries still need time complete energy transition.",
+      "Renewable energy although growing, countries need still time complete.",
+      "Many countries need time although complete renewable energy is growing."
+    ],
+    "answer": "Although renewable energy is growing, many countries still need time to complete the energy transition.",
+    "explanation": "Use 'Although + clause' to introduce contrast, and 'need time to + V'.",
+    "tags": ["translation", "although", "energy transition"]
+  },
+  {
+    "id": "translation_006",
+    "moduleId": "translation",
+    "level": "B1",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:rare earth",
+    "topic": "critical supply chains",
+    "focus": "relative clause",
+    "passage": "",
+    "question": "Translate into English: 稀土材料被用於許多高科技產品，這使它們對供應鏈很重要。",
+    "options": [
+      "Rare earth materials are used in many high-tech products, which makes them important to supply chains.",
+      "Rare earth materials use many high-tech products which make important supply chains.",
+      "Supply chains are important because rare earth materials many products.",
+      "Rare earth materials are using in products, that important supply chains."
+    ],
+    "answer": "Rare earth materials are used in many high-tech products, which makes them important to supply chains.",
+    "explanation": "Use passive voice 'are used' and a which-clause to refer to the whole previous idea.",
+    "tags": ["translation", "relative clause", "rare earth"]
+  },
+  {
+    "id": "translation_007",
+    "moduleId": "translation",
+    "level": "A2",
+    "sourceType": "manual",
+    "sourceRef": "daily_practice.md",
+    "topic": "study habit",
+    "focus": "sentence correction",
+    "passage": "I need improve my reading speed.",
+    "question": "Choose the best correction.",
+    "options": [
+      "I need to improve my reading speed.",
+      "I need improving my reading speed.",
+      "I am need improve my reading speed.",
+      "My reading speed need improve."
+    ],
+    "answer": "I need to improve my reading speed.",
+    "explanation": "Use 'need to + base verb'.",
+    "tags": ["correction", "need to", "reading speed"]
+  },
+  {
+    "id": "translation_008",
+    "moduleId": "translation",
+    "level": "B2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:systemic resilience",
+    "topic": "climate and cities",
+    "focus": "academic sentence",
+    "passage": "",
+    "question": "Translate into English: 強化公共服務和基礎建設可以提升城市的系統韌性。",
+    "options": [
+      "Strengthening public services and infrastructure can improve a city's systemic resilience.",
+      "Strengthen public services and infrastructure can improves city systemic resilience.",
+      "A city systemic resilience improve because public services strengthen.",
+      "Infrastructure and public service can improving systemic city resilience."
+    ],
+    "answer": "Strengthening public services and infrastructure can improve a city's systemic resilience.",
+    "explanation": "Use a gerund phrase as the subject and 'can + base verb'.",
+    "tags": ["translation", "resilience", "academic writing"]
+  },
+  {
+    "id": "translation_009",
+    "moduleId": "translation",
+    "level": "B1",
+    "sourceType": "manual",
+    "sourceRef": "question_bank:reading_008",
+    "topic": "urbanisation",
+    "focus": "contrast paragraph",
+    "passage": "Rapid urbanisation can create jobs. It can also increase traffic and housing pressure.",
+    "question": "Choose the best combined sentence.",
+    "options": [
+      "Rapid urbanisation can create jobs, but it can also increase traffic and housing pressure.",
+      "Rapid urbanisation can create jobs because traffic and housing pressure.",
+      "Traffic can create jobs but housing pressure urbanisation.",
+      "Rapid urbanisation increase traffic, jobs also because pressure."
+    ],
+    "answer": "Rapid urbanisation can create jobs, but it can also increase traffic and housing pressure.",
+    "explanation": "Use 'but' to connect a benefit with a drawback.",
+    "tags": ["sentence combining", "but", "urbanisation"]
+  },
+  {
+    "id": "translation_010",
+    "moduleId": "translation",
+    "level": "B2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:AI compute",
+    "topic": "technology",
+    "focus": "short paragraph",
+    "passage": "",
+    "question": "Choose the best topic sentence for a short paragraph about AI compute and energy.",
+    "options": [
+      "The growth of AI compute creates new opportunities, but it also raises serious energy questions.",
+      "AI compute is a word and energy is also a word.",
+      "There are many things about computers in the world.",
+      "Energy questions are fun because AI compute."
+    ],
+    "answer": "The growth of AI compute creates new opportunities, but it also raises serious energy questions.",
+    "explanation": "A strong topic sentence presents both the main subject and the contrast the paragraph can develop.",
+    "tags": ["topic sentence", "AI compute", "writing"]
   }
 ]

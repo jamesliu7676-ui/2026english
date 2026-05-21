@@ -18,5 +18,175 @@
     "answer": "AI data centers create both energy opportunities and local concerns.",
     "explanation": "The passage mentions electricity, cleaner energy, and local concerns, so the answer must cover both benefits and worries.",
     "tags": ["AI", "climate", "main idea"]
+  },
+  {
+    "id": "reading_002",
+    "moduleId": "reading",
+    "level": "A2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:energy security",
+    "topic": "energy geopolitics",
+    "focus": "detail",
+    "passage": "Energy security means having a stable and affordable supply of energy. When countries depend too heavily on one supplier, they may face higher risks during conflict or trade disputes.",
+    "question": "According to the passage, why can dependence on one supplier be risky?",
+    "options": [
+      "Conflict or trade disputes may affect the energy supply.",
+      "Energy becomes free during international conflict.",
+      "All suppliers always offer the same price.",
+      "Countries no longer need electricity."
+    ],
+    "answer": "Conflict or trade disputes may affect the energy supply.",
+    "explanation": "The passage states that dependence on one supplier creates higher risks during conflict or trade disputes.",
+    "tags": ["energy security", "detail", "geopolitics"]
+  },
+  {
+    "id": "reading_003",
+    "moduleId": "reading",
+    "level": "B1",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:global recession",
+    "topic": "global economy",
+    "focus": "inference",
+    "passage": "A global recession does not begin in every country at the same moment. It often spreads when trade slows, investors lose confidence, and consumers reduce spending.",
+    "question": "What can be inferred from the passage?",
+    "options": [
+      "A recession can spread through several connected economic channels.",
+      "A recession always starts and ends on the same day worldwide.",
+      "Consumer spending has no effect on the economy.",
+      "Trade becomes faster during a recession."
+    ],
+    "answer": "A recession can spread through several connected economic channels.",
+    "explanation": "The passage lists trade, investor confidence, and consumer spending as connected ways a recession spreads.",
+    "tags": ["global recession", "inference", "economy"]
+  },
+  {
+    "id": "reading_004",
+    "moduleId": "reading",
+    "level": "B1",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:systemic resilience",
+    "topic": "climate and economy",
+    "focus": "author purpose",
+    "passage": "After floods and power failures, some cities recover faster than others. Experts say that strong public services, reliable infrastructure, and community trust can improve systemic resilience.",
+    "question": "Why does the writer mention public services, infrastructure, and community trust?",
+    "options": [
+      "To give examples of factors that support resilience.",
+      "To show that cities do not need planning.",
+      "To argue that floods are never serious.",
+      "To explain why communities should stop using electricity."
+    ],
+    "answer": "To give examples of factors that support resilience.",
+    "explanation": "The examples explain what can make a city more resilient after shocks.",
+    "tags": ["resilience", "author purpose", "examples"]
+  },
+  {
+    "id": "reading_005",
+    "moduleId": "reading",
+    "level": "B1",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:rare earth",
+    "topic": "critical supply chains",
+    "focus": "cause and effect",
+    "passage": "Rare earth materials are needed for many high-tech products. If access to these materials is limited, companies may struggle to produce electric vehicles, smartphones, and defense equipment.",
+    "question": "What is the effect of limited access to rare earth materials?",
+    "options": [
+      "Some companies may have trouble making high-tech products.",
+      "All technology products become easier to produce.",
+      "Electric vehicles no longer need materials.",
+      "Smartphones become unrelated to supply chains."
+    ],
+    "answer": "Some companies may have trouble making high-tech products.",
+    "explanation": "The passage says companies may struggle to produce several high-tech products if access is limited.",
+    "tags": ["rare earth", "cause effect", "supply chain"]
+  },
+  {
+    "id": "reading_006",
+    "moduleId": "reading",
+    "level": "A2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:carbon emissions",
+    "topic": "AI and climate",
+    "focus": "reference",
+    "passage": "Some companies promise to reduce carbon emissions from their data centers. They may buy renewable energy or improve cooling systems to use less electricity.",
+    "question": "What does They refer to?",
+    "options": ["Some companies", "Carbon emissions", "Cooling systems", "Data centers only"],
+    "answer": "Some companies",
+    "explanation": "They refers back to the companies that promise to reduce emissions.",
+    "tags": ["reference", "carbon emissions", "pronoun"]
+  },
+  {
+    "id": "reading_007",
+    "moduleId": "reading",
+    "level": "B2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:geopolitical fragmentation",
+    "topic": "global economy",
+    "focus": "tone",
+    "passage": "Geopolitical fragmentation may not stop global trade completely, but it can make cooperation slower, more expensive, and less predictable.",
+    "question": "Which tone best describes the sentence?",
+    "options": ["cautious", "celebratory", "careless", "humorous"],
+    "answer": "cautious",
+    "explanation": "The writer does not say trade will end, but warns about slower and less predictable cooperation.",
+    "tags": ["tone", "geopolitics", "caution"]
+  },
+  {
+    "id": "reading_008",
+    "moduleId": "reading",
+    "level": "B1",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:rapid urbanisation",
+    "topic": "climate and cities",
+    "focus": "main idea",
+    "passage": "Rapid urbanisation can create jobs and improve access to services. However, if city growth is not planned well, it may also increase traffic, housing pressure, and pollution.",
+    "question": "What is the main idea of the passage?",
+    "options": [
+      "Rapid urbanisation brings both opportunities and challenges.",
+      "City growth only creates pollution.",
+      "Jobs disappear when cities grow.",
+      "Planning has no effect on urban life."
+    ],
+    "answer": "Rapid urbanisation brings both opportunities and challenges.",
+    "explanation": "The passage presents both benefits and problems of rapid urbanisation.",
+    "tags": ["urbanisation", "main idea", "contrast"]
+  },
+  {
+    "id": "reading_009",
+    "moduleId": "reading",
+    "level": "A2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:tariff",
+    "topic": "global trade",
+    "focus": "detail",
+    "passage": "A tariff can protect local industries by making imported goods more expensive. However, consumers may also pay higher prices as a result.",
+    "question": "What possible problem of tariffs is mentioned?",
+    "options": [
+      "Consumers may pay higher prices.",
+      "Imported goods always become free.",
+      "Local industries disappear immediately.",
+      "Consumers never notice price changes."
+    ],
+    "answer": "Consumers may pay higher prices.",
+    "explanation": "The second sentence directly states that consumers may pay higher prices.",
+    "tags": ["tariff", "detail", "trade"]
+  },
+  {
+    "id": "reading_010",
+    "moduleId": "reading",
+    "level": "B2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:AI compute",
+    "topic": "technology",
+    "focus": "inference",
+    "passage": "As demand for AI compute grows, companies need more chips, electricity, cooling systems, and network equipment. This growth may create business opportunities, but it also raises questions about energy use.",
+    "question": "What can be inferred from the passage?",
+    "options": [
+      "AI compute growth affects both business and energy planning.",
+      "AI compute reduces the need for electricity.",
+      "Network equipment is unrelated to AI.",
+      "Business opportunities remove all energy concerns."
+    ],
+    "answer": "AI compute growth affects both business and energy planning.",
+    "explanation": "The passage connects AI compute with business opportunities and energy questions.",
+    "tags": ["AI compute", "inference", "technology"]
   }
 ]

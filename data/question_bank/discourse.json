@@ -18,5 +18,180 @@
     "answer": "However, they often spend too little time seeing the words in context.",
     "explanation": "The next sentence contrasts memorizing words with failing to use them in context, so 'However' creates the correct relation.",
     "tags": ["context", "transition", "sentence insertion"]
+  },
+  {
+    "id": "discourse_002",
+    "moduleId": "discourse",
+    "level": "A2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:data center",
+    "topic": "AI and climate",
+    "focus": "contrast transition",
+    "passage": "AI data centers can support new tools and services. ____. Local residents may worry about electricity use, water demand, and noise.",
+    "question": "Which sentence best fits the blank?",
+    "options": [
+      "However, their growth can also create local problems.",
+      "For example, students can learn vocabulary by reading.",
+      "Therefore, every city has stopped using computers.",
+      "In the past, people wrote letters by hand."
+    ],
+    "answer": "However, their growth can also create local problems.",
+    "explanation": "The blank must connect benefits of data centers with later concerns, so a contrast sentence with 'However' fits.",
+    "tags": ["AI", "however", "sentence insertion"]
+  },
+  {
+    "id": "discourse_003",
+    "moduleId": "discourse",
+    "level": "B1",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:tariff",
+    "topic": "global trade",
+    "focus": "cause effect",
+    "passage": "A tariff makes imported goods more expensive. ____. Some consumers may decide to buy fewer imported products.",
+    "question": "Which sentence best connects the two ideas?",
+    "options": [
+      "As a result, prices in stores may rise.",
+      "However, the weather may become cooler.",
+      "For example, many students enjoy music.",
+      "In contrast, words have different meanings."
+    ],
+    "answer": "As a result, prices in stores may rise.",
+    "explanation": "The final sentence describes an effect of higher prices, so 'As a result' creates the correct cause-effect relation.",
+    "tags": ["tariff", "as a result", "cause effect"]
+  },
+  {
+    "id": "discourse_004",
+    "moduleId": "discourse",
+    "level": "B1",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:energy transition",
+    "topic": "energy policy",
+    "focus": "concession",
+    "passage": "Renewable energy is becoming cheaper in many places. ____. Many countries still need time to build storage systems and update power grids.",
+    "question": "Which sentence best fits the blank?",
+    "options": [
+      "Nevertheless, the energy transition cannot happen overnight.",
+      "For example, some students study at night.",
+      "Therefore, no country needs electricity.",
+      "Similarly, all fossil fuels are already gone."
+    ],
+    "answer": "Nevertheless, the energy transition cannot happen overnight.",
+    "explanation": "The passage contrasts progress in renewable energy with practical limits, so a concession sentence fits.",
+    "tags": ["energy transition", "nevertheless", "concession"]
+  },
+  {
+    "id": "discourse_005",
+    "moduleId": "discourse",
+    "level": "A2",
+    "sourceType": "past_exam",
+    "sourceRef": "exam_frequency_seed.csv:according to",
+    "topic": "reading signal",
+    "focus": "source marker",
+    "passage": "____. Students who review mistakes regularly often avoid repeating the same errors.",
+    "question": "Which sentence best introduces the information?",
+    "options": [
+      "According to the study, practice alone is not enough.",
+      "However, the city is near the ocean.",
+      "As a result, the cake tasted sweet.",
+      "In contrast, birds can fly."
+    ],
+    "answer": "According to the study, practice alone is not enough.",
+    "explanation": "The second sentence sounds like a finding, so a source marker such as 'According to the study' fits.",
+    "tags": ["according to", "source", "coherence"]
+  },
+  {
+    "id": "discourse_006",
+    "moduleId": "discourse",
+    "level": "B2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:geopolitical fragmentation",
+    "topic": "global economy",
+    "focus": "paragraph logic",
+    "passage": "Countries may set different rules for trade, technology, and security. ____. This fragmentation can make global cooperation slower and less predictable.",
+    "question": "Which sentence best fits the blank?",
+    "options": [
+      "When rules become less shared, companies face more uncertainty.",
+      "Many students prefer short vocabulary quizzes.",
+      "For example, clean water is important for health.",
+      "Therefore, all countries now follow one rule."
+    ],
+    "answer": "When rules become less shared, companies face more uncertainty.",
+    "explanation": "The blank needs to bridge different national rules and the result of fragmentation.",
+    "tags": ["fragmentation", "paragraph logic", "uncertainty"]
+  },
+  {
+    "id": "discourse_007",
+    "moduleId": "discourse",
+    "level": "B1",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:rare earth",
+    "topic": "supply chains",
+    "focus": "pronoun reference",
+    "passage": "Rare earth materials are used in smartphones, electric vehicles, and defense equipment. Because they are difficult to replace quickly, restrictions on them can affect many industries.",
+    "question": "What does they refer to?",
+    "options": ["rare earth materials", "smartphones", "industries", "restrictions"],
+    "answer": "rare earth materials",
+    "explanation": "They refers to the plural noun phrase in the previous sentence: rare earth materials.",
+    "tags": ["reference", "rare earth", "pronoun"]
+  },
+  {
+    "id": "discourse_008",
+    "moduleId": "discourse",
+    "level": "B2",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:systemic resilience",
+    "topic": "climate and economy",
+    "focus": "sentence order",
+    "passage": "(1) A city first needs reliable warning systems. (2) It also needs roads, hospitals, and power lines that can keep working during a crisis. (3) Together, these systems improve resilience.",
+    "question": "Which sentence best follows the passage?",
+    "options": [
+      "Therefore, resilience depends on both information and infrastructure.",
+      "However, cities should never prepare for disasters.",
+      "For example, tariffs are taxes on imports.",
+      "In contrast, vocabulary lists are always enough."
+    ],
+    "answer": "Therefore, resilience depends on both information and infrastructure.",
+    "explanation": "The passage lists warning systems and infrastructure, so the best next sentence summarizes both.",
+    "tags": ["resilience", "summary", "therefore"]
+  },
+  {
+    "id": "discourse_009",
+    "moduleId": "discourse",
+    "level": "A2",
+    "sourceType": "past_exam",
+    "sourceRef": "exam_frequency_seed.csv:instead of",
+    "topic": "study strategy",
+    "focus": "contrast phrase",
+    "passage": "Some students only copy word lists. ____. They should use each word in a sentence and review it later.",
+    "question": "Which sentence best fits the blank?",
+    "options": [
+      "Instead of doing only that, they need active practice.",
+      "As a result, oceans are becoming warmer.",
+      "For example, rare earth materials are useful.",
+      "According to the weather report, it may rain."
+    ],
+    "answer": "Instead of doing only that, they need active practice.",
+    "explanation": "The next sentence explains what active practice means, so the blank should contrast copying with better practice.",
+    "tags": ["instead of", "study strategy", "contrast"]
+  },
+  {
+    "id": "discourse_010",
+    "moduleId": "discourse",
+    "level": "B1",
+    "sourceType": "news",
+    "sourceRef": "news_keyword_seed.csv:climate target",
+    "topic": "AI and climate",
+    "focus": "coherence",
+    "passage": "AI tools may help scientists analyze data faster. ____. If the electricity comes from fossil fuels, the technology could make climate targets harder to reach.",
+    "question": "Which sentence best fits the blank?",
+    "options": [
+      "At the same time, running these tools can require large amounts of energy.",
+      "For example, many students take buses to school.",
+      "Therefore, AI tools never use computers.",
+      "In contrast, all climate targets have already been reached."
+    ],
+    "answer": "At the same time, running these tools can require large amounts of energy.",
+    "explanation": "The blank must connect the benefit of AI tools with the later concern about electricity and fossil fuels.",
+    "tags": ["AI", "climate target", "coherence"]
   }
 ]
