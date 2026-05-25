@@ -317,6 +317,54 @@
       padding-left: 20px;
     }
 
+    .practice-toolbar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 12px 0 16px;
+    }
+
+    .practice-toolbar button {
+      min-height: 38px;
+      background: #e8eef3;
+      color: var(--ink);
+      padding: 8px 12px;
+    }
+
+    .practice-toolbar button.active {
+      background: var(--blue);
+      color: #fff;
+    }
+
+    .practice-day {
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 16px;
+    }
+
+    .practice-day-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: start;
+      border-bottom: 1px solid #edf1f4;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+    }
+
+    .practice-day h3 {
+      margin: 0;
+    }
+
+    .practice-list {
+      margin: 8px 0 0;
+      padding-left: 20px;
+    }
+
+    .practice-list li {
+      margin-bottom: 6px;
+    }
+
     .report-box {
       margin-top: 14px;
     }
@@ -464,6 +512,10 @@
       .frequency-grid {
         grid-template-columns: 1fr;
       }
+
+      .practice-day-head {
+        display: grid;
+      }
     }
 
     @media (max-width: 640px) {
@@ -583,6 +635,13 @@
         <h2>題型訓練模組</h2>
         <p class="hint" id="questionModuleMeta">依學測英文題型建立可擴充題庫。</p>
         <div class="frequency-grid" id="questionModuleGrid"></div>
+      </section>
+
+      <section>
+        <h2>7 天練習計畫範例</h2>
+        <p class="hint" id="practicePlanMeta">依目前題庫、近五年高頻項目與新聞關鍵字，示範每日 30 分鐘補強節奏。</p>
+        <div class="practice-toolbar" id="practicePlanTabs" aria-label="7 天練習計畫日期"></div>
+        <div id="practicePlanPanel"></div>
       </section>
 
       <section>
@@ -832,8 +891,12 @@
     const questionTypeMeta = document.getElementById("questionTypeMeta");
     const questionModuleGrid = document.getElementById("questionModuleGrid");
     const questionModuleMeta = document.getElementById("questionModuleMeta");
+    const practicePlanTabs = document.getElementById("practicePlanTabs");
+    const practicePlanPanel = document.getElementById("practicePlanPanel");
+    const practicePlanMeta = document.getElementById("practicePlanMeta");
     const visibleFrequencyLimit = 6;
     let currentFrequencyType = "word";
+    let currentPracticeDay = 0;
 
     function createQuestionSet() {
       const selectedLevel = document.getElementById("diagnosticLevel").value;
@@ -998,6 +1061,77 @@
           </article>
         `;
       }).join("");
+    }
+
+    function pickFrom(items, start, count) {
+      if (!items.length) return [];
+      return Array.from({ length: count }, (_, offset) => items[(start + offset) % items.length]);
+    }
+
+    function buildPracticePreview() {
+      const frequencyItems = window.examFrequencyItems || [];
+      const words = frequencyItems
+        .filter((item) => item.type === "word")
+        .sort((a, b) => b.frequency - a.frequency);
+      const phrases = frequencyItems
+        .filter((item) => item.type === "phrase")
+        .sort((a, b) => b.frequency - a.frequency);
+      const news = window.newsKeywordItems || [];
+      const modules = window.questionModules || [];
+      const examples = window.questionModuleExamples || [];
+      const skillOrder = ["單字", "閱讀", "文法句構", "作文輸出", "考試策略"];
+
+      return Array.from({ length: 7 }, (_, index) => {
+        const module = modules[index % modules.length] || {};
+        const example = examples.find((item) => item.moduleId === module.id);
+        const dayWords = pickFrom(words, index * 3, 3).map((item) => item.text);
+        const dayPhrases = pickFrom(phrases, index * 2, 2).map((item) => item.text);
+        const dayNews = pickFrom(news, index * 2, 2).map((item) => item.keyword);
+
+        return {
+          day: index + 1,
+          focus: skillOrder[index % skillOrder.length],
+          moduleName: module.name || "混合練習",
+          moduleGoal: module.firstGoal || "完成一組混合題型練習",
+          vocabulary: [...dayWords, ...dayPhrases, ...dayNews],
+          question: example ? example.question : "完成一組學測英文混合題，記錄錯因與正確線索。",
+          writing: `用 ${dayNews[0] || dayWords[0] || "today's keywords"} 寫 3-5 句英文，至少使用 1 個連接詞。`
+        };
+      });
+    }
+
+    function renderPracticePlan(dayIndex = currentPracticeDay) {
+      const plan = buildPracticePreview();
+      currentPracticeDay = dayIndex;
+      practicePlanMeta.textContent = "範例使用匿名學生 SAMPLE 的 7 天節奏；正式使用時可依快篩結果調整優先補強。";
+      practicePlanTabs.innerHTML = plan.map((day, index) => `
+        <button type="button" class="${index === dayIndex ? "active" : ""}" data-practice-day="${index}">
+          Day ${day.day}
+        </button>
+      `).join("");
+
+      const day = plan[dayIndex];
+      practicePlanPanel.innerHTML = `
+        <article class="practice-day">
+          <div class="practice-day-head">
+            <div>
+              <h3>Day ${day.day}｜${escapeHtml(day.focus)}</h3>
+              <p class="small">題型主軸：${escapeHtml(day.moduleName)}｜建議時間：30 分鐘</p>
+            </div>
+            <span class="tag">${escapeHtml(day.moduleGoal)}</span>
+          </div>
+          <strong>1. 單字主動回想</strong>
+          <ul class="practice-list">
+            ${day.vocabulary.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+          </ul>
+          <strong>2. 題型練習</strong>
+          <p>${escapeHtml(day.question)}</p>
+          <strong>3. 錯題回收</strong>
+          <p>把今天錯題的題型、錯因、正確線索與下次複習日寫入錯題紀錄。</p>
+          <strong>4. 寫作輸出</strong>
+          <p>${escapeHtml(day.writing)}</p>
+        </article>
+      `;
     }
 
     function getScores() {
@@ -1169,6 +1303,7 @@
     renderNewsKeywords();
     renderQuestionTypeStats();
     renderQuestionModules();
+    renderPracticePlan();
     updateProgress();
     document.getElementById("quiz").addEventListener("change", updateProgress);
     document.getElementById("diagnosticLevel").addEventListener("change", shuffleCurrentQuestions);
@@ -1193,6 +1328,11 @@
     document.querySelector("[data-reset-known='exam-frequency']").addEventListener("click", () => {
       localStorage.removeItem(knownStorageKey(currentFrequencyType));
       renderFrequencyItems(currentFrequencyType);
+    });
+    practicePlanTabs.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-practice-day]");
+      if (!button) return;
+      renderPracticePlan(Number(button.dataset.practiceDay));
     });
   </script>
 </body>
