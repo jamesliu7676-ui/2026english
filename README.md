@@ -18,6 +18,7 @@ This repository is currently focused on helping a student prepare for Taiwan's �
 - `web/question-modules.js`: web data for question-type training modules.
 - `scripts/build_exam_frequency.py`: rebuilds frequency data from the external past-exam text extraction project.
 - `scripts/validate_question_bank.py`: validates formal question bank files.
+- `scripts/generate_practice_plan.py`: generates a 7-day GSAT English practice plan from open errors, frequency data, news keywords, and the formal question bank.
 - `data/vocabulary_seed.csv`: starter vocabulary list for high-frequency practice.
 - `data/exam_frequency_seed.csv`: import-ready frequency table for past exam words, phrases, and grammar points.
 - `data/news_keyword_seed.csv`: recent English news keyword seed list.
@@ -29,6 +30,7 @@ This repository is currently focused on helping a student prepare for Taiwan's �
 - `data/error_log.csv`: starter wrong-answer tracking table.
 - `templates/daily_practice.md`: daily 30-minute practice template.
 - `templates/weekly_review.md`: weekly review template.
+- `docs/practice_plans/`: generated student practice plans.
 - `.gitignore`: local secrets, tooling caches, and generated files that should not be committed.
 
 ## Current Assumptions
@@ -61,6 +63,14 @@ In the past-exam frequency section, students can mark a word, phrase, or grammar
 ## Next Step
 
 Use the diagnostic interface with a student, then turn the weakest categories into a 7-day 高中學測英文 practice set.
+
+Generate a sample practice plan:
+
+```powershell
+py scripts\generate_practice_plan.py --student-id SAMPLE --start-date 2026-05-25
+```
+
+The generated Markdown file is written to `docs/practice_plans/`. Use anonymous student IDs only.
 
 ## Frequency Data
 

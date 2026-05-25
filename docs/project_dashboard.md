@@ -40,6 +40,8 @@
   - `web/question-type-stats.js`
   - `web/question-modules.js`
   - `scripts/validate_question_bank.py`
+  - `scripts/generate_practice_plan.py`
+  - `docs/practice_plans/2026-05-25_SAMPLE_7_day_practice.md`
 - Git：
   - 已執行本地 `git init`
   - 已設定 `windows.appendAtomically=false`
@@ -168,6 +170,27 @@ py scripts\validate_question_bank.py
 - 閱讀測驗：已擴充到 10 題。
 - 篇章結構：已擴充到 10 題。
 - 翻譯與寫作：已擴充到 10 題。
+
+## 7 天練習計畫產生器
+
+已建立 `scripts/generate_practice_plan.py`，可把開放中錯題、近五年高頻單字/片語、近兩個月新聞關鍵字與正式題庫整合成 Markdown 練習計畫。
+
+範例指令：
+
+```powershell
+py scripts\generate_practice_plan.py --student-id SAMPLE --start-date 2026-05-25
+```
+
+目前範例輸出：
+
+- `docs/practice_plans/2026-05-25_SAMPLE_7_day_practice.md`
+
+產生器規則：
+
+- 只使用匿名學生 ID。
+- 依 `data/error_log.csv` 的開放中錯題排序弱點。
+- 每天安排高頻單字、片語、新聞關鍵字、正式題庫題目、錯題回收與短寫作。
+- 若沒有開放中錯題，會以單字、閱讀、文法、寫作、策略作為預設補強順序。
 
 ## 下一步建議
 
