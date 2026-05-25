@@ -239,7 +239,7 @@ py scripts\generate_practice_plan.py --student-id SAMPLE --start-date 2026-05-25
 - 建立 7 天學測英文練習計畫產生器，並產出 SAMPLE 範例。
 - 將 7 天練習計畫範例放入首頁。
 - 將首頁「近五年題型統計出題參考」與「題型訓練模組」可見區塊替換成「每日英文影片分享」。
-- 建立 `web/daily-video-sources.js`，目前共 21 筆來源，其中 20 支為單一 Facebook Reel。
+- 建立 `web/daily-video-sources.js`，目前共 51 筆來源，其中 50 支為單一 Facebook Reel。
 - 首頁每日影片分享會從單支 Reel 中隨機抽選，並以 Facebook iframe 內嵌播放。
 - GitHub repository 已改為 Public，GitHub Pages 已啟用並部署成功。
 
@@ -271,3 +271,10 @@ py scripts\generate_practice_plan.py --student-id SAMPLE --start-date 2026-05-25
 - 題庫若有 `explanation` 會優先使用；沒有時依題型產生基本講解，提示正解與解題方向。
 - 講解已加入答案中文翻譯：顯示學生答案中文、正解中文與解題方向；未收錄的選項會標示「待補中文翻譯」。
 - 講解已加入題目整句中文翻譯；未收錄的題幹會標示「待補題目中文翻譯」。
+
+最後同步狀態：
+
+- 講解格式已依範例調整為「題目翻譯 / 你的選項是 / 答案是 / 解題方向」。
+- 已 commit 並 push：`f1c0b3c Add translated answer explanations`
+- GitHub Pages 部署成功，外部網址回應 `200`。
+- 目前 Git 狀態：`master...origin/master`。
