@@ -231,3 +231,43 @@ py scripts\generate_practice_plan.py --student-id SAMPLE --start-date 2026-05-25
 7. 逐步擴充閱讀測驗、篇章結構、文意選填、填字/綜合測驗、翻譯與寫作題庫。
 8. 擴充題庫產生器，依 60/30/10 與題型比例規則自動抽題。
 9. 若需要版本管理，完成第一次本地 commit。
+
+## 2026-05-25 收工紀錄
+
+今日完成：
+
+- 建立 7 天學測英文練習計畫產生器，並產出 SAMPLE 範例。
+- 將 7 天練習計畫範例放入首頁。
+- 將首頁「近五年題型統計出題參考」與「題型訓練模組」可見區塊替換成「每日英文影片分享」。
+- 建立 `web/daily-video-sources.js`，目前共 21 筆來源，其中 20 支為單一 Facebook Reel。
+- 首頁每日影片分享會從單支 Reel 中隨機抽選，並以 Facebook iframe 內嵌播放。
+- GitHub repository 已改為 Public，GitHub Pages 已啟用並部署成功。
+
+目前狀態：
+
+- 本機預覽：`http://localhost:8765/index.html`
+- 外部網址：`https://jamesliu7676-ui.github.io/2026english/`
+- Git 狀態：`master...origin/master` 已同步。
+- 最新主要 commits：
+  - `d8ae126 Enable GitHub Pages deployment`
+  - `bb0b692 Add daily Reel video embeds`
+  - `415080d Add practice plan preview to web page`
+
+注意事項：
+
+- Facebook Reel 內嵌播放仍受 Facebook 登入、隱私、地區與嵌入權限限制；若某支無法內嵌，頁面仍保留「開啟原始影片」連結。
+- Reel 預設直式比例；若未來新增橫式影片，該筆來源需加 `orientation: "horizontal"`。
+- Git 操作仍偶爾出現 `.git/packed-refs.lock` 殘留訊息，但 commit/push 已可正常完成。
+
+下次建議：
+
+1. 在外部網址實際測試多次重新整理，確認隨機 Reel 與 iframe 顯示狀態。
+2. 逐步替每支 Reel 補更精準的 `topic`、`keywords`、`sentencePattern` 與 `writingPrompt`。
+3. 若要讓學生每日固定同一支影片，可把隨機抽選改成依日期選片。
+
+後續追加：
+
+- 診斷送出後，若學生答錯，會在該題下方顯示「講解」欄位。
+- 題庫若有 `explanation` 會優先使用；沒有時依題型產生基本講解，提示正解與解題方向。
+- 講解已加入答案中文翻譯：顯示學生答案中文、正解中文與解題方向；未收錄的選項會標示「待補中文翻譯」。
+- 講解已加入題目整句中文翻譯；未收錄的題幹會標示「待補題目中文翻譯」。

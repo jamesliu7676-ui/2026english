@@ -249,6 +249,24 @@
       accent-color: var(--primary);
     }
 
+    .answer-feedback {
+      display: none;
+      margin-top: 12px;
+      border-left: 5px solid var(--danger);
+      background: #fff7f5;
+      padding: 12px 14px;
+    }
+
+    .answer-feedback.visible {
+      display: block;
+    }
+
+    .answer-feedback strong {
+      display: block;
+      color: var(--danger);
+      margin-bottom: 4px;
+    }
+
     .actions {
       display: flex;
       gap: 12px;
@@ -947,6 +965,157 @@
       strategy: "考試策略"
     };
 
+    const answerTranslations = {
+      "make better": "變得更好；改善",
+      "make worse": "變得更糟",
+      forget: "忘記",
+      borrow: "借入",
+      regularly: "定期地；規律地",
+      rare: "稀少的",
+      recent: "最近的",
+      realize: "了解；意識到",
+      "affect / effect": "影響（動詞）/ 影響、效果（名詞）",
+      "table / chair": "桌子 / 椅子",
+      "blue / green": "藍色 / 綠色",
+      "run / walk": "跑 / 走",
+      "focus on": "專注於",
+      "pay money": "付錢",
+      "look after money": "照看錢；不自然用法",
+      "arrive late": "遲到",
+      "She has studied English for three years.": "她已經學英文三年了。",
+      "She have studied English since three years.": "錯誤句；主詞與助動詞不一致，since/for 用法也錯。",
+      "She studied English since three years.": "錯誤句；這裡不適合用過去式搭配 since three years。",
+      "She studying English for three years.": "錯誤句；缺少 be 動詞或完成式結構。",
+      "will stay": "將會待著",
+      stayed: "過去待著",
+      staying: "正在待著；動名詞/分詞",
+      "have stayed": "已經待著",
+      lying: "躺著的；位於的",
+      lies: "躺；位於（三單現在式）",
+      lay: "放置；躺的過去式",
+      "to lie": "去躺；不定詞",
+      "Because he practiced every day, his reading speed improved.": "因為他每天練習，所以閱讀速度進步了。",
+      "He practiced every day his reading speed.": "錯誤句；語序不自然。",
+      "His reading speed because practiced every day.": "錯誤句；because 子句結構不完整。",
+      "Every day improved because he reading.": "錯誤句；主詞、動詞與語序都不完整。",
+      contrast: "對比；轉折",
+      "time order": "時間順序",
+      example: "例子",
+      location: "地點",
+      "main idea": "主旨",
+      "every unknown word": "每一個不認識的字",
+      "font size": "字體大小",
+      "the longest sentence": "最長的句子",
+      "a limitation": "限制；保留意見",
+      "the same idea": "相同想法",
+      "a place": "一個地方",
+      "a person": "一個人",
+      "supported but not directly stated": "有線索支持，但文章沒有直接說出",
+      "copied word for word": "逐字照抄",
+      unrelated: "無關的",
+      "always the longest": "永遠選最長的",
+      "Daily review helps students remember vocabulary longer.": "每日複習能幫助學生把單字記得更久。",
+      "Vocabulary and students and review.": "錯誤句；只是詞語堆疊，句意不完整。",
+      "I like English because good.": "錯誤句；because 後面缺完整子句。",
+      "Review is a thing.": "複習是一件事；內容太空泛。",
+      therefore: "因此",
+      although: "雖然",
+      before: "在……之前",
+      "for example": "例如",
+      "I need to improve my reading speed.": "我需要改善我的閱讀速度。",
+      "I need improve my read fast.": "錯誤句；need 後應接 to V，reading speed 才自然。",
+      "I am need better reading speed.": "錯誤句；am need 不正確。",
+      "My reading speed need good.": "錯誤句；主詞動詞不一致且表達不自然。",
+      "I made many mistakes, so I reviewed them after class.": "我犯了很多錯，所以課後複習它們。",
+      "I mistakes many, review class.": "錯誤句；語序與動詞不完整。",
+      "Mistakes are reviewed after class because many.": "錯誤句；because many 不完整。",
+      "I reviewed many after class mistake.": "錯誤句；受詞與語序不自然。",
+      "record the reason and review similar questions": "記錄錯因並複習相似題",
+      "erase them immediately": "立刻擦掉它們",
+      "only check the answer letter": "只看答案選項字母",
+      "avoid the same topic forever": "永遠避開同一主題",
+      "find topic, keywords, and question targets": "找主題、關鍵字和題目目標",
+      "translate every word first": "先翻譯每一個字",
+      "give up and guess": "放棄並猜答案",
+      "read only the last sentence": "只讀最後一句",
+      "short practice plus old mistake review": "短時間練習加舊錯題回收",
+      "only new difficult words": "只背新的困難單字",
+      "one long session per month": "每月一次長時間練習",
+      "copy grammar rules without questions": "只抄文法規則，不做題目",
+      "real question format and timed review": "真實題型格式加限時複習",
+      "random videos only": "只看隨機影片",
+      "beautiful notes only": "只做漂亮筆記",
+      "memorizing without testing": "只背誦不測驗"
+    };
+
+    const questionTranslations = {
+      "The word “improve” is closest in meaning to:": "這個字「improve（提升；改善）」的意思最接近：",
+      "Choose the best word: Students should review vocabulary ______.": "選出最適合的單字：學生應該 ______ 複習單字。",
+      "The phrase “pay attention to” means:": "片語 pay attention to 的意思是什麼？",
+      "The word “easy” is closest in meaning to:": "單字 easy 最接近哪一個意思？",
+      "The word “require” is closest in meaning to:": "單字 require 最接近哪一個意思？",
+      "Which word best completes the sentence? This method can ______ time.": "哪個字最能完成句子？這個方法可以 ______ 時間。",
+      "Which pair is most easily confused by learners?": "哪一組字最容易被學習者混淆？",
+      "In a reading question, “infer” means:": "在閱讀題中，infer 是什麼意思？",
+      "The best synonym for “evidence” is:": "evidence 最好的同義字是哪一個？",
+      "Choose the strongest collocation.": "選出最自然、最有力的搭配詞。",
+      "The word “subtle” most nearly means:": "單字 subtle 最接近哪一個意思？",
+      "The phrase “a viable option” means an option that is:": "片語 a viable option 指的是一個怎樣的選項？",
+      "Which word best means “to make something less serious”?": "哪個字最能表示「讓某事變得比較不嚴重」？",
+      "Choose the correct sentence.": "選出正確的句子。",
+      "I ______ breakfast every morning.": "我每天早上 ______ 早餐。",
+      "There ______ many books on the desk.": "桌上有很多書。",
+      "Choose the correct question.": "選出正確的問句。",
+      "If it rains tomorrow, we ______ at home.": "如果明天下雨，我們會 ______ 在家。",
+      "The book ______ on the desk is mine.": "那本 ______ 在桌上的書是我的。",
+      "Which sentence has the clearest cause-effect relation?": "哪個句子有最清楚的因果關係？",
+      "The student, ______ essay was selected, felt proud.": "那位作文被選上的學生感到驕傲。",
+      "Not only ______ hard, but she also reviewed her mistakes.": "她不但努力練習，也複習自己的錯誤。",
+      "Had I known about the quiz, I ______ more carefully.": "如果我早知道有小考，我會更仔細地準備。",
+      "Choose the best reduced clause.": "選出最好的簡化子句。",
+      "The proposal is worth ______.": "這個提案值得 ______。",
+      "Reading clue: “Tom is hungry, so he buys bread.” Why does Tom buy bread?": "閱讀線索：Tom 很餓，所以他買麵包。Tom 為什麼買麵包？",
+      "The title of a passage usually helps readers find the:": "文章標題通常能幫助讀者找到什麼？",
+      "In a passage, “first, next, finally” shows:": "在文章中，first, next, finally 表示什麼？",
+      "If a passage says “Amy is twelve years old,” the question “How old is Amy?” asks for:": "如果文章說 Amy 十二歲，題目問 How old is Amy? 是在問什麼？",
+      "Reading clue: “Although the test was difficult, Mia remained calm.” What does “although” show?": "閱讀線索：雖然考試很難，Mia 仍然保持冷靜。although 表示什麼？",
+      "In a long reading passage, what should you usually identify first?": "在長篇閱讀中，通常應該先找出什麼？",
+      "The sentence “This method saves time; however, it requires discipline.” The second part gives:": "句子「這個方法節省時間；然而，它需要自律。」第二部分提出了什麼？",
+      "When a question asks “What can be inferred?”, choose the answer that is:": "當題目問 What can be inferred? 時，應選哪一種答案？",
+      "When a question asks “What can be inferred?”, you should choose the answer that is:": "當題目問 What can be inferred? 時，你應該選哪一種答案？",
+      "If paragraph 1 introduces a problem and paragraph 2 gives solutions, the structure is:": "如果第一段提出問題，第二段給出解方，這是什麼文章結構？",
+      "The word “they” in a reading passage usually refers to:": "閱讀文章中的 they 通常指的是什麼？",
+      "A writer's tone is best identified by looking at:": "判斷作者語氣時，最好看什麼？",
+      "If an option is true but not related to the question, it should be treated as:": "如果選項本身正確，但和題目無關，應該把它視為什麼？",
+      "The purpose of a concession paragraph is often to:": "讓步段落的目的通常是什麼？",
+      "Choose the best complete sentence.": "選出最好的完整句。",
+      "Which sentence has a clear subject and verb?": "哪個句子有清楚的主詞和動詞？",
+      "Choose the best translation: 我每天複習英文。": "選出「我每天複習英文。」最好的英文翻譯。",
+      "Choose the best sentence ending: I practice English because ______.": "選出最好的句尾：我練習英文，因為 ______。",
+      "Choose the best topic sentence.": "選出最好的主題句。",
+      "Which connector best shows a result?": "哪個連接詞最能表示結果？",
+      "Choose the clearest translation: 我需要改善我的閱讀速度。": "選出「我需要改善我的閱讀速度。」最清楚的英文翻譯。",
+      "Which revision is strongest?": "哪個修改版本最有力？",
+      "Choose the sentence with the strongest support.": "選出有最強支持理由的句子。",
+      "Which connector best introduces contrast?": "哪個連接詞最適合引出對比？",
+      "Choose the most concise academic sentence.": "選出最精簡的學術句。",
+      "Which sentence best uses concession?": "哪個句子最能正確使用讓步語氣？",
+      "Choose the strongest thesis statement.": "選出最有力的論點句。",
+      "After getting an answer wrong, the first useful step is to:": "答錯後，第一個有用的步驟是什麼？",
+      "The best daily habit is:": "最好的每日習慣是什麼？",
+      "If you do not know a word in a reading passage, you should first:": "如果閱讀文章中有不認識的字，你應該先做什麼？",
+      "The best way to remember vocabulary is to:": "記住單字最好的方式是什麼？",
+      "The most efficient way to use wrong answers is to:": "使用錯題最有效率的方式是什麼？",
+      "If a reading passage is hard, the first move should be:": "如果閱讀文章很難，第一步應該做什麼？",
+      "For a student with little time, the best daily practice is:": "對時間很少的學生來說，最好的每日練習是什麼？",
+      "Before an exam, practice should be closest to:": "考前練習應該最接近什麼？",
+      "If you repeatedly miss inference questions, your next practice should focus on:": "如果你一直錯推論題，下一步練習應該專注於什麼？",
+      "A good 7-day plan should include:": "一個好的 7 天計畫應該包含什麼？",
+      "When two answer choices look similar, the strongest method is to:": "當兩個選項看起來很像時，最好的方法是什麼？",
+      "For high scorers, the best use of practice time is often:": "對高分學生來說，練習時間最好的使用方式通常是什麼？",
+      "A diagnostic result is most useful when it becomes:": "診斷結果在變成什麼時最有用？"
+    };
+
     const questionsEl = document.getElementById("questions");
     const progressFill = document.getElementById("progressFill");
     const progressText = document.getElementById("progressText");
@@ -1009,9 +1178,53 @@
           <div class="question">
             <p>${index + 1}. <span class="tag">${skillLabels[question.skill]} ${question.level || ""}</span>${escapeHtml(question.text)}</p>
             <div class="options">${options}</div>
+            <div class="answer-feedback" id="feedback-q${index}" aria-live="polite"></div>
           </div>
         `;
       }).join("");
+    }
+
+    function clearAnswerFeedback() {
+      document.querySelectorAll(".answer-feedback").forEach((item) => {
+        item.classList.remove("visible");
+        item.innerHTML = "";
+      });
+    }
+
+    function buildAnswerExplanation(question, selectedValue) {
+      const questionTranslation = questionTranslations[question.text] || "待補題目中文翻譯";
+      const selectedTranslation = answerTranslations[selectedValue] || "待補中文翻譯";
+      const answerTranslation = answerTranslations[question.answer] || "待補中文翻譯";
+
+      const skillHint = {
+        vocabulary: "這題要回到單字或片語在句子中的意思，不只背中文翻譯。",
+        grammar: "這題要檢查主詞、動詞、時態、連接詞或句構位置。",
+        reading: "這題要回到題幹關鍵字與文章線索，避免只憑印象選答案。",
+        writing: "這題要看句子是否完整、語意是否清楚，並確認連接詞和用字是否自然。",
+        strategy: "這題考的是答題流程與複習方法，要選最能幫助下次進步的做法。"
+      };
+
+      return [
+        `<div><strong>題目翻譯：</strong>${escapeHtml(questionTranslation)}</div>`,
+        `<div><strong>你的選項是：</strong>${escapeHtml(selectedValue)}｜${escapeHtml(selectedTranslation)}</div>`,
+        `<div><strong>答案是：</strong>${escapeHtml(question.answer)}｜${escapeHtml(answerTranslation)}</div>`,
+        `<div><strong>解題方向：</strong>${escapeHtml(question.explanation || skillHint[question.skill] || "請對照題目線索，再回到正解確認理由。")}</div>`
+      ].join("");
+    }
+
+    function renderAnswerFeedback() {
+      clearAnswerFeedback();
+      questionData.forEach((question, index) => {
+        const selected = document.querySelector(`input[name="q${index}"]:checked`);
+        if (!selected || selected.value === question.answer) return;
+
+        const feedback = document.getElementById(`feedback-q${index}`);
+        feedback.classList.add("visible");
+        feedback.innerHTML = `
+          <strong>講解</strong>
+          ${buildAnswerExplanation(question, selected.value)}
+        `;
+      });
     }
 
     function levelText(level) {
@@ -1311,10 +1524,12 @@
       const { scores, answered } = getScores();
       if (answered < questionData.length) {
         message.textContent = `還有 ${questionData.length - answered} 題尚未作答。`;
+        clearAnswerFeedback();
         return;
       }
 
       message.textContent = "";
+      renderAnswerFeedback();
       const total = Object.values(scores).reduce((sum, score) => sum + score, 0);
       const sorted = Object.entries(scores).sort((a, b) => a[1] - b[1]);
       const priority = sorted[0][0];
@@ -1357,6 +1572,7 @@
       document.getElementById("studentId").value = "";
       document.getElementById("resultPanel").classList.remove("visible");
       message.textContent = "";
+      clearAnswerFeedback();
       updateProgress();
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
