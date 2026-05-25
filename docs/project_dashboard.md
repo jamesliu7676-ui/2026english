@@ -202,6 +202,24 @@ py scripts\generate_practice_plan.py --student-id SAMPLE --start-date 2026-05-25
 - 診斷完成後的個人化 7 天安排仍保留在診斷結果區。
 - 本機預覽：`http://localhost:8765/index.html`
 
+## 每日英文影片分享
+
+首頁已移除「近五年題型統計出題參考」與「題型訓練模組」兩個可見區塊，原位置改放「每日英文影片分享」。
+
+目前來源入口：
+
+- `https://www.facebook.com/profile.php?id=100089836585396&sk=reels_tab`
+- 前端來源資料庫：`web/daily-video-sources.js`
+
+使用方式：
+
+- 保留原始 Facebook Reel 連結，不下載或重傳影片。
+- 網頁每次重新載入時，會從 `window.dailyVideoSources` 隨機挑選一筆可分享內容。
+- 每日可新增一支影片直接連結到 `web/daily-video-sources.js`。
+- 搭配今日英文重點、3 個單字、1 個句型與 3 句仿寫任務。
+- 單支 Facebook Reel 會直接以 iframe 內嵌在首頁播放；來源頁入口保留在資料庫但不參與內嵌抽選。
+- 影片預設依 Reel 使用直式比例；若加入橫式影片，可在該筆資料加上 `orientation: "horizontal"`。
+
 ## 下一步建議
 
 1. 以高中學測英文作為 `2026english` 的核心用途。

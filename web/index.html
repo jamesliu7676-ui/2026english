@@ -365,6 +365,52 @@
       margin-bottom: 6px;
     }
 
+    .video-share {
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 16px;
+    }
+
+    .source-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 8px 12px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+      margin: 8px 0 12px;
+    }
+
+    .source-link:hover {
+      background: var(--primary-strong);
+    }
+
+    .video-embed {
+      width: min(100%, 520px);
+      margin: 12px auto 16px;
+      background: #0f1720;
+      border: 1px solid #203040;
+    }
+
+    .video-embed.vertical {
+      aspect-ratio: 9 / 16;
+      max-width: 390px;
+    }
+
+    .video-embed.horizontal {
+      aspect-ratio: 16 / 9;
+      max-width: 760px;
+    }
+
+    .video-embed iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
     .report-box {
       margin-top: 14px;
     }
@@ -626,15 +672,37 @@
       </section>
 
       <section>
-        <h2>近五年題型統計出題參考</h2>
-        <p class="hint" id="questionTypeMeta">依 111-115 學年度英文試題題型比例，作為題庫擴充參考。</p>
-        <div class="frequency-grid" id="questionTypeGrid"></div>
-      </section>
-
-      <section>
-        <h2>題型訓練模組</h2>
-        <p class="hint" id="questionModuleMeta">依學測英文題型建立可擴充題庫。</p>
-        <div class="frequency-grid" id="questionModuleGrid"></div>
+        <h2>每日英文影片分享</h2>
+        <p class="hint">從指定 Facebook Reels 頁面挑一支影片，保留原始連結，搭配單字、句型與仿寫任務。</p>
+        <article class="video-share">
+          <div class="frequency-head">
+            <div>
+              <div class="frequency-term" id="dailyVideoTitle">今日來源：Facebook Reels 英文學習影片</div>
+              <p class="small" id="dailyVideoDescription">目前以你提供的 Reels 頁面作為每日選片入口；選定單支影片後，可把直接連結放進今日分享。</p>
+            </div>
+            <span class="frequency-badge high" id="dailyVideoLevel">每日</span>
+          </div>
+          <a class="source-link" id="dailyVideoLink" href="https://www.facebook.com/profile.php?id=100089836585396&sk=reels_tab" target="_blank" rel="noopener">開啟影片來源</a>
+          <div class="video-embed vertical" id="dailyVideoEmbed"></div>
+          <div class="frequency-grid">
+            <article class="frequency-item medium">
+              <div class="frequency-term">今日英文重點</div>
+              <p class="small" id="dailyVideoTopic">看完影片後，挑出 1 句最實用的英文，記下情境、語氣與可替換字。</p>
+            </article>
+            <article class="frequency-item medium">
+              <div class="frequency-term">3 個單字</div>
+              <p class="small" id="dailyVideoKeywords">從影片中選 3 個可以用在閱讀或作文的字，補上中文意思與自己的例句。</p>
+            </article>
+            <article class="frequency-item low">
+              <div class="frequency-term">1 個句型</div>
+              <p class="small" id="dailyVideoPattern">把影片中的句型改寫成和自己生活、學校或考試準備有關的句子。</p>
+            </article>
+            <article class="frequency-item low">
+              <div class="frequency-term">仿寫任務</div>
+              <p class="small" id="dailyVideoPrompt">用今天的句型寫 3 句英文，至少保留 1 個影片中的關鍵用法。</p>
+            </article>
+          </div>
+        </article>
       </section>
 
       <section>
@@ -698,7 +766,7 @@
   <script src="question-bank.js"></script>
   <script src="frequency-data.js"></script>
   <script src="news-keywords.js"></script>
-  <script src="question-type-stats.js"></script>
+  <script src="daily-video-sources.js"></script>
   <script src="question-modules.js"></script>
   <script>
     const questionBankFallback = [
@@ -887,10 +955,15 @@
     const frequencyMeta = document.getElementById("frequencyMeta");
     const newsKeywordGrid = document.getElementById("newsKeywordGrid");
     const newsKeywordMeta = document.getElementById("newsKeywordMeta");
-    const questionTypeGrid = document.getElementById("questionTypeGrid");
-    const questionTypeMeta = document.getElementById("questionTypeMeta");
-    const questionModuleGrid = document.getElementById("questionModuleGrid");
-    const questionModuleMeta = document.getElementById("questionModuleMeta");
+    const dailyVideoTitle = document.getElementById("dailyVideoTitle");
+    const dailyVideoDescription = document.getElementById("dailyVideoDescription");
+    const dailyVideoLevel = document.getElementById("dailyVideoLevel");
+    const dailyVideoLink = document.getElementById("dailyVideoLink");
+    const dailyVideoEmbed = document.getElementById("dailyVideoEmbed");
+    const dailyVideoTopic = document.getElementById("dailyVideoTopic");
+    const dailyVideoKeywords = document.getElementById("dailyVideoKeywords");
+    const dailyVideoPattern = document.getElementById("dailyVideoPattern");
+    const dailyVideoPrompt = document.getElementById("dailyVideoPrompt");
     const practicePlanTabs = document.getElementById("practicePlanTabs");
     const practicePlanPanel = document.getElementById("practicePlanPanel");
     const practicePlanMeta = document.getElementById("practicePlanMeta");
@@ -1024,43 +1097,34 @@
       `).join("");
     }
 
-    function renderQuestionTypeStats() {
-      if (window.questionTypeStatsMeta) {
-        questionTypeMeta.textContent = `${window.questionTypeStatsMeta.target}；此比例用於題庫擴充參考。`;
-      }
-      questionTypeGrid.innerHTML = (window.questionTypeStats || []).map((item) => `
-        <article class="frequency-item ${escapeHtml(item.weight)}">
-          <div class="frequency-head">
-            <div class="frequency-term">${escapeHtml(item.type)}</div>
-            <span class="frequency-badge ${escapeHtml(item.weight)}">${item.percent}%</span>
-          </div>
-          <div><strong>統計量：</strong>${item.count}</div>
-          <p class="small">${escapeHtml(item.note)}</p>
-        </article>
-      `).join("");
-    }
+    function renderDailyVideoShare() {
+      const sources = (window.dailyVideoSources || [])
+        .filter((source) => source.embeddable !== false && source.url.includes("/reel/"));
+      if (!sources.length) return;
 
-    function renderQuestionModules() {
-      if (window.questionModuleMeta) {
-        questionModuleMeta.textContent = `${window.questionModuleMeta.sourceBasis}；每個模組可獨立擴題與練習。`;
-      }
-      const examples = window.questionModuleExamples || [];
-      questionModuleGrid.innerHTML = (window.questionModules || []).map((module) => {
-        const example = examples.find((item) => item.moduleId === module.id);
-        const focus = module.focus.map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("");
-        return `
-          <article class="frequency-item ${escapeHtml(module.weight)}">
-            <div class="frequency-head">
-              <div class="frequency-term">${escapeHtml(module.name)}</div>
-              <span class="frequency-badge ${escapeHtml(module.weight)}">${module.percent}%</span>
-            </div>
-            <div><strong>對應題型：</strong>${escapeHtml(module.examType)}</div>
-            <div><strong>先做：</strong>${escapeHtml(module.firstGoal)}</div>
-            <div>${focus}</div>
-            ${example ? `<p class="small"><strong>種子題：</strong>${escapeHtml(example.question)}</p>` : ""}
-          </article>
-        `;
-      }).join("");
+      const item = sources[Math.floor(Math.random() * sources.length)];
+      const orientation = item.orientation || (item.url.includes("/reel/") ? "vertical" : "horizontal");
+      const embedWidth = orientation === "horizontal" ? 760 : 390;
+      const embedUrl = `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(item.url)}&show_text=false&width=${embedWidth}`;
+      dailyVideoTitle.textContent = `今日來源：${item.title}`;
+      dailyVideoDescription.textContent = item.description;
+      dailyVideoLevel.textContent = item.level || "每日";
+      dailyVideoLink.href = item.url;
+      dailyVideoLink.textContent = `開啟原始影片｜${item.sourceName || "原始連結"}`;
+      dailyVideoEmbed.className = `video-embed ${orientation === "horizontal" ? "horizontal" : "vertical"}`;
+      dailyVideoEmbed.innerHTML = `
+        <iframe
+          title="${escapeHtml(item.title)}"
+          src="${embedUrl}"
+          loading="lazy"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      `;
+      dailyVideoTopic.textContent = `主題：${item.topic}。看完後挑出 1 句最實用的英文，記下情境、語氣與可替換字。`;
+      dailyVideoKeywords.textContent = (item.keywords || []).join(" / ");
+      dailyVideoPattern.textContent = item.sentencePattern || "把影片中的句型改寫成和自己生活、學校或考試準備有關的句子。";
+      dailyVideoPrompt.textContent = item.writingPrompt || "用今天的句型寫 3 句英文，至少保留 1 個影片中的關鍵用法。";
     }
 
     function pickFrom(items, start, count) {
@@ -1301,8 +1365,7 @@
     renderQuestions();
     renderFrequencyItems();
     renderNewsKeywords();
-    renderQuestionTypeStats();
-    renderQuestionModules();
+    renderDailyVideoShare();
     renderPracticePlan();
     updateProgress();
     document.getElementById("quiz").addEventListener("change", updateProgress);

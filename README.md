@@ -14,6 +14,7 @@ This repository is currently focused on helping a student prepare for Taiwan's �
 - `web/question-bank.js`: randomized 高中學測英文 diagnostic question bank with A1, A2, B1, and B2 levels.
 - `web/frequency-data.js`: frequency-ranked words, phrases, and grammar points for the web interface.
 - `web/news-keywords.js`: recent news keyword set for current-affairs vocabulary.
+- `web/daily-video-sources.js`: shareable daily English video source database for the web page.
 - `web/question-type-stats.js`: past five-year English question-type statistics for item design.
 - `web/question-modules.js`: web data for question-type training modules.
 - `scripts/build_exam_frequency.py`: rebuilds frequency data from the external past-exam text extraction project.
