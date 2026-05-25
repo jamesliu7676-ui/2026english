@@ -383,6 +383,37 @@
       margin-bottom: 6px;
     }
 
+    .practice-question {
+      border-top: 1px solid #e7edf2;
+      padding-top: 14px;
+      margin-top: 14px;
+    }
+
+    .practice-question:first-child {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .practice-passage {
+      background: #f8fafc;
+      border: 1px solid #e1e8ef;
+      padding: 12px;
+      margin: 8px 0 10px;
+    }
+
+    .practice-feedback {
+      display: none;
+      margin-top: 10px;
+      border-left: 5px solid var(--blue);
+      background: #f5f9ff;
+      padding: 10px 12px;
+    }
+
+    .practice-feedback.visible {
+      display: block;
+    }
+
     .video-share {
       border: 1px solid var(--line);
       background: #fff;
@@ -724,6 +755,26 @@
       </section>
 
       <section>
+        <h2>克漏字練習</h2>
+        <p class="hint">從正式題庫抽 3 題，練語境選字、轉折詞、片語與學測常見語意判斷。</p>
+        <div id="clozePracticeList"></div>
+        <div class="actions">
+          <button type="button" id="checkClozeBtn">檢查克漏字</button>
+          <button type="button" class="secondary" id="shuffleClozeBtn">重新抽克漏字</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>閱讀測驗練習</h2>
+        <p class="hint">從正式題庫抽 3 題，練主旨、細節、推論、指涉與作者語氣。</p>
+        <div id="readingPracticeList"></div>
+        <div class="actions">
+          <button type="button" id="checkReadingBtn">檢查閱讀測驗</button>
+          <button type="button" class="secondary" id="shuffleReadingBtn">重新抽閱讀</button>
+        </div>
+      </section>
+
+      <section>
         <h2>7 天練習計畫範例</h2>
         <p class="hint" id="practicePlanMeta">依目前題庫、近五年高頻項目與新聞關鍵字，示範每日 30 分鐘補強節奏。</p>
         <div class="practice-toolbar" id="practicePlanTabs" aria-label="7 天練習計畫日期"></div>
@@ -785,6 +836,7 @@
   <script src="frequency-data.js"></script>
   <script src="news-keywords.js"></script>
   <script src="daily-video-sources.js"></script>
+  <script src="practice-question-bank.js"></script>
   <script src="question-modules.js"></script>
   <script>
     const questionBankFallback = [
@@ -1133,12 +1185,18 @@
     const dailyVideoKeywords = document.getElementById("dailyVideoKeywords");
     const dailyVideoPattern = document.getElementById("dailyVideoPattern");
     const dailyVideoPrompt = document.getElementById("dailyVideoPrompt");
+    const clozePracticeList = document.getElementById("clozePracticeList");
+    const readingPracticeList = document.getElementById("readingPracticeList");
     const practicePlanTabs = document.getElementById("practicePlanTabs");
     const practicePlanPanel = document.getElementById("practicePlanPanel");
     const practicePlanMeta = document.getElementById("practicePlanMeta");
     const visibleFrequencyLimit = 6;
     let currentFrequencyType = "word";
     let currentPracticeDay = 0;
+    const practiceQuestionSets = {
+      cloze: [],
+      reading: []
+    };
 
     function createQuestionSet() {
       const selectedLevel = document.getElementById("diagnosticLevel").value;
@@ -1338,6 +1396,70 @@
       dailyVideoKeywords.textContent = (item.keywords || []).join(" / ");
       dailyVideoPattern.textContent = item.sentencePattern || "把影片中的句型改寫成和自己生活、學校或考試準備有關的句子。";
       dailyVideoPrompt.textContent = item.writingPrompt || "用今天的句型寫 3 句英文，至少保留 1 個影片中的關鍵用法。";
+    }
+
+    function pickPracticeQuestions(moduleId, count = 3) {
+      const items = [...((window.practiceQuestionBank && window.practiceQuestionBank[moduleId]) || [])];
+      return items.sort(() => Math.random() - 0.5).slice(0, count);
+    }
+
+    function renderPracticeModule(moduleId, container) {
+      practiceQuestionSets[moduleId] = pickPracticeQuestions(moduleId);
+      if (!practiceQuestionSets[moduleId].length) {
+        container.innerHTML = `
+          <article class="practice-question">
+            <p class="hint">目前尚未載入題庫。</p>
+          </article>
+        `;
+        return;
+      }
+
+      container.innerHTML = practiceQuestionSets[moduleId].map((item, index) => {
+        const options = item.options.map((option) => `
+          <label class="option">
+            <input type="radio" name="${moduleId}-practice-${index}" value="${escapeHtml(option)}">
+            <span>${escapeHtml(option)}</span>
+          </label>
+        `).join("");
+
+        return `
+          <article class="practice-question">
+            <div>
+              <span class="tag">${escapeHtml(item.level)}</span>
+              <span class="tag">${escapeHtml(item.focus)}</span>
+            </div>
+            <p class="practice-passage">${escapeHtml(item.passage)}</p>
+            <p><strong>${index + 1}. ${escapeHtml(item.question)}</strong></p>
+            <div class="options">${options}</div>
+            <div class="practice-feedback" id="${moduleId}-practice-feedback-${index}" aria-live="polite"></div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function checkPracticeModule(moduleId) {
+      practiceQuestionSets[moduleId].forEach((item, index) => {
+        const selected = document.querySelector(`input[name="${moduleId}-practice-${index}"]:checked`);
+        const feedback = document.getElementById(`${moduleId}-practice-feedback-${index}`);
+        if (!feedback) return;
+
+        feedback.classList.add("visible");
+        if (!selected) {
+          feedback.innerHTML = `
+            <strong>尚未作答</strong>
+            <div>先選一個答案，再檢查解析。</div>
+          `;
+          return;
+        }
+
+        const isCorrect = selected.value === item.answer;
+        feedback.innerHTML = `
+          <strong>${isCorrect ? "答對" : "答錯"}</strong>
+          <div><strong>你的答案：</strong>${escapeHtml(selected.value)}</div>
+          <div><strong>正解：</strong>${escapeHtml(item.answer)}</div>
+          <div><strong>解析：</strong>${escapeHtml(item.explanation)}</div>
+        `;
+      });
     }
 
     function pickFrom(items, start, count) {
@@ -1582,6 +1704,8 @@
     renderFrequencyItems();
     renderNewsKeywords();
     renderDailyVideoShare();
+    renderPracticeModule("cloze", clozePracticeList);
+    renderPracticeModule("reading", readingPracticeList);
     renderPracticePlan();
     updateProgress();
     document.getElementById("quiz").addEventListener("change", updateProgress);
@@ -1589,6 +1713,10 @@
     document.getElementById("calculateBtn").addEventListener("click", calculate);
     document.getElementById("shuffleBtn").addEventListener("click", shuffleCurrentQuestions);
     document.getElementById("resetBtn").addEventListener("click", resetForm);
+    document.getElementById("checkClozeBtn").addEventListener("click", () => checkPracticeModule("cloze"));
+    document.getElementById("shuffleClozeBtn").addEventListener("click", () => renderPracticeModule("cloze", clozePracticeList));
+    document.getElementById("checkReadingBtn").addEventListener("click", () => checkPracticeModule("reading"));
+    document.getElementById("shuffleReadingBtn").addEventListener("click", () => renderPracticeModule("reading", readingPracticeList));
     frequencyGrid.addEventListener("click", (event) => {
       const button = event.target.closest("[data-known-frequency]");
       if (!button) return;
