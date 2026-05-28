@@ -30,10 +30,18 @@ jobs:
         with:
           enablement: true
 
+      - name: Build public site
+        run: |
+          mkdir -p public/reading_tests
+          cp -R web/. public/
+          cp reading_tests/quiz.html public/reading_tests/
+          cp reading_tests/quiz_preview.html public/reading_tests/
+          cp reading_tests/question_bank.json public/reading_tests/
+
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: web
+          path: public
 
       - name: Deploy to GitHub Pages
         id: deployment
