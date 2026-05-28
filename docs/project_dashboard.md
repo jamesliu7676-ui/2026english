@@ -277,5 +277,36 @@ py scripts\generate_practice_plan.py --student-id SAMPLE --start-date 2026-05-25
 
 - 講解格式已依範例調整為「題目翻譯 / 你的選項是 / 答案是 / 解題方向」。
 - 已 commit 並 push：`f1c0b3c Add translated answer explanations`
+- Reel 來源資料庫已擴充並 push：`c87f80d Expand daily Reel source database`
+- 克漏字練習與閱讀測驗練習區塊已新增並 push：`c3f557d Add cloze and reading practice sections`
 - GitHub Pages 部署成功，外部網址回應 `200`。
 - 目前 Git 狀態：`master...origin/master`。
+
+## 2026-05-28 收工記錄
+
+本次完成：
+
+- 新增 `reading_tests/` 短篇閱讀測驗題庫資料夾。
+- 建立閱讀題庫格式說明、來源登錄、短版與標準版模板。
+- 新增閱讀測驗樣本：`reading_001.md`、`reading_002_sample_full.md`、`reading_003_standard.md`。
+- 建立結構化題庫 `reading_tests/question_bank.json`，目前 5 篇閱讀文本、41 題。
+- 建立互動頁面 `reading_tests/quiz.html`，可讀取題庫並更新題目。
+- 建立免伺服器預覽頁 `reading_tests/quiz_preview.html`，方便直接看版面。
+- 寫入補題計劃 `reading_tests/replenishment_plan.md`，目標擴充到 200 題以上。
+- 已建立每週一 09:00 的補題排程：每批新增 5 篇、約 40 題，可加入經查證的時事題。
+- 已 commit 並 push：`0e00f3c Add reading test question bank`。
+
+目前狀態：
+
+- 題型已覆蓋：主旨題、細節題、推論題、字彙題、代名詞指涉題、句意理解題、段落排序、多文本整合題、圖表閱讀題、混合題。
+- `question_bank.json` 已用 UTF-8 JSON 解析檢查通過。
+- `quiz.html` 若直接用 `file://` 開啟，可能無法讀取 JSON；正式預覽建議用本機伺服器。
+- wmux 右側瀏覽器目前未啟動，無法用 wmux 預覽。
+- Git 遠端已同步到 `origin/master`；但 `docs/project_dashboard.md` 有本收工紀錄，尚未提交。
+
+下一步建議：
+
+1. 啟動本機伺服器預覽 `reading_tests/quiz.html`。
+2. 每週補題排程先跑 1-2 次後，檢查題目品質、時事題來源標記與重複率。
+3. 題庫達 120 題後，再調整抽題邏輯，加入主題篩選與題型篩選。
+4. 題庫達 200 題後，整理成學生練習版與教師答案版。
