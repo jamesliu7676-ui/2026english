@@ -1,0 +1,442 @@
+{
+  "version": "2026-05-28",
+  "duplicate_policy": {
+    "target_duplicate_rate": "below 5%",
+    "method": "Each quiz draw avoids repeated question IDs in the same quiz and avoids recently shown IDs stored in the browser when enough unused questions are available."
+  },
+  "items": [
+    {
+      "id": "r004",
+      "title": "The New Library Corner",
+      "topic": "校園生活、閱讀習慣",
+      "source_type": "自編",
+      "source": "無",
+      "usage": "自編短文",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "River Junior High School opened a new reading corner beside the school library. At first, some students thought it was just another quiet space. However, the reading corner soon became popular because students could borrow short books, magazines, and English comics during lunch break. The English teacher, Ms. Lin, also placed a suggestion box there. Students could write down topics they wanted to read about. After two weeks, the most popular topics were sports, animals, and travel. Ms. Lin said the reading corner was not only for strong readers. It was for anyone who wanted to build a small reading habit."
+        },
+        {
+          "label": "Passage B",
+          "text": "Notice: The reading corner is open from 12:10 to 12:50 on school days. Students may borrow one book at a time and return it within seven days."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r004-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["A school opened a reading space to encourage students to read.", "A teacher closed the school library during lunch.", "Students stopped reading English books.", "A class went on a trip to a library."],
+          "answer": "A",
+          "explanation": "The passage focuses on the new reading corner and how it encourages reading."
+        },
+        {
+          "id": "r004-q02",
+          "type": "細節題",
+          "question": "Where is the new reading corner?",
+          "options": ["Beside the school library.", "Inside the gym.", "Near the school gate.", "In Ms. Lin's office."],
+          "answer": "A",
+          "explanation": "The first sentence says it opened beside the school library."
+        },
+        {
+          "id": "r004-q03",
+          "type": "推論題",
+          "question": "Why did Ms. Lin place a suggestion box in the reading corner?",
+          "options": ["To learn what students wanted to read.", "To collect money for new desks.", "To choose students for a contest.", "To stop students from borrowing books."],
+          "answer": "A",
+          "explanation": "Students wrote down reading topics they wanted, so the box helped the teacher understand their interests."
+        },
+        {
+          "id": "r004-q04",
+          "type": "字彙題",
+          "question": "What does \"popular\" most likely mean in Passage A?",
+          "options": ["liked by many people", "hard to find", "too expensive", "closed for a long time"],
+          "answer": "A",
+          "explanation": "Many students used the reading corner, so it became liked by many people."
+        },
+        {
+          "id": "r004-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"there\" refer to in \"placed a suggestion box there\"?",
+          "options": ["the reading corner", "the sports field", "the travel topic", "the English classroom"],
+          "answer": "A",
+          "explanation": "\"There\" refers to the reading corner."
+        },
+        {
+          "id": "r004-q06",
+          "type": "句意理解題",
+          "question": "What does Ms. Lin mean by saying the corner is for anyone who wants to build a small reading habit?",
+          "options": ["Students do not need to be excellent readers to use it.", "Only strong readers can borrow books.", "Students must read long books every day.", "The reading corner is only for teachers."],
+          "answer": "A",
+          "explanation": "The sentence means the corner welcomes all students who want to read more."
+        },
+        {
+          "id": "r004-q07",
+          "type": "多文本整合題",
+          "question": "According to both passages, which statement is true?",
+          "options": ["Students can use the reading corner during lunch break.", "Students can borrow three books at a time.", "The reading corner is open after school only.", "Students must return books on the same day."],
+          "answer": "A",
+          "explanation": "Passage A mentions lunch break, and Passage B gives the lunch-time opening hours."
+        },
+        {
+          "id": "r004-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which topic was one of the most popular topics in the suggestion box? Brief answer: Why might this help Ms. Lin choose books?",
+          "options": ["animals", "history tests", "school rules", "math homework"],
+          "answer": "A",
+          "sample_brief_answer": "It helps Ms. Lin choose books that students are interested in.",
+          "explanation": "Animals was one of the three popular topics."
+        }
+      ]
+    },
+    {
+      "id": "r005",
+      "title": "A Bus Schedule Problem",
+      "topic": "交通、時間表閱讀",
+      "source_type": "自編",
+      "source": "無",
+      "usage": "自編短文與表格",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Nora planned to visit her cousin on Sunday afternoon. She usually took Bus 16 because it stopped near her cousin's apartment. This Sunday, however, the city changed the bus schedule because of a road race. Nora checked the notice at the bus stop before leaving home. She learned that Bus 16 would not stop at Garden Road between 1:00 p.m. and 4:00 p.m. Her cousin told her to take Bus 22 instead and get off at Lake Street. Nora left earlier than usual because she did not want to be late."
+        },
+        {
+          "label": "Chart",
+          "text": "Bus 16: no Garden Road stop from 1:00-4:00 p.m.; Bus 22: stops at Lake Street every 20 minutes; Bus 30: stops at City Hall only."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r005-q01",
+          "type": "主旨題",
+          "question": "What is the passage mainly about?",
+          "options": ["Nora needed to change her travel plan because of a bus schedule change.", "Nora joined a road race on Sunday.", "Nora moved to a new apartment.", "Nora learned how to drive a bus."],
+          "answer": "A",
+          "explanation": "The passage is about Nora changing her bus plan."
+        },
+        {
+          "id": "r005-q02",
+          "type": "細節題",
+          "question": "Which bus did Nora usually take?",
+          "options": ["Bus 16", "Bus 22", "Bus 30", "Bus 40"],
+          "answer": "A",
+          "explanation": "The passage says she usually took Bus 16."
+        },
+        {
+          "id": "r005-q03",
+          "type": "圖表閱讀題",
+          "question": "According to the chart, which bus stops at Lake Street?",
+          "options": ["Bus 22", "Bus 16", "Bus 30", "No bus"],
+          "answer": "A",
+          "explanation": "The chart says Bus 22 stops at Lake Street every 20 minutes."
+        },
+        {
+          "id": "r005-q04",
+          "type": "推論題",
+          "question": "Why did Nora leave earlier than usual?",
+          "options": ["She wanted to avoid being late.", "She wanted to watch the road race.", "She had to buy a new phone.", "She missed her cousin's call."],
+          "answer": "A",
+          "explanation": "The last sentence states her reason."
+        },
+        {
+          "id": "r005-q05",
+          "type": "字彙題",
+          "question": "What does \"instead\" mean in the passage?",
+          "options": ["as another choice", "very quickly", "in the past", "for no reason"],
+          "answer": "A",
+          "explanation": "Her cousin suggested Bus 22 as another choice."
+        },
+        {
+          "id": "r005-q06",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"because it stopped near her cousin's apartment\"?",
+          "options": ["Bus 16", "Sunday afternoon", "the city", "the road race"],
+          "answer": "A",
+          "explanation": "\"It\" refers to Bus 16."
+        },
+        {
+          "id": "r005-q07",
+          "type": "句意理解題",
+          "question": "What does the sentence \"the city changed the bus schedule because of a road race\" mean?",
+          "options": ["The bus times and stops were different because a race was happening.", "The city bought new buses for students.", "The road race was canceled by the city.", "Nora's cousin changed the schedule."],
+          "answer": "A",
+          "explanation": "The schedule changed due to the road race."
+        },
+        {
+          "id": "r005-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which bus should Nora take to visit her cousin during the road race? Brief answer: Give one reason.",
+          "options": ["Bus 22", "Bus 16", "Bus 30", "Bus 40"],
+          "answer": "A",
+          "sample_brief_answer": "She should take Bus 22 because Bus 16 will not stop at Garden Road during that time.",
+          "explanation": "Bus 22 is the alternative suggested by her cousin."
+        }
+      ]
+    },
+    {
+      "id": "r006",
+      "title": "The Lunch Survey",
+      "topic": "校園生活、圖表閱讀",
+      "source_type": "自編",
+      "source": "無",
+      "usage": "自編短文與表格",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "The student council at East High School wanted to improve school lunches. Before making suggestions to the cafeteria, they asked 120 students about their favorite lunch choices. The survey showed that rice boxes were still the most popular, but many students also wanted more fruit and soup. Some students said the food was fine, but the lines were too long. After reading the results, the student council decided to make two suggestions: add one fruit option every day and open a second line for students who only wanted soup or drinks."
+        },
+        {
+          "label": "Chart",
+          "text": "Favorite lunch choices: rice box 48 students; noodles 30 students; sandwich 22 students; salad 12 students; soup only 8 students."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r006-q01",
+          "type": "主旨題",
+          "question": "What is the main purpose of the survey?",
+          "options": ["To help improve school lunches.", "To choose a new school principal.", "To plan a sports day.", "To decide homework rules."],
+          "answer": "A",
+          "explanation": "The council wanted to improve school lunches."
+        },
+        {
+          "id": "r006-q02",
+          "type": "細節題",
+          "question": "How many students joined the survey?",
+          "options": ["120", "48", "30", "22"],
+          "answer": "A",
+          "explanation": "The passage says 120 students were asked."
+        },
+        {
+          "id": "r006-q03",
+          "type": "圖表閱讀題",
+          "question": "Which lunch choice was the most popular?",
+          "options": ["Rice box", "Noodles", "Sandwich", "Salad"],
+          "answer": "A",
+          "explanation": "The chart shows rice box had 48 students, the highest number."
+        },
+        {
+          "id": "r006-q04",
+          "type": "推論題",
+          "question": "Why did the council suggest opening a second line?",
+          "options": ["To reduce waiting time.", "To sell more rice boxes.", "To close the cafeteria earlier.", "To stop students from buying soup."],
+          "answer": "A",
+          "explanation": "Some students said the lines were too long."
+        },
+        {
+          "id": "r006-q05",
+          "type": "字彙題",
+          "question": "What does \"suggestions\" most likely mean?",
+          "options": ["ideas offered for people to consider", "answers to a math test", "school bags", "lunch boxes"],
+          "answer": "A",
+          "explanation": "The council made ideas for the cafeteria to consider."
+        },
+        {
+          "id": "r006-q06",
+          "type": "代名詞指涉題",
+          "question": "What does \"they\" refer to in \"they asked 120 students\"?",
+          "options": ["the student council", "the cafeteria workers", "the rice boxes", "the students in line"],
+          "answer": "A",
+          "explanation": "\"They\" refers to the student council."
+        },
+        {
+          "id": "r006-q07",
+          "type": "多文本整合題",
+          "question": "According to the passage and chart, which statement is true?",
+          "options": ["More students chose noodles than sandwiches.", "Soup only was the most popular choice.", "No students wanted salad.", "Rice boxes were less popular than sandwiches."],
+          "answer": "A",
+          "explanation": "Noodles had 30 students, and sandwiches had 22."
+        },
+        {
+          "id": "r006-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which suggestion is directly connected to students wanting more healthy options? Brief answer: Explain your choice.",
+          "options": ["Add one fruit option every day.", "Make the line longer.", "Remove soup from the menu.", "Sell only rice boxes."],
+          "answer": "A",
+          "sample_brief_answer": "Fruit is a healthy option, and many students wanted more fruit.",
+          "explanation": "The passage connects students' request for fruit with the council's suggestion."
+        }
+      ]
+    },
+    {
+      "id": "r007",
+      "title": "A Message from the Museum",
+      "topic": "公共資訊、展覽公告",
+      "source_type": "自編",
+      "source": "無",
+      "usage": "自編公告與短文",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "The City Science Museum is holding a special exhibition about light and color. Visitors can learn why the sky looks blue, how rainbows form, and how artists use color to create different feelings. The exhibition is designed for families and students. It includes short videos, simple experiments, and a small drawing area. The museum hopes visitors will not only read about science but also touch, test, and create."
+        },
+        {
+          "label": "Passage B",
+          "text": "Museum Message: Student groups of 10 or more should book tickets at least three days before their visit. The exhibition is closed on Mondays. Photos are allowed, but flash photography is not."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r007-q01",
+          "type": "主旨題",
+          "question": "What is the exhibition mainly about?",
+          "options": ["Light and color", "Famous sports players", "Old city maps", "Healthy school lunches"],
+          "answer": "A",
+          "explanation": "The first sentence states the topic."
+        },
+        {
+          "id": "r007-q02",
+          "type": "細節題",
+          "question": "Which activity is included in the exhibition?",
+          "options": ["Simple experiments", "A basketball game", "A cooking class", "A bus tour"],
+          "answer": "A",
+          "explanation": "The passage lists simple experiments as part of the exhibition."
+        },
+        {
+          "id": "r007-q03",
+          "type": "推論題",
+          "question": "Why does the museum include videos, experiments, and a drawing area?",
+          "options": ["To make learning more active.", "To make visitors leave quickly.", "To stop students from asking questions.", "To sell more cameras."],
+          "answer": "A",
+          "explanation": "The museum wants visitors to touch, test, and create."
+        },
+        {
+          "id": "r007-q04",
+          "type": "字彙題",
+          "question": "What does \"designed for\" most likely mean?",
+          "options": ["made for", "hidden from", "sold by", "painted with"],
+          "answer": "A",
+          "explanation": "The exhibition is made for families and students."
+        },
+        {
+          "id": "r007-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"It\" refer to in \"It includes short videos\"?",
+          "options": ["the exhibition", "the sky", "the museum message", "flash photography"],
+          "answer": "A",
+          "explanation": "\"It\" refers to the exhibition."
+        },
+        {
+          "id": "r007-q06",
+          "type": "句意理解題",
+          "question": "What does \"touch, test, and create\" suggest about the exhibition?",
+          "options": ["Visitors can learn by doing things.", "Visitors must stay quiet all the time.", "Visitors can only read signs.", "Visitors cannot use their hands."],
+          "answer": "A",
+          "explanation": "The phrase suggests hands-on learning."
+        },
+        {
+          "id": "r007-q07",
+          "type": "多文本整合題",
+          "question": "A class of 12 students wants to visit on Monday. What problem do they have?",
+          "options": ["The exhibition is closed on Mondays.", "Student groups cannot visit the museum.", "The exhibition has no science activities.", "Photos are never allowed."],
+          "answer": "A",
+          "explanation": "Passage B says the exhibition is closed on Mondays."
+        },
+        {
+          "id": "r007-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which rule should a student group remember? Brief answer: Why is this rule important for planning?",
+          "options": ["Book tickets at least three days before the visit.", "Use flash photography in every room.", "Visit only on Mondays.", "Bring sports shoes."],
+          "answer": "A",
+          "sample_brief_answer": "They need to book early, so the museum can prepare for the group.",
+          "explanation": "The message clearly states the booking rule."
+        }
+      ]
+    },
+    {
+      "id": "r008",
+      "title": "A Team Practice Plan",
+      "topic": "運動、計畫安排",
+      "source_type": "自編",
+      "source": "無",
+      "usage": "自編短文與時間表",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "The school volleyball team lost its first game of the season. After the game, Coach Wang did not blame the players. Instead, he asked them to watch a video of the match and write down one thing they did well and one thing they needed to improve. Most players noticed that they missed many serves in the second half. The team decided to add a short serving practice before every regular practice. Three weeks later, the players felt more confident. They still made mistakes, but they were no longer afraid of serving during important points."
+        },
+        {
+          "label": "Schedule",
+          "text": "Tuesday: serving practice 4:00-4:20, team practice 4:20-5:30. Thursday: serving practice 4:00-4:20, team practice 4:20-5:30. Saturday: practice game 9:00-10:30."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r008-q01",
+          "type": "主旨題",
+          "question": "What is Passage A mainly about?",
+          "options": ["A team improved by finding a problem and practicing it.", "A coach stopped all team practices.", "A school canceled its volleyball season.", "Players learned a new school song."],
+          "answer": "A",
+          "explanation": "The passage focuses on improving serving through practice."
+        },
+        {
+          "id": "r008-q02",
+          "type": "細節題",
+          "question": "What did Coach Wang ask players to do after the game?",
+          "options": ["Watch a video and write down strengths and weaknesses.", "Run around the school ten times.", "Stop playing volleyball.", "Choose a new coach."],
+          "answer": "A",
+          "explanation": "The passage states this directly."
+        },
+        {
+          "id": "r008-q03",
+          "type": "推論題",
+          "question": "What kind of coach is Coach Wang probably?",
+          "options": ["A coach who helps players learn from mistakes.", "A coach who never watches games.", "A coach who blames players first.", "A coach who dislikes practice plans."],
+          "answer": "A",
+          "explanation": "He asked players to review and improve instead of blaming them."
+        },
+        {
+          "id": "r008-q04",
+          "type": "字彙題",
+          "question": "What does \"confident\" most likely mean?",
+          "options": ["feeling sure about yourself", "very tired", "angry with others", "late for practice"],
+          "answer": "A",
+          "explanation": "The players became less afraid of serving."
+        },
+        {
+          "id": "r008-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"they\" refer to in \"they were no longer afraid\"?",
+          "options": ["the players", "the serves", "the important points", "the mistakes"],
+          "answer": "A",
+          "explanation": "\"They\" refers to the players."
+        },
+        {
+          "id": "r008-q06",
+          "type": "句意理解題",
+          "question": "What does \"he did not blame the players\" mean?",
+          "options": ["He did not say the loss was only their fault.", "He asked them to leave the team.", "He forgot the game score.", "He ended the season."],
+          "answer": "A",
+          "explanation": "Not blaming means he did not simply say the players were at fault."
+        },
+        {
+          "id": "r008-q07",
+          "type": "圖表閱讀題",
+          "question": "According to the schedule, how long is serving practice on Tuesday?",
+          "options": ["20 minutes", "30 minutes", "70 minutes", "90 minutes"],
+          "answer": "A",
+          "explanation": "Serving practice is from 4:00 to 4:20."
+        },
+        {
+          "id": "r008-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which practice was added to help the team improve? Brief answer: Why did they add it?",
+          "options": ["Serving practice", "Drawing practice", "Reading practice", "Ticket practice"],
+          "answer": "A",
+          "sample_brief_answer": "They added serving practice because many players missed serves in the second half.",
+          "explanation": "The team found serving was a weakness."
+        },
+        {
+          "id": "r008-q09",
+          "type": "段落排序",
+          "question": "Put the events in the correct order.",
+          "options": ["The team lost its first game. → Players watched the video. → The team added serving practice. → Players felt more confident.", "Players felt more confident. → The team lost its first game. → Players watched the video. → The team added serving practice.", "The team added serving practice. → The team lost its first game. → Players felt more confident. → Players watched the video.", "Players watched the video. → Players felt more confident. → The team lost its first game. → The team added serving practice."],
+          "answer": "A",
+          "explanation": "The passage first describes the lost game, then the video review, then extra serving practice, and finally the team's greater confidence."
+        }
+      ]
+    }
+  ]
+}

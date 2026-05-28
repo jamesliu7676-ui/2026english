@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>短篇閱讀測驗預覽</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --ink: #18202f;
+      --muted: #5d687a;
+      --line: #d9dfeb;
+      --accent: #1f7a68;
+      --accent-weak: #e6f4ef;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 0;
+    }
+
+    h1, h2, h3 { margin: 0 0 10px; letter-spacing: 0; }
+    h1 { font-size: 1.35rem; }
+    h2 { font-size: 1.15rem; }
+    h3 { font-size: 1rem; }
+
+    button {
+      min-height: 38px;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      font: inherit;
+      font-weight: 650;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+
+    main { padding: 24px 0 40px; }
+
+    .status {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .stat, .panel, .question {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .stat { padding: 12px; }
+    .stat strong { display: block; font-size: 1.35rem; }
+    .stat span, .meta { color: var(--muted); font-size: .92rem; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .panel { padding: 18px; }
+    .passage + .passage {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .question {
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+
+    .question-type {
+      display: inline-flex;
+      background: var(--accent-weak);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 2px 9px;
+      font-size: .82rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .question p { margin: 0 0 10px; font-weight: 650; }
+    ol { margin: 0; padding-left: 22px; }
+    details { margin-top: 10px; color: var(--muted); }
+    summary { cursor: pointer; color: var(--accent); font-weight: 650; }
+
+    @media (max-width: 860px) {
+      .topbar, .layout { display: grid; grid-template-columns: 1fr; }
+      .status { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <h1>短篇閱讀測驗預覽</h1>
+      <button id="refresh" type="button">更新題目</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="status">
+      <div class="stat"><strong>41</strong><span>目前題庫題數</span></div>
+      <div class="stat"><strong id="shown">8</strong><span>本次出題</span></div>
+      <div class="stat"><strong>0%</strong><span>本次重複率</span></div>
+      <div class="stat"><strong>5</strong><span>閱讀文本</span></div>
+    </section>
+
+    <section class="layout">
+      <article class="panel">
+        <h2 id="title"></h2>
+        <div id="meta" class="meta"></div>
+        <div id="passages"></div>
+      </article>
+      <aside class="panel">
+        <h2>Questions</h2>
+        <div id="questions"></div>
+      </aside>
+    </section>
+  </main>
+
+  <script>
+    const readings = [
+      {
+        title: "The New Library Corner",
+        meta: "校園生活、閱讀習慣｜自編｜8 題",
+        passages: [
+          ["Passage A", "River Junior High School opened a new reading corner beside the school library. At first, some students thought it was just another quiet space. However, the reading corner soon became popular because students could borrow short books, magazines, and English comics during lunch break. The English teacher, Ms. Lin, also placed a suggestion box there. Students could write down topics they wanted to read about."],
+          ["Passage B", "Notice: The reading corner is open from 12:10 to 12:50 on school days. Students may borrow one book at a time and return it within seven days."]
+        ],
+        questions: [
+          ["主旨題", "What is the main idea of Passage A?", ["A school opened a reading space to encourage students to read.", "A teacher closed the school library during lunch.", "Students stopped reading English books.", "A class went on a trip to a library."], "A"],
+          ["細節題", "Where is the new reading corner?", ["Beside the school library.", "Inside the gym.", "Near the school gate.", "In Ms. Lin's office."], "A"],
+          ["推論題", "Why did Ms. Lin place a suggestion box in the reading corner?", ["To learn what students wanted to read.", "To collect money for new desks.", "To choose students for a contest.", "To stop students from borrowing books."], "A"],
+          ["字彙題", "What does \"popular\" most likely mean?", ["liked by many people", "hard to find", "too expensive", "closed for a long time"], "A"],
+          ["代名詞指涉題", "What does \"there\" refer to?", ["the reading corner", "the sports field", "the travel topic", "the English classroom"], "A"],
+          ["句意理解題", "What does the corner is for anyone mean?", ["All students may use it.", "Only strong readers can borrow books.", "Students must read long books.", "Only teachers may use it."], "A"],
+          ["多文本整合題", "According to both passages, which statement is true?", ["Students can use the reading corner during lunch break.", "Students can borrow three books at a time.", "It opens after school only.", "Books must return on the same day."], "A"],
+          ["混合題：選擇 + 簡答", "Which topic was popular? Brief answer: Why might this help Ms. Lin choose books?", ["animals", "history tests", "school rules", "math homework"], "A"]
+        ]
+      },
+      {
+        title: "The Lunch Survey",
+        meta: "校園生活、圖表閱讀｜自編｜8 題",
+        passages: [
+          ["Passage A", "The student council at East High School wanted to improve school lunches. Before making suggestions to the cafeteria, they asked 120 students about their favorite lunch choices. The survey showed that rice boxes were still the most popular, but many students also wanted more fruit and soup."],
+          ["Chart", "Favorite lunch choices: rice box 48 students; noodles 30 students; sandwich 22 students; salad 12 students; soup only 8 students."]
+        ],
+        questions: [
+          ["主旨題", "What is the main purpose of the survey?", ["To help improve school lunches.", "To choose a new school principal.", "To plan a sports day.", "To decide homework rules."], "A"],
+          ["細節題", "How many students joined the survey?", ["120", "48", "30", "22"], "A"],
+          ["圖表閱讀題", "Which lunch choice was the most popular?", ["Rice box", "Noodles", "Sandwich", "Salad"], "A"],
+          ["推論題", "Why did the council suggest opening a second line?", ["To reduce waiting time.", "To sell more rice boxes.", "To close the cafeteria earlier.", "To stop students from buying soup."], "A"],
+          ["字彙題", "What does \"suggestions\" most likely mean?", ["ideas offered for people to consider", "answers to a math test", "school bags", "lunch boxes"], "A"],
+          ["代名詞指涉題", "What does \"they\" refer to?", ["the student council", "the cafeteria workers", "the rice boxes", "the students in line"], "A"],
+          ["多文本整合題", "Which statement is true?", ["More students chose noodles than sandwiches.", "Soup only was the most popular choice.", "No students wanted salad.", "Rice boxes were less popular than sandwiches."], "A"],
+          ["混合題：選擇 + 簡答", "Which suggestion is connected to healthy options?", ["Add one fruit option every day.", "Make the line longer.", "Remove soup from the menu.", "Sell only rice boxes."], "A"]
+        ]
+      }
+    ];
+
+    let index = 0;
+    const title = document.querySelector("#title");
+    const meta = document.querySelector("#meta");
+    const passages = document.querySelector("#passages");
+    const questions = document.querySelector("#questions");
+
+    function render() {
+      const reading = readings[index % readings.length];
+      title.textContent = reading.title;
+      meta.textContent = reading.meta;
+      passages.innerHTML = reading.passages.map(([label, text]) => `<section class="passage"><h3>${label}</h3><p>${text}</p></section>`).join("");
+      questions.innerHTML = reading.questions.map(([type, prompt, options, answer], i) => `
+        <article class="question">
+          <div class="question-type">${type}</div>
+          <p>${i + 1}. ${prompt}</p>
+          <ol>${options.map((option, optionIndex) => `<li>${String.fromCharCode(65 + optionIndex)}. ${option}</li>`).join("")}</ol>
+          <details><summary>答案與解析</summary><p><strong>答案：</strong>${answer}</p></details>
+        </article>
+      `).join("");
+    }
+
+    document.querySelector("#refresh").addEventListener("click", () => {
+      index += 1;
+      render();
+    });
+    render();
+  </script>
+</body>
+</html>
