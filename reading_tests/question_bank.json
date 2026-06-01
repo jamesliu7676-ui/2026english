@@ -1,5 +1,5 @@
 {
-  "version": "2026-05-28",
+  "version": "2026-06-01",
   "duplicate_policy": {
     "target_duplicate_rate": "below 5%",
     "method": "Each quiz draw avoids repeated question IDs in the same quiz and avoids recently shown IDs stored in the browser when enough unused questions are available."
@@ -435,6 +435,431 @@
           "options": ["The team lost its first game. → Players watched the video. → The team added serving practice. → Players felt more confident.", "Players felt more confident. → The team lost its first game. → Players watched the video. → The team added serving practice.", "The team added serving practice. → The team lost its first game. → Players felt more confident. → Players watched the video.", "Players watched the video. → Players felt more confident. → The team lost its first game. → The team added serving practice."],
           "answer": "A",
           "explanation": "The passage first describes the lost game, then the video review, then extra serving practice, and finally the team's greater confidence."
+        }
+      ]
+    },
+    {
+      "id": "r009",
+      "title": "Storm Notes for June",
+      "topic": "天氣、公共安全、圖表閱讀",
+      "source_type": "官方資料改寫",
+      "source": "NOAA Climate Prediction Center Atlantic Hurricane Outlook; https://www.cpc.ncep.noaa.gov/products/outlooks/hurricane.shtml?vm=r; accessed 2026-06-01",
+      "usage": "依 NOAA 2026 大西洋颶風季展望重寫短文與圖表，用於題材與數字查證，未直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "At school, Kevin helped the science club make a June safety poster. He read NOAA's outlook for the 2026 Atlantic hurricane season and learned that a below-normal season was the most likely result. Still, his teacher reminded everyone that below-normal does not mean danger-free. A single strong storm can still cause serious flooding, power cuts, and travel problems. Kevin added three simple tips to the poster: check weather updates, prepare flashlights and water, and talk with family members about where to go in an emergency. He also wrote that the Atlantic hurricane season officially runs from June 1 to November 30, so students should stay alert for many months, not only during one stormy week."
+        },
+        {
+          "label": "Chart",
+          "text": "2026 Atlantic outlook: below-normal season 55%; near-normal season 35%; above-normal season 10%. Expected ranges: 8-14 named storms, 3-6 hurricanes, 1-3 major hurricanes."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r009-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Kevin used hurricane-season information to help make a school safety poster.", "Kevin decided to travel during every storm.", "The science club canceled all summer activities.", "The teacher said storms never cause real problems."],
+          "answer": "A",
+          "explanation": "The passage focuses on Kevin reading the outlook and turning it into a safety poster."
+        },
+        {
+          "id": "r009-q02",
+          "type": "細節題",
+          "question": "When does the Atlantic hurricane season officially run?",
+          "options": ["From June 1 to November 30.", "From January 1 to March 31.", "From July 1 to August 31.", "From September 1 to December 31."],
+          "answer": "A",
+          "explanation": "Passage A states that the season officially runs from June 1 to November 30."
+        },
+        {
+          "id": "r009-q03",
+          "type": "圖表閱讀題",
+          "question": "According to the chart, what is the expected range for named storms?",
+          "options": ["8-14", "3-6", "1-3", "55-35"],
+          "answer": "A",
+          "explanation": "The chart says the expected range is 8-14 named storms."
+        },
+        {
+          "id": "r009-q04",
+          "type": "推論題",
+          "question": "Why did Kevin's teacher still want students to prepare for emergencies?",
+          "options": ["Because even one strong storm can still be dangerous.", "Because NOAA said storms would never end.", "Because the club wanted to sell flashlights.", "Because school would stay closed for six months."],
+          "answer": "A",
+          "explanation": "The passage explains that below-normal does not mean there is no danger."
+        },
+        {
+          "id": "r009-q05",
+          "type": "字彙題",
+          "question": "What does \"outlook\" most likely mean in this passage?",
+          "options": ["a forecast or prediction", "a window in a classroom", "a student contest", "a travel ticket"],
+          "answer": "A",
+          "explanation": "NOAA's outlook refers to its seasonal forecast."
+        },
+        {
+          "id": "r009-q06",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"it officially runs from June 1 to November 30\"?",
+          "options": ["the Atlantic hurricane season", "the science club", "Kevin's poster", "the emergency plan"],
+          "answer": "A",
+          "explanation": "\"It\" refers to the Atlantic hurricane season."
+        },
+        {
+          "id": "r009-q07",
+          "type": "多文本整合題",
+          "question": "Which statement is supported by both the passage and the chart?",
+          "options": ["Students should not assume a quieter season means zero risk.", "The season has a 55% chance of being above-normal.", "There will definitely be 14 hurricanes.", "The season ends in August."],
+          "answer": "A",
+          "explanation": "The chart shows only probabilities, and the passage explains why people should still prepare."
+        },
+        {
+          "id": "r009-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which season outcome is most likely in the chart? Brief answer: Give one reason Kevin still included emergency tips.",
+          "options": ["below-normal", "near-normal", "above-normal", "impossible to tell"],
+          "answer": "A",
+          "sample_brief_answer": "He still included them because a single strong storm can cause serious damage even in a below-normal season.",
+          "explanation": "The chart gives below-normal the highest probability, and Passage A explains the safety reason."
+        }
+      ]
+    },
+    {
+      "id": "r010",
+      "title": "A New Champion at Bee Week",
+      "topic": "拼字比賽、校外學習、多文本整合",
+      "source_type": "官方資料改寫",
+      "source": "Scripps National Spelling Bee homepage; https://spellingbee.com/; accessed 2026-06-01",
+      "usage": "依 2026 Scripps National Spelling Bee 官方首頁事實重寫短文與活動資訊，未直接複製原文或外部題目。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Mia loves words, so she followed the 2026 Scripps National Spelling Bee online. She learned that Shrey Parikh, a 14-year-old student from San Bernardino, California, became the new champion. He won after a spell-off and correctly spelled 32 words there, setting a new record for that round. Mia was surprised by the winning word, \"bromocriptine,\" because she had never seen it before. Instead of feeling discouraged, she wrote the word in her notebook and decided to learn a few new word roots each week. She said the contest reminded her that strong spelling is not only about memory, but also about staying calm under pressure."
+        },
+        {
+          "label": "Passage B",
+          "text": "Bee Week Notes: 247 spellers came to Washington, D.C., from across the country and around the world. The 2026 event was held at a new venue, DAR Constitution Hall."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r010-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Mia followed the spelling bee and felt inspired by the new champion.", "Mia decided to stop learning difficult words.", "The bee was canceled before the final round.", "All students already knew the winning word."],
+          "answer": "A",
+          "explanation": "The passage focuses on Mia learning about the champion and feeling motivated."
+        },
+        {
+          "id": "r010-q02",
+          "type": "細節題",
+          "question": "How old was Shrey Parikh in the passage?",
+          "options": ["14", "12", "16", "18"],
+          "answer": "A",
+          "explanation": "Passage A says Shrey Parikh was 14 years old."
+        },
+        {
+          "id": "r010-q03",
+          "type": "推論題",
+          "question": "Why did Mia write the winning word in her notebook?",
+          "options": ["She wanted to keep learning from the contest.", "She planned to erase it later as a joke.", "She had to return it to the judges.", "She did not understand who won."],
+          "answer": "A",
+          "explanation": "Her action shows she wanted to study and improve."
+        },
+        {
+          "id": "r010-q04",
+          "type": "字彙題",
+          "question": "What does \"discouraged\" most likely mean in Passage A?",
+          "options": ["less confident or disappointed", "ready to celebrate loudly", "able to spell every word", "interested in traveling"],
+          "answer": "A",
+          "explanation": "\"Discouraged\" means feeling less confident or disappointed."
+        },
+        {
+          "id": "r010-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"He\" refer to in \"He won after a spell-off\"?",
+          "options": ["Shrey Parikh", "Mia", "the judge", "the venue"],
+          "answer": "A",
+          "explanation": "\"He\" refers to Shrey Parikh."
+        },
+        {
+          "id": "r010-q06",
+          "type": "句意理解題",
+          "question": "What does the sentence \"strong spelling is not only about memory, but also about staying calm under pressure\" mean?",
+          "options": ["Success in spelling also depends on self-control during stress.", "Only memory matters in every competition.", "Contestants should speak very fast to win.", "The judges cared only about handwriting."],
+          "answer": "A",
+          "explanation": "The sentence explains that calm thinking is important, not just memorization."
+        },
+        {
+          "id": "r010-q07",
+          "type": "多文本整合題",
+          "question": "Which statement is supported by both passages?",
+          "options": ["The 2026 spelling bee was a large event with an important final result.", "The contest took place in San Bernardino, California.", "Only students from one country joined the bee.", "The champion won without a spell-off."],
+          "answer": "A",
+          "explanation": "Passage A describes the championship result, and Passage B shows the event was large and international."
+        },
+        {
+          "id": "r010-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which city hosted the 2026 event? Brief answer: Why did the contest motivate Mia?",
+          "options": ["Washington, D.C.", "San Bernardino", "New York City", "Chicago"],
+          "answer": "A",
+          "sample_brief_answer": "It motivated her because she saw that difficult words can be learned step by step with practice and calm thinking.",
+          "explanation": "Passage B gives the host city, and Passage A explains Mia's reaction."
+        }
+      ]
+    },
+    {
+      "id": "r011",
+      "title": "Watching an Asteroid Carefully",
+      "topic": "太空科學、風險判讀、多文本整合",
+      "source_type": "官方資料改寫",
+      "source": "NASA Science article on asteroid 2024 YR4; https://science.nasa.gov/blogs/planetary-defense/2026/03/05/new-nasa-asteroid-observations-eliminate-chance-of-2032-lunar-impact/; accessed 2026-06-01",
+      "usage": "依 NASA 對 2024 YR4 的最新觀測結果重寫科普短文與時間線，用於事實查證與題材設計，未直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "During science class, Ms. Huang showed students a short update about asteroid 2024 YR4. New observations from the James Webb Space Telescope helped NASA refine the asteroid's path. The new data showed that the asteroid is expected to pass the Moon on December 22, 2032, at a distance of about 13,200 miles. NASA also said the object poses no significant risk to Earth. Ms. Huang told the class that this was a good example of how science works: experts make early estimates, collect more evidence, and improve their answers. The students agreed that the most important lesson was not to panic when a first report sounds uncertain."
+        },
+        {
+          "label": "Passage B",
+          "text": "Timeline Note: Early 2025 reports said 2024 YR4 had a small but notable chance of hitting Earth. By March 2026, after more observations, NASA ruled out a lunar impact and said the asteroid no longer posed a significant Earth threat."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r011-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["New observations helped scientists better understand an asteroid's path.", "Students discovered a new asteroid by themselves.", "NASA warned people to leave Earth at once.", "The Moon changed its orbit suddenly."],
+          "answer": "A",
+          "explanation": "The passage is about better data leading to a clearer understanding of the asteroid."
+        },
+        {
+          "id": "r011-q02",
+          "type": "細節題",
+          "question": "About how far from the Moon is 2024 YR4 expected to pass in 2032?",
+          "options": ["13,200 miles", "2,032 miles", "130 miles", "132,000 miles"],
+          "answer": "A",
+          "explanation": "Passage A gives the distance as about 13,200 miles."
+        },
+        {
+          "id": "r011-q03",
+          "type": "推論題",
+          "question": "Why did Ms. Huang say students should not panic about the first report?",
+          "options": ["Because early reports can change when scientists get more evidence.", "Because asteroids always disappear quickly.", "Because NASA never studies space objects carefully.", "Because the class was not interested in science."],
+          "answer": "A",
+          "explanation": "The passage says science improves answers with more evidence."
+        },
+        {
+          "id": "r011-q04",
+          "type": "字彙題",
+          "question": "What does \"refine\" most likely mean in Passage A?",
+          "options": ["make more exact", "hide from the public", "move somewhere else", "celebrate loudly"],
+          "answer": "A",
+          "explanation": "NASA refined the path by making its prediction more exact."
+        },
+        {
+          "id": "r011-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"this\" refer to in \"this was a good example of how science works\"?",
+          "options": ["the process of improving predictions with more evidence", "the school building", "the Moon itself", "one student's notebook"],
+          "answer": "A",
+          "explanation": "\"This\" refers to the process Ms. Huang just described."
+        },
+        {
+          "id": "r011-q06",
+          "type": "句意理解題",
+          "question": "What does the sentence \"experts make early estimates, collect more evidence, and improve their answers\" mean?",
+          "options": ["Scientific conclusions can become more accurate over time.", "Scientists never change their minds.", "Good science avoids new observations.", "Answers should stay the same even if facts change."],
+          "answer": "A",
+          "explanation": "The sentence explains that science becomes more accurate as new data arrives."
+        },
+        {
+          "id": "r011-q07",
+          "type": "多文本整合題",
+          "question": "Which statement matches both passages?",
+          "options": ["Later observations reduced the earlier concern about 2024 YR4.", "NASA stopped using telescopes in 2026.", "The asteroid is now expected to hit Earth in 2032.", "Students were told to ignore new evidence."],
+          "answer": "A",
+          "explanation": "Both passages explain that later data lowered the risk."
+        },
+        {
+          "id": "r011-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which tool helped provide the new observations? Brief answer: What bigger lesson did Ms. Huang want students to learn?",
+          "options": ["the James Webb Space Telescope", "a weather balloon", "a school bus camera", "a microscope"],
+          "answer": "A",
+          "sample_brief_answer": "She wanted them to learn that scientific answers improve when new evidence is collected.",
+          "explanation": "Passage A names the telescope, and the lesson is explained directly."
+        }
+      ]
+    },
+    {
+      "id": "r012",
+      "title": "Rabat and the Year of Books",
+      "topic": "閱讀推廣、國際文化、段落排序",
+      "source_type": "官方資料改寫",
+      "source": "UNESCO World Book Capital announcement; https://www.unesco.org/en/articles/unesco-names-rabat-world-book-capital-2026?hub=66703; accessed 2026-06-01",
+      "usage": "依 UNESCO 對 Rabat 成為 2026 世界圖書之都的公告重寫閱讀推廣短文，保留關鍵事實，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "In reading class, Ms. Chen told students that Rabat, Morocco, was chosen as UNESCO's World Book Capital for 2026. She explained that the city was recognized for supporting reading, helping women and young people through literacy, and fighting illiteracy in underserved communities. Rabat also has 54 publishing houses and one of Africa's large international book fairs. Ms. Chen asked students to imagine what their own town could do if it wanted to celebrate books for a whole year. Some students suggested book exchanges, reading corners, and family storytelling nights. They liked the idea that books could be used not only for study, but also for community change."
+        },
+        {
+          "label": "Passage B",
+          "text": "Event Note: UNESCO said the year of celebrations for Rabat starts on April 23, 2026, World Book and Copyright Day."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r012-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Students learned why Rabat was recognized for promoting books and reading.", "Students planned to move to Morocco immediately.", "UNESCO decided to stop supporting literacy.", "Books were removed from the classroom."],
+          "answer": "A",
+          "explanation": "The passage explains Rabat's recognition and the students' response."
+        },
+        {
+          "id": "r012-q02",
+          "type": "細節題",
+          "question": "How many publishing houses does Rabat have according to the passage?",
+          "options": ["54", "26", "23", "194"],
+          "answer": "A",
+          "explanation": "Passage A states that Rabat has 54 publishing houses."
+        },
+        {
+          "id": "r012-q03",
+          "type": "推論題",
+          "question": "Why did Ms. Chen ask students to imagine ideas for their own town?",
+          "options": ["She wanted them to connect the news to their own community.", "She wanted them to forget the passage quickly.", "She planned to test their map skills only.", "She wanted them to stop reading books."],
+          "answer": "A",
+          "explanation": "Her question helps students apply the idea to real life."
+        },
+        {
+          "id": "r012-q04",
+          "type": "字彙題",
+          "question": "What does \"underserved\" most likely mean in this passage?",
+          "options": ["not receiving enough support", "full of bookstores", "easy to travel to", "famous for sports"],
+          "answer": "A",
+          "explanation": "\"Underserved communities\" are communities that do not receive enough support."
+        },
+        {
+          "id": "r012-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"They\" refer to in \"They liked the idea that books could be used...\"?",
+          "options": ["the students", "the publishing houses", "the book fairs", "the communities"],
+          "answer": "A",
+          "explanation": "\"They\" refers to the students."
+        },
+        {
+          "id": "r012-q06",
+          "type": "句意理解題",
+          "question": "What does the sentence \"books could be used not only for study, but also for community change\" mean?",
+          "options": ["Books can support learning and also help improve society.", "Books should only be used in tests.", "Communities should replace books with screens.", "Reading has no connection to daily life."],
+          "answer": "A",
+          "explanation": "The sentence says books can help both individuals and communities."
+        },
+        {
+          "id": "r012-q07",
+          "type": "段落排序",
+          "question": "Which order best matches the information in the passages?",
+          "options": ["Rabat is chosen by UNESCO. → Students discuss why the city matters. → They suggest local reading ideas. → The celebration year starts on April 23, 2026.", "Students suggest local reading ideas. → Rabat is chosen by UNESCO. → The celebration year starts on April 23, 2026. → The city stops promoting literacy.", "The celebration year starts on April 23, 2026. → Rabat is chosen by UNESCO. → Students leave class. → UNESCO closes all book fairs.", "Rabat is chosen by UNESCO. → The city removes publishing houses. → Students stop reading. → The celebration year ends before it starts."],
+          "answer": "A",
+          "explanation": "This order follows the passage: recognition first, discussion next, local ideas after that, and the event note gives the start date."
+        },
+        {
+          "id": "r012-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "On what date does the celebration year start? Brief answer: Name one reading activity the students suggested.",
+          "options": ["April 23, 2026", "June 1, 2026", "October 8, 2026", "November 30, 2026"],
+          "answer": "A",
+          "sample_brief_answer": "One possible answer is a book exchange, a reading corner, or a family storytelling night.",
+          "explanation": "Passage B gives the date, and Passage A lists student ideas."
+        }
+      ]
+    },
+    {
+      "id": "r013",
+      "title": "Roman Telescope Ready for Its Next View",
+      "topic": "太空探索、工程進度、圖表閱讀",
+      "source_type": "官方資料改寫",
+      "source": "NASA Roman Space Telescope update; https://www.nasa.gov/missions/roman-space-telescope/nasas-roman-space-telescope-primary-mirror-gets-last-look/; accessed 2026-06-01",
+      "usage": "依 NASA 對 Roman 太空望遠鏡主鏡最終檢查的更新重寫短文與流程表，保留里程碑事實，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Ella read a space article about NASA's Nancy Grace Roman Space Telescope. Engineers completed a final inspection of the telescope's primary mirror at Goddard Space Flight Center on May 20 and 21. The mirror is 7.9 feet wide and helps collect and focus light from faraway objects. After this milestone, the team plans to ship the observatory to Kennedy Space Center in Florida in the coming weeks. Ella liked the idea that a long space mission depends on careful small checks first. She wrote in her journal that big discoveries often begin with quiet, patient engineering work."
+        },
+        {
+          "label": "Checklist",
+          "text": "Mission steps: 1. Final mirror inspection completed. 2. Observatory ships to Kennedy Space Center. 3. Launch preparations continue. 4. Roman begins sending back space views several months after launch."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r013-q01",
+          "type": "主旨題",
+          "question": "What is Passage A mainly about?",
+          "options": ["A telescope passed an important inspection before the next mission steps.", "Ella built a telescope in one day.", "NASA canceled all work on the Roman mission.", "The mirror was used to study oceans on Earth."],
+          "answer": "A",
+          "explanation": "The passage focuses on the completed inspection and what comes next."
+        },
+        {
+          "id": "r013-q02",
+          "type": "細節題",
+          "question": "How wide is the primary mirror mentioned in the passage?",
+          "options": ["7.9 feet", "2.4 inches", "21 feet", "79 feet"],
+          "answer": "A",
+          "explanation": "Passage A says the mirror is 7.9 feet wide."
+        },
+        {
+          "id": "r013-q03",
+          "type": "圖表閱讀題",
+          "question": "According to the checklist, what happens right after the final mirror inspection?",
+          "options": ["The observatory ships to Kennedy Space Center.", "Roman begins sending back space views immediately.", "The mission ends.", "The mirror returns to the classroom."],
+          "answer": "A",
+          "explanation": "Step 2 in the checklist is shipping the observatory to Kennedy Space Center."
+        },
+        {
+          "id": "r013-q04",
+          "type": "推論題",
+          "question": "Why did Ella write that big discoveries begin with patient engineering work?",
+          "options": ["She understood that careful preparation is necessary before space science can happen.", "She thought engineering was easier than reading.", "She wanted NASA to skip testing.", "She believed discoveries happen by accident only."],
+          "answer": "A",
+          "explanation": "Her comment shows she understood the value of careful preparation."
+        },
+        {
+          "id": "r013-q05",
+          "type": "字彙題",
+          "question": "What does \"milestone\" most likely mean in Passage A?",
+          "options": ["an important stage or achievement", "a kind of rocket fuel", "a dangerous mistake", "a classroom poster"],
+          "answer": "A",
+          "explanation": "\"Milestone\" means an important stage in a process."
+        },
+        {
+          "id": "r013-q06",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"Ella liked the idea that it depends on careful small checks first\"?",
+          "options": ["a long space mission", "the journal", "Florida", "one engineer"],
+          "answer": "A",
+          "explanation": "\"It\" refers to the long space mission."
+        },
+        {
+          "id": "r013-q07",
+          "type": "句意理解題",
+          "question": "What does the sentence \"big discoveries often begin with quiet, patient engineering work\" mean?",
+          "options": ["Important science results usually require careful preparation first.", "Space discoveries happen without planning.", "Only loud teams do useful work.", "Engineering and science have no connection."],
+          "answer": "A",
+          "explanation": "The sentence explains that careful engineering supports future discoveries."
+        },
+        {
+          "id": "r013-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Where will the observatory be shipped next? Brief answer: Why is the final inspection important?",
+          "options": ["Kennedy Space Center", "DAR Constitution Hall", "Rabat City Library", "the Moon"],
+          "answer": "A",
+          "sample_brief_answer": "The inspection is important because engineers must confirm the mirror is ready before launch preparations continue.",
+          "explanation": "Passage A names the next location and explains why the check matters."
         }
       ]
     }
