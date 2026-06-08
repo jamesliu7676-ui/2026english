@@ -310,3 +310,63 @@ py scripts\generate_practice_plan.py --student-id SAMPLE --start-date 2026-05-25
 2. 每週補題排程先跑 1-2 次後，檢查題目品質、時事題來源標記與重複率。
 3. 題庫達 120 題後，再調整抽題邏輯，加入主題篩選與題型篩選。
 4. 題庫達 200 題後，整理成學生練習版與教師答案版。
+
+## 2026-06-01 收工記錄
+
+本次完成：
+
+- 補充 `reading_tests/question_bank.json` 一批新題，新增 `r009`-`r013` 共 5 篇閱讀、40 題。
+- 新題主題涵蓋：NOAA 颶風季安全、Scripps National Spelling Bee、NASA 小行星 2024 YR4、UNESCO Rabat 世界圖書之都、NASA Roman 太空望遠鏡。
+- `reading_tests/collection_log.md` 已補上來源名稱、網址、查閱日期與使用方式。
+- 已將本批題庫更新提交並推送到 `origin/master`。
+- 最新 commit：`2f1e3ba Add weekly reading test batch for June 1`
+
+目前狀態：
+
+- Git 狀態：`master...origin/master`，目前工作樹乾淨。
+- `reading_tests` 題庫累計 10 篇、81 題。
+- 距離 200 題目標尚差 119 題。
+- 公開頁面可由 `https://jamesliu7676-ui.github.io/2026english/reading_tests/quiz.html` 進入。
+
+注意事項：
+
+- 本次本機執行器持續出現 `windows sandbox failed: spawn setup refresh`，因此未能用本地腳本重跑 JSON 驗證；題目格式與 ID 以人工檢查完成。
+- Git 在 Google Drive 環境下仍可能留下殘留 `git` 行程或 `.git/packed-refs.lock`；本次已清除後完成推送。
+
+下次建議：
+
+1. 再補 2-3 批閱讀題，把總題數先推到 120 題以上。
+2. 優先加入更多圖表題、段落排序題與雙文本比較題，避免題型集中在單篇問答。
+3. 找時間檢查 GitHub Pages 上 `quiz.html` 的實際題目載入與抽題表現。
+4. 若本機執行器問題持續，另外補一次 `question_bank.json` 的自動驗證。
+
+## 2026-06-08 收工記錄
+
+本次完成：
+
+- 已補充 `reading_tests/question_bank.json` 一批新題，新增 `r014`-`r018` 共 5 篇閱讀、40 題。
+- 新題主題涵蓋：WHO 青少年尼古丁產品風險、NOAA 太空天氣 G3 警報、ESA Smile 任務、NASA 夏季 STEM 活動、NASA 航空維修競賽。
+- `reading_tests/collection_log.md` 已補上來源名稱、網址、查閱日期與使用方式。
+- 已重新檢查 `question_bank.json`：JSON 可正常解析、閱讀文本共 15 篇、總題數 121 題、題目與文本 ID 皆無重複。
+
+目前狀態：
+
+- Git 狀態：`master...origin/master`，但目前有 3 個未提交檔案：
+  - `docs/project_dashboard.md`
+  - `reading_tests/collection_log.md`
+  - `reading_tests/question_bank.json`
+- `reading_tests` 題庫累計 15 篇、121 題。
+- 距離 200 題目標尚差 79 題。
+- 本次尚未 commit、push。
+
+注意事項：
+
+- 這批補題在先前自動化執行時曾遇到 `windows sandbox failed: spawn setup refresh`，當時無法直接寫檔；目前檔案內容已存在工作區，但尚未發佈到遠端。
+- `git diff --stat` 顯示本次主要變更為 3 檔、約 487 行新增；內容集中在閱讀題庫補充與收工紀錄。
+- 工作樹中的 CRLF 提示屬 Git 行尾轉換提醒，目前未見內容損壞跡象。
+
+下次建議：
+
+1. 先決定是否要將這批 `r014`-`r018` commit 並 push 到 `origin/master`。
+2. 若要繼續補題，再新增 2 批即可突破 200 題目標。
+3. 發佈前可再開 `reading_tests/quiz.html` 或 GitHub Pages 版本檢查抽題與顯示是否正常。

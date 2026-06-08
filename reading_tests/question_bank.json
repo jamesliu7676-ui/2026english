@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-01",
+  "version": "2026-06-08",
   "duplicate_policy": {
     "target_duplicate_rate": "below 5%",
     "method": "Each quiz draw avoids repeated question IDs in the same quiz and avoids recently shown IDs stored in the browser when enough unused questions are available."
@@ -860,6 +860,431 @@
           "answer": "A",
           "sample_brief_answer": "The inspection is important because engineers must confirm the mirror is ready before launch preparations continue.",
           "explanation": "Passage A names the next location and explains why the check matters."
+        }
+      ]
+    },
+    {
+      "id": "r014",
+      "title": "A School Talk on Nicotine Pouches",
+      "topic": "健康教育、青少年保護、公共政策",
+      "source_type": "官方資料改寫",
+      "source": "World Health Organization news release; https://www.who.int/news/item/29-05-2026-who-urges-governments-to-protect-young-people-from-addiction-to-tobacco-and-nicotine-products; accessed 2026-06-08",
+      "usage": "依 WHO 對青少年與尼古丁產品的警示重寫校園健康短文與重點公告，保留核心事實，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "At school assembly, Ms. Wu shared a health news update from the World Health Organization. She told students that at least 40 million children aged 13 to 15 around the world use tobacco products, and the use of e-cigarettes and nicotine pouches is rising among young people. Ms. Wu explained that nicotine pouches may look small and harmless, but nicotine can be highly addictive, especially for teenagers whose brains are still developing. She reminded students that bright packaging and sweet flavors are often used to make harmful products seem less dangerous. Her message was simple: if a product is designed to attract young people but can lead to addiction, students should think carefully and ask trusted adults for help."
+        },
+        {
+          "label": "Passage B",
+          "text": "Health Note: WHO urged governments to protect young people by banning flavored products, stopping advertising aimed at youth, and making indoor public places smoke- and vape-free."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r014-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Students learned why nicotine products can be risky for young people.", "Students were invited to sell health products at school.", "WHO asked students to design candy packaging.", "The assembly was mainly about math scores."],
+          "answer": "A",
+          "explanation": "Passage A focuses on the health warning about youth nicotine use."
+        },
+        {
+          "id": "r014-q02",
+          "type": "細節題",
+          "question": "According to Passage A, which age group is mentioned in the WHO update?",
+          "options": ["Children aged 13 to 15", "Adults aged 30 to 35", "Teachers over 50", "College students only"],
+          "answer": "A",
+          "explanation": "Passage A says at least 40 million children aged 13 to 15 use tobacco products."
+        },
+        {
+          "id": "r014-q03",
+          "type": "推論題",
+          "question": "Why did Ms. Wu warn students about bright packaging and sweet flavors?",
+          "options": ["Because they can make dangerous products seem appealing.", "Because schools only allow plain packaging.", "Because students should collect every package they see.", "Because flavors make products cheaper."],
+          "answer": "A",
+          "explanation": "The passage suggests these features are used to attract young people."
+        },
+        {
+          "id": "r014-q04",
+          "type": "字彙題",
+          "question": "What does \"addictive\" most likely mean in Passage A?",
+          "options": ["hard to stop using", "safe to use every day", "easy to share with friends", "made from paper"],
+          "answer": "A",
+          "explanation": "In context, addictive means something people can become dependent on."
+        },
+        {
+          "id": "r014-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"they\" refer to in \"they are still developing\"?",
+          "options": ["teenagers' brains", "trusted adults", "school assemblies", "public places"],
+          "answer": "A",
+          "explanation": "The sentence talks about teenagers whose brains are still developing."
+        },
+        {
+          "id": "r014-q06",
+          "type": "句意理解題",
+          "question": "What does Ms. Wu mean by saying students should \"think carefully and ask trusted adults for help\"?",
+          "options": ["Students should not make quick choices about risky products.", "Students should hide problems from teachers.", "Students should buy products first and ask later.", "Students should only trust advertisements."],
+          "answer": "A",
+          "explanation": "She means students should be cautious and seek guidance."
+        },
+        {
+          "id": "r014-q07",
+          "type": "多文本整合題",
+          "question": "Which action is supported by both passages?",
+          "options": ["Protecting young people from nicotine addiction", "Encouraging more product advertising", "Allowing flavored products in every shop", "Making all public places smoking areas"],
+          "answer": "A",
+          "explanation": "Passage A explains the risk, and Passage B lists protective actions."
+        },
+        {
+          "id": "r014-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which rule from Passage B would reduce youth exposure to these products the most at school? Brief answer: Why could this rule help students?",
+          "options": ["Stopping advertising aimed at youth", "Adding more flavors", "Making bigger packages", "Selling products at school events"],
+          "answer": "A",
+          "sample_brief_answer": "It could help because fewer students would be tempted by ads designed to attract them.",
+          "explanation": "Reducing youth-targeted advertising can lower temptation and normalizing effects."
+        }
+      ]
+    },
+    {
+      "id": "r015",
+      "title": "When Space Weather Reaches Earth",
+      "topic": "太空天氣、即時警報、公告閱讀",
+      "source_type": "官方資料改寫",
+      "source": "NOAA / NWS Space Weather Prediction Center alert; https://www.swpc.noaa.gov/news/strong-geomagnetic-storm-g3-watch-effect-04-05-june-utc; accessed 2026-06-08",
+      "usage": "依 NOAA 對 2026-06-04 至 06-05 UTC 的 G3 監測公告改寫科普短文與警報摘要，保留日期與原因，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Leo joined his school's astronomy club, so he paid attention when his teacher mentioned a space weather alert from NOAA. The notice said a strong geomagnetic storm watch, called G3, was in effect for June 4 and 5 in UTC time. Leo first imagined a normal thunderstorm, but his teacher explained that this kind of storm happens when energy from the Sun disturbs Earth's magnetic environment. She added that scientists expected three coronal mass ejections, or CMEs, to interact with Earth. Leo liked how the alert turned a difficult science term into something he could connect with the night sky and satellite technology."
+        },
+        {
+          "label": "Passage B",
+          "text": "Alert Summary: G3 watch in effect for 04-05 June (UTC). Cause: three CMEs expected to interact with Earth. Advice: stay tuned for updates."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r015-q01",
+          "type": "主旨題",
+          "question": "What is Passage A mainly about?",
+          "options": ["A student learned what a geomagnetic storm alert means.", "A class was canceled by heavy rain.", "Leo built a new satellite by himself.", "NOAA stopped studying space weather."],
+          "answer": "A",
+          "explanation": "The passage centers on Leo understanding the alert."
+        },
+        {
+          "id": "r015-q02",
+          "type": "細節題",
+          "question": "For which dates was the G3 watch in effect?",
+          "options": ["June 4-5 (UTC)", "June 1-2 (UTC)", "May 20-21 (UTC)", "September 1-30 (UTC)"],
+          "answer": "A",
+          "explanation": "Both passages state 04-05 June (UTC)."
+        },
+        {
+          "id": "r015-q03",
+          "type": "推論題",
+          "question": "Why did Leo first misunderstand the alert?",
+          "options": ["He connected the word \"storm\" with ordinary weather.", "He already knew too much about CMEs.", "He thought NOAA was a school club.", "He ignored the teacher's explanation."],
+          "answer": "A",
+          "explanation": "The passage says he first imagined a normal thunderstorm."
+        },
+        {
+          "id": "r015-q04",
+          "type": "字彙題",
+          "question": "What does \"interact\" most likely mean in Passage B?",
+          "options": ["affect each other", "move away forever", "become invisible", "arrive late to class"],
+          "answer": "A",
+          "explanation": "The CMEs were expected to affect Earth."
+        },
+        {
+          "id": "r015-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"this kind of storm\" refer to in Passage A?",
+          "options": ["a geomagnetic storm", "a school storm drill", "a rain cloud", "a science fair"],
+          "answer": "A",
+          "explanation": "It refers to the G3 geomagnetic storm watch."
+        },
+        {
+          "id": "r015-q06",
+          "type": "句意理解題",
+          "question": "What does the teacher mean by saying the alert was connected with \"the night sky and satellite technology\"?",
+          "options": ["Space weather can matter in real life, not only in textbooks.", "Satellites create all storms on Earth.", "Only club members can understand science words.", "The alert was about airplane tickets."],
+          "answer": "A",
+          "explanation": "She means the topic has real-world effects and applications."
+        },
+        {
+          "id": "r015-q07",
+          "type": "多文本整合題",
+          "question": "Which statement matches both passages?",
+          "options": ["The watch was related to activity coming from the Sun.", "The event lasted the whole summer.", "The alert said people should ignore updates.", "The storm was a local rainstorm near Leo's school."],
+          "answer": "A",
+          "explanation": "Passage A explains space weather from the Sun, and Passage B gives the CME cause."
+        },
+        {
+          "id": "r015-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "What was the main cause listed in Passage B? Brief answer: Why is \"stay tuned for updates\" a sensible suggestion?",
+          "options": ["Three CMEs expected to interact with Earth", "A school power failure", "Heavy city traffic", "A library closing"],
+          "answer": "A",
+          "sample_brief_answer": "It is sensible because scientific alerts can change as experts collect new information.",
+          "explanation": "Passage B names the cause directly, and alerts often need later updates."
+        }
+      ]
+    },
+    {
+      "id": "r016",
+      "title": "Smile Begins Its Journey",
+      "topic": "太空任務、國際合作、段落排序",
+      "source_type": "官方資料改寫",
+      "source": "European Space Agency video page; https://www.esa.int/ESA_Multimedia/Videos/2026/06/Smile_cleanroom_to_space; accessed 2026-06-08",
+      "usage": "依 ESA 對 Smile 任務發射與任務目標的官方說明改寫閱讀短文與時間線，保留發射日期與任務目的，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "In science class, Amy watched a short ESA video about a mission called Smile. She learned that Smile launched from Europe's Spaceport in French Guiana on May 19, 2026. The mission will study how the solar wind interacts with Earth's magnetosphere, a magnetic region around our planet. Amy liked the idea that scientists can learn about invisible space events by sending a spacecraft far above Earth. She wrote that the mission sounded important because space weather can affect the environment around our planet even when people cannot see it with their own eyes."
+        },
+        {
+          "label": "Passage B",
+          "text": "Mission Note: Smile is short for Solar wind Magnetosphere Ionosphere Link Explorer. It studies the connection between the Sun and Earth."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r016-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Amy learned about a new space mission and why it matters.", "Amy decided to become a bus driver.", "ESA ended all space weather research.", "The class was about book fairs in Africa."],
+          "answer": "A",
+          "explanation": "The passage focuses on Amy learning about Smile and its purpose."
+        },
+        {
+          "id": "r016-q02",
+          "type": "細節題",
+          "question": "When did Smile launch according to Passage A?",
+          "options": ["May 19, 2026", "June 4, 2026", "May 20, 2025", "April 23, 2026"],
+          "answer": "A",
+          "explanation": "Passage A gives the launch date directly."
+        },
+        {
+          "id": "r016-q03",
+          "type": "推論題",
+          "question": "Why did Amy describe the mission as important?",
+          "options": ["Because it helps scientists understand unseen space weather effects.", "Because it will open a new school library.", "Because it changes the rules of spelling contests.", "Because it teaches students to forecast rainstorms."],
+          "answer": "A",
+          "explanation": "She connected the mission to understanding invisible but important space events."
+        },
+        {
+          "id": "r016-q04",
+          "type": "字彙題",
+          "question": "What does \"interacts with\" most likely mean in Passage A?",
+          "options": ["acts on and responds to", "moves under the ocean", "becomes a school subject", "disappears completely"],
+          "answer": "A",
+          "explanation": "The phrase means the solar wind affects and responds to Earth's magnetic environment."
+        },
+        {
+          "id": "r016-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"it sounded important\"?",
+          "options": ["the Smile mission", "French Guiana", "science class", "Earth's weather report"],
+          "answer": "A",
+          "explanation": "\"It\" refers to the mission Amy just described."
+        },
+        {
+          "id": "r016-q06",
+          "type": "句意理解題",
+          "question": "What does the sentence about \"invisible space events\" mean?",
+          "options": ["Some important scientific processes cannot be seen directly but can still be studied.", "Scientists should only study things they can touch.", "Space missions are useful only for making videos.", "Amy thought the mission was imaginary."],
+          "answer": "A",
+          "explanation": "The sentence explains that science can investigate unseen phenomena."
+        },
+        {
+          "id": "r016-q07",
+          "type": "段落排序",
+          "question": "Which order best matches the information in the passages?",
+          "options": ["Smile launches on May 19, 2026. → Scientists study the Sun-Earth connection. → Amy thinks the mission matters because space weather has effects people cannot easily see.", "Amy writes a report first. → ESA cancels the mission. → The spacecraft launches years later.", "Scientists stop studying the magnetosphere. → Amy forgets the video. → The mission never gets a name.", "Earth sends a message to the Sun. → Amy wins a spelling bee. → ESA opens a museum."],
+          "answer": "A",
+          "explanation": "This order follows the launch fact, the mission goal, and Amy's reflection."
+        },
+        {
+          "id": "r016-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "What does the name Smile stand for? Brief answer: Why might this long name be useful to scientists?",
+          "options": ["Solar wind Magnetosphere Ionosphere Link Explorer", "Science Mission in Low Earth Orbit", "Sunlight Mapping International Lab Experiment", "Space Machine for Interplanetary Learning Events"],
+          "answer": "A",
+          "sample_brief_answer": "It is useful because the full name tells scientists what parts of space the mission studies.",
+          "explanation": "Passage B gives the full name and shows its scientific focus."
+        }
+      ]
+    },
+    {
+      "id": "r017",
+      "title": "NASA Ideas for Summer Learning",
+      "topic": "STEM 學習、活動資訊、圖表閱讀",
+      "source_type": "官方資料改寫",
+      "source": "NASA STEM article; https://www.nasa.gov/learning-resources/space-out-this-summer-with-variety-of-nasa-stem-activities/; accessed 2026-06-08",
+      "usage": "依 NASA 2026 夏季 STEM 活動文章改寫學生版閱讀與活動清單，保留日期、年齡與活動方向，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Jenny wanted to make better use of her summer, so she read a NASA article about STEM activities for students. One project that caught her eye was the online Stardance Challenge, which invites students ages 13 to 18 to build creative projects with real NASA mission data. The article also introduced virtual career events where students could learn about robotics, AI, aircraft maintenance, and other jobs that support NASA missions. Jenny was especially interested in the idea of citizen science because it lets people use a phone or computer to join real research projects on their own schedule. She realized that summer learning did not have to mean only reading textbooks. It could also mean building, exploring, and asking better questions."
+        },
+        {
+          "label": "Activity List",
+          "text": "Key details: Stardance Challenge runs from June 1 to Sept. 30 for students ages 13-18. NASA Career Technical Education Day at Goddard was on Tuesday, June 2. Virtual Career Connection: Aviation Technology and Maintenance was on Thursday, June 11."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r017-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Jenny found several ways students can learn through NASA activities in summer.", "Jenny spent summer doing nothing at all.", "NASA only offered one activity for professional pilots.", "The article was mainly about school lunch menus."],
+          "answer": "A",
+          "explanation": "The passage is about Jenny discovering several summer STEM opportunities."
+        },
+        {
+          "id": "r017-q02",
+          "type": "細節題",
+          "question": "Which age group can join the Stardance Challenge?",
+          "options": ["Students ages 13 to 18", "Children ages 5 to 8", "Adults over 30 only", "Teachers only"],
+          "answer": "A",
+          "explanation": "Both passages say the challenge is for students ages 13-18."
+        },
+        {
+          "id": "r017-q03",
+          "type": "圖表閱讀題",
+          "question": "According to the activity list, which event happened on June 11?",
+          "options": ["Virtual Career Connection: Aviation Technology and Maintenance", "The start of the Stardance Challenge", "NASA Career Technical Education Day at Goddard", "The end of all summer activities"],
+          "answer": "A",
+          "explanation": "The activity list gives June 11 for the aviation technology event."
+        },
+        {
+          "id": "r017-q04",
+          "type": "推論題",
+          "question": "Why was Jenny especially interested in citizen science?",
+          "options": ["Because it allows flexible participation in real research.", "Because it requires students to travel into space.", "Because it replaces every school subject.", "Because it bans the use of computers."],
+          "answer": "A",
+          "explanation": "The passage says people can join on their own schedule with a phone or computer."
+        },
+        {
+          "id": "r017-q05",
+          "type": "字彙題",
+          "question": "What does \"creative projects\" most likely mean in Passage A?",
+          "options": ["original things students design or build", "strict spelling tests only", "closed museum exhibits", "government laws"],
+          "answer": "A",
+          "explanation": "The projects include building things with ideas and imagination."
+        },
+        {
+          "id": "r017-q06",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"It could also mean building, exploring, and asking better questions\"?",
+          "options": ["summer learning", "NASA mission data", "the phone", "the June 11 event"],
+          "answer": "A",
+          "explanation": "\"It\" refers to summer learning."
+        },
+        {
+          "id": "r017-q07",
+          "type": "句意理解題",
+          "question": "What does Jenny mean by saying summer learning did not have to mean only reading textbooks?",
+          "options": ["Learning can happen through hands-on activities and exploration too.", "Textbooks should never be used again.", "Summer should be canceled for students.", "Only NASA workers can keep learning."],
+          "answer": "A",
+          "explanation": "She means learning can be active and practical, not only book-based."
+        },
+        {
+          "id": "r017-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which activity would best fit a student interested in aircraft careers? Brief answer: Why?",
+          "options": ["Virtual Career Connection: Aviation Technology and Maintenance", "A family storytelling night", "A bus schedule notice", "A museum flash rule"],
+          "answer": "A",
+          "sample_brief_answer": "It fits because the event focuses on aircraft mechanics, technicians, and aviation career paths.",
+          "explanation": "The activity list directly connects that event to aviation technology and maintenance."
+        }
+      ]
+    },
+    {
+      "id": "r018",
+      "title": "Safety Glasses as a Wingman",
+      "topic": "航空創新、學生競賽、職涯探索",
+      "source_type": "官方資料改寫",
+      "source": "NASA aeronautics competition article; https://www.nasa.gov/aeronautics/nasa-announces-winners-in-university-aeronautics-competition/; accessed 2026-06-08",
+      "usage": "依 NASA 2026 Gateways to Blue Skies 競賽結果改寫航空創新短文與活動摘要，保留得獎隊伍、地點與構想，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Eric read a NASA article about the 2026 Gateways to Blue Skies Competition. He learned that Team WINGMAN from South Dakota State University took first place in a contest about improving aircraft maintenance. Their idea used augmented reality safety glasses with voice-controlled manuals, automatic documentation, and photo recognition to help mechanics during routine work and small repairs. Eric liked the idea because it showed that aviation safety is not only about pilots in the sky. It also depends on smart tools and careful workers on the ground. After reading, he began to see aircraft maintenance as a field where technology and safety problem-solving meet."
+        },
+        {
+          "label": "Event Note",
+          "text": "Forum facts: The 2026 Gateways to Blue Skies Forum was held May 18 and 19 at NASA's Langley Research Center in Hampton, Virginia. Students could network with NASA and industry experts, tour the center, and explore possible careers."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r018-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Eric learned how a student team's invention could improve aircraft maintenance.", "Eric bought safety glasses for his classroom.", "NASA ended all aviation research programs.", "The article was mainly about weather forecasts."],
+          "answer": "A",
+          "explanation": "The passage centers on the winning idea and what Eric learned from it."
+        },
+        {
+          "id": "r018-q02",
+          "type": "細節題",
+          "question": "Which team won first place according to Passage A?",
+          "options": ["Team WINGMAN from South Dakota State University", "A team from Rio de Janeiro", "Hack Club Stardance", "The City Science Museum team"],
+          "answer": "A",
+          "explanation": "Passage A names Team WINGMAN as the first-place team."
+        },
+        {
+          "id": "r018-q03",
+          "type": "推論題",
+          "question": "Why did Eric become more interested in aircraft maintenance after reading the article?",
+          "options": ["He saw it as a field that combines technology with safety problem-solving.", "He wanted to avoid every kind of science work.", "He thought maintenance needed no training.", "He believed only pilots matter in aviation."],
+          "answer": "A",
+          "explanation": "The passage says he saw maintenance as a meeting point of technology and safety."
+        },
+        {
+          "id": "r018-q04",
+          "type": "字彙題",
+          "question": "What does \"routine\" most likely mean in Passage A?",
+          "options": ["regular and repeated", "dangerous and rare", "hidden from workers", "made for tourists"],
+          "answer": "A",
+          "explanation": "Routine work means regular daily work."
+        },
+        {
+          "id": "r018-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"their idea\" refer to in Passage A?",
+          "options": ["the WINGMAN team's safety-glasses concept", "Eric's homework", "the weather at the forum", "the school library plan"],
+          "answer": "A",
+          "explanation": "\"Their idea\" refers to the first-place team's invention."
+        },
+        {
+          "id": "r018-q06",
+          "type": "句意理解題",
+          "question": "What does Eric mean by saying aviation safety is not only about pilots in the sky?",
+          "options": ["People and tools on the ground are also important to safe flight.", "Pilots are not needed anymore.", "Only ground workers should make decisions.", "Safety has nothing to do with technology."],
+          "answer": "A",
+          "explanation": "He means safe aviation depends on many roles, including maintenance."
+        },
+        {
+          "id": "r018-q07",
+          "type": "多文本整合題",
+          "question": "Which statement is supported by both passages?",
+          "options": ["The competition connected student ideas with real aviation careers.", "The event took place at a museum in Morocco.", "The winning team studied nicotine products.", "Students were not allowed to meet experts."],
+          "answer": "A",
+          "explanation": "Passage A explains the useful invention, and Passage B shows the forum included career exploration."
+        },
+        {
+          "id": "r018-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Where was the forum held? Brief answer: Give one reason the forum could help students plan a future career.",
+          "options": ["NASA's Langley Research Center in Hampton, Virginia", "Europe's Spaceport in French Guiana", "DAR Constitution Hall", "A school lunchroom"],
+          "answer": "A",
+          "sample_brief_answer": "It could help because students met experts, toured the center, and learned about possible jobs.",
+          "explanation": "Passage B gives the location and explains the career-related opportunities."
         }
       ]
     }

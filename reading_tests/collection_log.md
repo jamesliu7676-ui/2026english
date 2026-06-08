@@ -1,5 +1,37 @@
 # 題庫收集紀錄
 
+## 2026-06-08
+
+本次新增 5 篇英文短篇閱讀測驗，全部依已查證的官方資料改寫為學生可讀版本，未直接複製新聞原文或外部題目。
+
+### 已新增文本
+
+| ID | 標題 | 主題 | 題數 | 來源 |
+|---|---|---|---:|---|
+| r014 | A School Talk on Nicotine Pouches | 健康教育、青少年保護、公共政策 | 8 | WHO 改寫 |
+| r015 | When Space Weather Reaches Earth | 太空天氣、即時警報、公告閱讀 | 8 | NOAA 改寫 |
+| r016 | Smile Begins Its Journey | 太空任務、國際合作、段落排序 | 8 | ESA 改寫 |
+| r017 | NASA Ideas for Summer Learning | STEM 學習、活動資訊、圖表閱讀 | 8 | NASA 改寫 |
+| r018 | Safety Glasses as a Wingman | 航空創新、學生競賽、職涯探索 | 8 | NASA 改寫 |
+
+### 查證來源與使用方式
+
+| ID | 來源名稱 | 網址 | 查閱日期 | 使用方式 |
+|---|---|---|---|---|
+| r014 | WHO urges governments to protect young people from addiction to tobacco and nicotine products | https://www.who.int/news/item/29-05-2026-who-urges-governments-to-protect-young-people-from-addiction-to-tobacco-and-nicotine-products | 2026-06-08 | 依 WHO 對青少年尼古丁產品風險與保護措施的說明重寫校園健康短文與公告。 |
+| r015 | Strong Geomagnetic Storm (G3) Watch In Effect for 04-05 June (UTC) | https://www.swpc.noaa.gov/news/strong-geomagnetic-storm-g3-watch-effect-04-05-june-utc | 2026-06-08 | 依 NOAA 公告重寫太空天氣警報短文，保留日期、G3 等級與三次 CME 的關鍵事實。 |
+| r016 | Smile: cleanroom to space | https://www.esa.int/ESA_Multimedia/Videos/2026/06/Smile_cleanroom_to_space | 2026-06-08 | 依 ESA 對 Smile 任務的官方說明重寫任務介紹與重點摘要。 |
+| r017 | Space Out This Summer with Variety of NASA STEM Activities | https://www.nasa.gov/learning-resources/space-out-this-summer-with-variety-of-nasa-stem-activities/ | 2026-06-08 | 依 NASA 夏季 STEM 活動文章重寫學生版閱讀與活動清單，保留年齡、日期與活動方向。 |
+| r018 | NASA Announces Winners in University Aeronautics Competition | https://www.nasa.gov/aeronautics/nasa-announces-winners-in-university-aeronautics-competition/ | 2026-06-08 | 依 NASA 競賽報導重寫航空維修創新閱讀短文與活動資訊，保留得獎隊伍、地點與構想。 |
+
+### 本次新增題數
+
+- 新增閱讀文本：5 篇
+- 新增題目：40 題
+- 題型覆蓋：主旨題、細節題、推論題、字彙題、代名詞指涉題、句意理解題、多文本整合題、圖表閱讀題、段落排序、混合題：選擇 + 簡答
+- 題庫總數：15 篇、121 題
+- 距離 200 題目標：尚差 79 題
+
 ## 2026-06-01
 
 本次新增 5 篇英文短篇閱讀測驗，全部依已查證的官方資料重寫為學生可讀版本，未直接複製新聞原文或外部題目。
