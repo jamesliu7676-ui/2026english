@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-08",
+  "version": "2026-07-20",
   "duplicate_policy": {
     "target_duplicate_rate": "below 5%",
     "method": "Each quiz draw avoids repeated question IDs in the same quiz and avoids recently shown IDs stored in the browser when enough unused questions are available."
@@ -1285,6 +1285,2556 @@
           "answer": "A",
           "sample_brief_answer": "It could help because students met experts, toured the center, and learned about possible jobs.",
           "explanation": "Passage B gives the location and explains the career-related opportunities."
+        }
+      ]
+    },
+    {
+      "id": "r019",
+      "title": "A Grant for Future Space Research",
+      "topic": "高等教育、太空研究、STEM 資源",
+      "source_type": "官方資料改寫",
+      "source": "NASA M-STAR article; https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/murep/nasa-award-boosts-space-technology-research-capabilities/; accessed 2026-06-15",
+      "usage": "依 NASA 2026-06-11 的 M-STAR 資助公告改寫學生版閱讀與說明，保留申請截止時間、研究方向與主管單位，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Maya read a NASA notice about a program called M-STAR. The application window opened on June 11, 2026, and will stay open until 11:59 p.m. EDT on Aug. 11. NASA says the program supports academic research and technology development connected to the Moon, Mars, and deep space. Eligible colleges and universities are encouraged to strengthen their science and engineering abilities, involve more teachers and students in aerospace research, and become more competitive for future research awards. Maya liked the idea because she saw that space exploration also depends on classrooms, labs, and long-term training on Earth."
+        },
+        {
+          "label": "Program Note",
+          "text": "M-STAR is administered by NASA's Office of STEM Engagement and supports the agency's Space Technology Mission Directorate."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r019-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["NASA opened a funding opportunity to support future space research and training.", "NASA closed all university space programs for the year.", "Maya decided to travel to Mars next month.", "The passage is mainly about a sports competition."],
+          "answer": "A",
+          "explanation": "The passage focuses on the M-STAR opportunity and what it supports."
+        },
+        {
+          "id": "r019-q02",
+          "type": "細節題",
+          "question": "When does the M-STAR application window close according to Passage A?",
+          "options": ["At 11:59 p.m. EDT on Aug. 11, 2026", "On June 11, 2026 at noon", "At the end of 2030", "On May 19, 2026"],
+          "answer": "A",
+          "explanation": "Passage A gives the closing time and date directly."
+        },
+        {
+          "id": "r019-q03",
+          "type": "推論題",
+          "question": "Why did Maya connect the program to classrooms and labs on Earth?",
+          "options": ["She understood that space exploration needs trained people and research before missions happen.", "She thought NASA was ending all space travel.", "She wanted schools to stop teaching science.", "She believed only astronauts can help NASA."],
+          "answer": "A",
+          "explanation": "Her comment shows she saw preparation and research on Earth as part of space exploration."
+        },
+        {
+          "id": "r019-q04",
+          "type": "字彙題",
+          "question": "What does \"competitive\" most likely mean in Passage A?",
+          "options": ["better able to succeed against others", "angry about losing", "ready to cancel a class", "hidden from the public"],
+          "answer": "A",
+          "explanation": "The sentence means institutions can improve their chances of winning future awards."
+        },
+        {
+          "id": "r019-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"she saw that it also depends on classrooms\"?",
+          "options": ["space exploration", "the application window", "Aug. 11", "Maya's homework"],
+          "answer": "A",
+          "explanation": "\"It\" refers to space exploration."
+        },
+        {
+          "id": "r019-q06",
+          "type": "句意理解題",
+          "question": "What does the sentence about \"the Moon, Mars, and deep space\" show?",
+          "options": ["The program is linked to long-term NASA exploration goals.", "The program only pays for school lunches.", "The program is only for weather reports.", "The program has nothing to do with technology."],
+          "answer": "A",
+          "explanation": "Those destinations show the research is tied to major exploration goals."
+        },
+        {
+          "id": "r019-q07",
+          "type": "多文本整合題",
+          "question": "Which statement is supported by both passages?",
+          "options": ["NASA connected education work with its space technology mission.", "M-STAR was created by ESA in Tenerife.", "The program is only for high school sports teams.", "The notice said students should ignore research careers."],
+          "answer": "A",
+          "explanation": "Passage A explains the research purpose, and Passage B names the NASA offices behind it."
+        },
+        {
+          "id": "r019-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which NASA office administers M-STAR? Brief answer: Why might that office be involved in this program?",
+          "options": ["NASA's Office of STEM Engagement", "The school library office", "The city bus office", "The museum ticket office"],
+          "answer": "A",
+          "sample_brief_answer": "That office helps connect education, students, and research opportunities, so it fits the program's goals.",
+          "explanation": "Passage B gives the office name, and the program focuses on research and student engagement."
+        }
+      ]
+    },
+    {
+      "id": "r020",
+      "title": "A Day for Technical Careers",
+      "topic": "職涯探索、技職教育、NASA 活動",
+      "source_type": "官方資料改寫",
+      "source": "NASA Langley article; https://www.nasa.gov/centers-and-facilities/langley/nasas-career-technical-education-day-highlights-technical-careers/; accessed 2026-06-15",
+      "usage": "依 NASA 2026-06-11 的 Career Technical Education Day 報導改寫校園職涯閱讀，保留地點、參與學生數與技術職務重點，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Kevin thought NASA jobs were mostly for astronauts and engineers. Then he read about Career Technical Education Day at NASA's Langley Research Center in Hampton, Virginia. At the event, 100 high school and community college students from Virginia and North Carolina explored technical career paths through talks and hands-on activities. Kevin learned that technicians help operate wind tunnels, build parts in fabrication shops, and use electronics skills to test important systems. After reading, he realized that NASA also needs people who like practical problem-solving and skilled hands-on work."
+        },
+        {
+          "label": "Event Note",
+          "text": "Students joined demonstrations such as robotics activities and heard speakers explain how technical classes can lead to real NASA jobs."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r020-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Kevin learned that NASA includes many technical careers, not only famous space jobs.", "Kevin decided to stop studying after one event.", "NASA canceled its technical programs.", "The event was mainly about cooking and music."],
+          "answer": "A",
+          "explanation": "The passage shows Kevin changing his idea about NASA careers."
+        },
+        {
+          "id": "r020-q02",
+          "type": "細節題",
+          "question": "How many students attended the event according to Passage A?",
+          "options": ["100", "23", "6", "2030"],
+          "answer": "A",
+          "explanation": "Passage A states that 100 students attended."
+        },
+        {
+          "id": "r020-q03",
+          "type": "推論題",
+          "question": "Why did the event probably include hands-on activities?",
+          "options": ["To help students see what technical work feels like in real life.", "To replace every science class in school forever.", "To keep students away from NASA workers.", "To test only their spelling ability."],
+          "answer": "A",
+          "explanation": "Hands-on activities help students understand practical technical work."
+        },
+        {
+          "id": "r020-q04",
+          "type": "字彙題",
+          "question": "What does \"practical\" most likely mean in Passage A?",
+          "options": ["useful in real work situations", "full of mystery", "very expensive", "easy to forget"],
+          "answer": "A",
+          "explanation": "The word describes problem-solving that can be used in real tasks."
+        },
+        {
+          "id": "r020-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"they\" refer to in \"they help operate wind tunnels\"?",
+          "options": ["technicians", "astronauts", "students from one class", "the wind tunnels"],
+          "answer": "A",
+          "explanation": "\"They\" refers to technicians."
+        },
+        {
+          "id": "r020-q06",
+          "type": "句意理解題",
+          "question": "What does Kevin mean by saying NASA needs people who like skilled hands-on work?",
+          "options": ["Important NASA work includes making, testing, and fixing things carefully.", "Only astronauts are useful at NASA.", "NASA jobs do not need training.", "Technical workers never solve problems."],
+          "answer": "A",
+          "explanation": "He means technical skills are valuable and necessary in NASA missions."
+        },
+        {
+          "id": "r020-q07",
+          "type": "多文本整合題",
+          "question": "Which statement is supported by both passages?",
+          "options": ["The event helped students connect school learning with future technical jobs.", "The event was held in the Mojave Desert.", "Only college professors were invited.", "The day focused on library book returns."],
+          "answer": "A",
+          "explanation": "Passage A describes technical roles, and Passage B says speakers linked classes to NASA jobs."
+        },
+        {
+          "id": "r020-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Where was the event held? Brief answer: Name one activity that could help students imagine a future job there.",
+          "options": ["NASA's Langley Research Center in Hampton, Virginia", "A copper mine in Mexico", "A bookstore in Rabat", "Europe's Spaceport in French Guiana"],
+          "answer": "A",
+          "sample_brief_answer": "A robotics demonstration could help because students can see technical skills in action.",
+          "explanation": "Passage A gives the location, and Passage B mentions demonstrations."
+        }
+      ]
+    },
+    {
+      "id": "r021",
+      "title": "Clues Hidden in Desert Rocks",
+      "topic": "地球科學、礦物探測、實地調查",
+      "source_type": "官方資料改寫",
+      "source": "NASA Earth Science article; https://www.nasa.gov/science-research/earth-science/nasa-usgs-scientists-go-rock-hounding-in-californias-high-desert/; accessed 2026-06-15",
+      "usage": "依 NASA 與 USGS 的 2026-06-11 地質調查報導改寫科普閱讀，保留 Barstow、topaz、porphyry copper 與礦物用途等關鍵事實，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "During science reading time, Olivia learned about a team of geologists working near Barstow, California. A NASA sensor on an airplane had detected a mineral signal, so scientists from NASA's Jet Propulsion Laboratory and the U.S. Geological Survey went into the Mojave Desert to investigate. They were especially interested in topaz because it can be a clue to porphyry copper deposits hidden underground. These deposits form when magma and hot water change the surrounding rock. Olivia thought it was exciting that scientists could combine high-flying technology with boots-on-the-ground fieldwork to search for evidence."
+        },
+        {
+          "label": "Fact Box",
+          "text": "Copper is the third most used metal in the world after steel and aluminum. Porphyry copper deposits may also contain molybdenum and tellurium, which are used in steelmaking and solar panels."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r021-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Scientists used aircraft data and fieldwork to investigate a possible mineral clue in the desert.", "Olivia bought jewelry made of topaz.", "The passage is mainly about city bus schedules.", "NASA stopped using technology in Earth science."],
+          "answer": "A",
+          "explanation": "The passage centers on how scientists investigated the mineral signal."
+        },
+        {
+          "id": "r021-q02",
+          "type": "細節題",
+          "question": "Which mineral were the scientists especially interested in?",
+          "options": ["topaz", "gold", "salt", "ice"],
+          "answer": "A",
+          "explanation": "Passage A says they were especially interested in topaz."
+        },
+        {
+          "id": "r021-q03",
+          "type": "圖表閱讀題",
+          "question": "According to the Fact Box, which metal is used more than copper?",
+          "options": ["steel", "topaz", "tellurium", "molybdenum"],
+          "answer": "A",
+          "explanation": "The Fact Box says copper is third after steel and aluminum."
+        },
+        {
+          "id": "r021-q04",
+          "type": "推論題",
+          "question": "Why did Olivia find the investigation exciting?",
+          "options": ["It combined advanced tools with real field exploration.", "It proved that minerals can only be found by luck.", "It showed planes should never be used in science.", "It was mainly about reading novels in class."],
+          "answer": "A",
+          "explanation": "She liked the connection between technology and fieldwork."
+        },
+        {
+          "id": "r021-q05",
+          "type": "字彙題",
+          "question": "What does \"clue\" most likely mean in Passage A?",
+          "options": ["a sign that helps people find or understand something", "a kind of school lunch", "a broken machine part", "a dangerous storm"],
+          "answer": "A",
+          "explanation": "Topaz is described as a sign that may point to another deposit."
+        },
+        {
+          "id": "r021-q06",
+          "type": "代名詞指涉題",
+          "question": "What does \"they\" refer to in \"they were especially interested in topaz\"?",
+          "options": ["the scientists", "the solar panels", "the rocks underground", "the airplanes"],
+          "answer": "A",
+          "explanation": "\"They\" refers to the scientists in the team."
+        },
+        {
+          "id": "r021-q07",
+          "type": "句意理解題",
+          "question": "What does the phrase \"boots-on-the-ground fieldwork\" suggest?",
+          "options": ["Scientists had to visit the site in person to collect evidence.", "The team only watched a video from school.", "No one was allowed to touch any rocks.", "All the work happened inside a museum."],
+          "answer": "A",
+          "explanation": "The phrase means scientists physically went to the site to investigate."
+        },
+        {
+          "id": "r021-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which organization worked with NASA's Jet Propulsion Laboratory on this investigation? Brief answer: Why might scientists still need field samples after a sensor finds a signal?",
+          "options": ["The U.S. Geological Survey", "The school volleyball team", "The World Health Organization", "The city transport office"],
+          "answer": "A",
+          "sample_brief_answer": "They need field samples to check whether the signal really matches the rocks underground.",
+          "explanation": "Passage A names the USGS and shows that scientists wanted more evidence."
+        }
+      ]
+    },
+    {
+      "id": "r022",
+      "title": "ESA Plans for New Discoveries",
+      "topic": "太空科學、國際合作、委員會決策",
+      "source_type": "官方資料改寫",
+      "source": "ESA science programme article; https://www.esa.int/Science_Exploration/Space_Science/ESA_science_missions_get_green_light_for_new_discoveries; accessed 2026-06-15",
+      "usage": "依 ESA 2026-06-11 的 Science Programme 更新改寫閱讀與事實表，保留 Tenerife 會議、23 個會員國、Arrakihs 與任務數量，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "On June 10 and 11, 2026, representatives from European Space Agency member states met in Tenerife to discuss the future of ESA's Science Programme. They decided to extend current missions and to adopt a new fast-class mission called Arrakihs. The committee includes representatives from ESA's 23 member states, so each country can help shape important scientific decisions. Jenny thought the meeting sounded important because it was not only about one spacecraft. It was also about planning what kinds of discoveries Europe wants to support in the 2030s and beyond."
+        },
+        {
+          "label": "Program Facts",
+          "text": "ESA leads or co-leads 10 active space science missions and is involved in 6 more led by international partners."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r022-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["ESA member states met to make important decisions about future space science work.", "The passage is only about a vacation in Tenerife.", "ESA stopped all science missions in 2026.", "Jenny planned a school lunch survey."],
+          "answer": "A",
+          "explanation": "The passage focuses on the meeting and its major decisions."
+        },
+        {
+          "id": "r022-q02",
+          "type": "細節題",
+          "question": "How many ESA member states are mentioned in Passage A?",
+          "options": ["23", "10", "6", "100"],
+          "answer": "A",
+          "explanation": "Passage A states that ESA has 23 member states in the committee."
+        },
+        {
+          "id": "r022-q03",
+          "type": "多文本整合題",
+          "question": "Which statement is supported by both passages?",
+          "options": ["ESA already runs many science missions while still planning new ones.", "ESA works only with one country.", "The committee met to discuss bus routes in California.", "All ESA missions are finished now."],
+          "answer": "A",
+          "explanation": "Passage A talks about new planning, and Passage B shows ESA already has many active missions."
+        },
+        {
+          "id": "r022-q04",
+          "type": "推論題",
+          "question": "Why did Jenny think the meeting was important?",
+          "options": ["It could influence scientific work for many years, not just one project.", "It decided only what books students should read.", "It was mainly about weather on one day.", "It had no effect on future missions."],
+          "answer": "A",
+          "explanation": "She noticed the decisions would guide science in the 2030s and beyond."
+        },
+        {
+          "id": "r022-q05",
+          "type": "字彙題",
+          "question": "What does \"shape\" most likely mean in Passage A?",
+          "options": ["influence or help form", "draw with a pencil", "hide from cameras", "cancel without discussion"],
+          "answer": "A",
+          "explanation": "Each country can help influence major decisions."
+        },
+        {
+          "id": "r022-q06",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"it was also about planning\"?",
+          "options": ["the meeting", "one country", "the island weather", "a classroom test"],
+          "answer": "A",
+          "explanation": "\"It\" refers to the meeting Jenny read about."
+        },
+        {
+          "id": "r022-q07",
+          "type": "句意理解題",
+          "question": "What does the phrase \"the 2030s and beyond\" suggest?",
+          "options": ["The decisions were meant to have long-term effects.", "The mission would end the next morning.", "Only one week of science was planned.", "The committee did not think about the future."],
+          "answer": "A",
+          "explanation": "The phrase shows long-range planning."
+        },
+        {
+          "id": "r022-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which new fast-class mission was adopted at the meeting? Brief answer: Why might countries want equal say in these decisions?",
+          "options": ["Arrakihs", "Smile", "Roman", "Stardance"],
+          "answer": "A",
+          "sample_brief_answer": "Because the missions use shared resources and represent scientific goals across many countries.",
+          "explanation": "Passage A names Arrakihs and explains that each member state can help shape decisions."
+        }
+      ]
+    },
+    {
+      "id": "r023",
+      "title": "Arrakihs Looks for Hidden Halos",
+      "topic": "天文學、星系形成、太空任務",
+      "source_type": "官方資料改寫",
+      "source": "ESA Arrakihs article; https://www.esa.int/Science_Exploration/Space_Science/ESA_adopts_galactic_archaeology_mission_Arrakihs; accessed 2026-06-15",
+      "usage": "依 ESA 2026-06-10 的 Arrakihs 任務文章改寫太空科普閱讀，保留任務名稱全稱、採納意義、2030 前發射目標與 2022 選任時間，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "ESA has adopted a mission called Arrakihs, which is planned for launch by the end of 2030. The mission will study the faint light around nearby galaxy haloes so scientists can better understand how galaxies form and evolve. Its name is short for Analysis of Resolved Remnants of Accreted galaxies as a Key Instrument for Halo Surveys. Kevin found the mission interesting because it tries to study parts of galaxies that people usually do not imagine when they picture bright stars and spiral shapes. He also learned that adoption means the study phase is finished and ESA is ready to build and test the spacecraft."
+        },
+        {
+          "label": "Timeline Note",
+          "text": "Arrakihs was selected in November 2022, adopted at the June 10-11, 2026 committee meeting, and is planned to launch by the end of 2030."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r023-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Arrakihs is a new ESA mission that will study hard-to-see galaxy haloes.", "The passage is mainly about school sports practice.", "ESA decided to stop observing galaxies.", "Kevin built a new telescope at home."],
+          "answer": "A",
+          "explanation": "The passage focuses on the Arrakihs mission and its purpose."
+        },
+        {
+          "id": "r023-q02",
+          "type": "細節題",
+          "question": "By when is Arrakihs planned to launch?",
+          "options": ["By the end of 2030", "By the end of 2022", "On June 11, 2026", "Next week"],
+          "answer": "A",
+          "explanation": "Passage A says the mission is planned for launch by the end of 2030."
+        },
+        {
+          "id": "r023-q03",
+          "type": "推論題",
+          "question": "Why did Kevin find the mission interesting?",
+          "options": ["It studies parts of galaxies that are usually overlooked in simple pictures.", "It promised to cancel all future space missions.", "It was only about buying brighter cameras.", "It focused on bus stops and road maps."],
+          "answer": "A",
+          "explanation": "He liked that the mission studies hidden or faint parts of galaxies."
+        },
+        {
+          "id": "r023-q04",
+          "type": "字彙題",
+          "question": "What does \"faint\" most likely mean in Passage A?",
+          "options": ["not bright and hard to see", "full of loud sound", "very fast-moving", "made of metal only"],
+          "answer": "A",
+          "explanation": "The mission studies light that is hard to see clearly."
+        },
+        {
+          "id": "r023-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"He also learned that it means\"?",
+          "options": ["adoption", "the galaxy halo", "the bright stars", "November 2022"],
+          "answer": "A",
+          "explanation": "\"It\" refers to the word adoption in the mission process."
+        },
+        {
+          "id": "r023-q06",
+          "type": "句意理解題",
+          "question": "What does the sentence about people imagining \"bright stars and spiral shapes\" suggest?",
+          "options": ["Many people picture only the obvious parts of galaxies, not the hidden halo around them.", "Galaxies do not have any hidden parts at all.", "Scientists are no longer interested in stars.", "Kevin thought space should be drawn only in black and white."],
+          "answer": "A",
+          "explanation": "The sentence contrasts common images with the mission's less obvious target."
+        },
+        {
+          "id": "r023-q07",
+          "type": "段落排序",
+          "question": "Which order matches the timeline in the passages?",
+          "options": ["Selected in November 2022 → adopted in June 2026 → planned launch by the end of 2030", "Planned launch by the end of 2030 → selected in November 2022 → adopted in June 2026", "Adopted in June 2026 → selected in November 2022 → launch canceled", "Selected in November 2022 → launched the same day → adopted years later"],
+          "answer": "A",
+          "explanation": "Timeline Note gives the order clearly."
+        },
+        {
+          "id": "r023-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "What does Arrakihs stand for? Brief answer: Why can a long mission name still be useful?",
+          "options": ["Analysis of Resolved Remnants of Accreted galaxies as a Key Instrument for Halo Surveys", "A Rocket Ready to Race Across Key Interstellar Highways", "Astronomy Research Route for Kids in Space", "A Real Robot for Airplane Repair in High Schools"],
+          "answer": "A",
+          "sample_brief_answer": "It is useful because the full name tells scientists what the mission studies and why it matters.",
+          "explanation": "Passage A gives the full name and shows the mission's scientific focus."
+        }
+      ]
+    },
+    {
+      "id": "r024",
+      "title": "Arthur Arrives on Satellite Images",
+      "topic": "天氣安全、衛星影像、公共資訊",
+      "source_type": "官方資料改寫",
+      "source": "NASA Earth Observatory article; https://science.nasa.gov/earth/earth-observatory/tropical-storm-arthur/; accessed 2026-06-22",
+      "usage": "依 NASA Earth Observatory 2026-06-19 對 Tropical Storm Arthur 的說明改寫學生版天氣安全閱讀，保留 first named storm、Gulf Coast、heavy rain、flash flooding 與衛星影像重點，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "On June 19, 2026, a class read a NASA Earth Observatory report about Tropical Storm Arthur. It was the first named storm of the 2026 Atlantic hurricane season. The storm brought heavy rain to parts of the U.S. Gulf Coast, so local people had to watch for flash flooding. The report also used satellite images to show Arthur in two ways: a natural-color view of white clouds and a brightness-temperature view that helped show colder cloud tops. Ms. Chen told her students that a storm image is not just a beautiful picture. It can help people understand where dangerous weather may be developing."
+        },
+        {
+          "label": "Weather Board",
+          "text": "Storm: Tropical Storm Arthur | Area: U.S. Gulf Coast | Main risk: heavy rain and flash flooding | Image clues: white clouds in natural color; colder cloud tops in brightness temperature"
+        }
+      ],
+      "questions": [
+        {
+          "id": "r024-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["A NASA report showed how satellite images helped explain Tropical Storm Arthur.", "A class learned how to name every cloud in the sky.", "The Gulf Coast had no weather problems in 2026.", "NASA stopped using satellite images for storms."],
+          "answer": "A",
+          "explanation": "The passage focuses on Arthur and how NASA images helped explain the storm."
+        },
+        {
+          "id": "r024-q02",
+          "type": "細節題",
+          "question": "What was Arthur in the 2026 Atlantic hurricane season?",
+          "options": ["The first named storm.", "The last storm of the season.", "A winter snowstorm.", "A storm on Mars."],
+          "answer": "A",
+          "explanation": "Passage A states that Arthur was the first named storm of the season."
+        },
+        {
+          "id": "r024-q03",
+          "type": "推論題",
+          "question": "Why did local people need to watch for flash flooding?",
+          "options": ["The storm brought heavy rain to the area.", "The satellite stopped working.", "The storm had no clouds.", "The class wanted a holiday."],
+          "answer": "A",
+          "explanation": "Heavy rain can quickly lead to flash flooding."
+        },
+        {
+          "id": "r024-q04",
+          "type": "字彙題",
+          "question": "What does \"developing\" most likely mean in the last sentence?",
+          "options": ["growing or forming", "already finished", "being painted", "becoming quieter"],
+          "answer": "A",
+          "explanation": "Dangerous weather may be growing or forming."
+        },
+        {
+          "id": "r024-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"It\" refer to in \"It was the first named storm\"?",
+          "options": ["Tropical Storm Arthur", "the class", "the satellite image", "the Gulf Coast"],
+          "answer": "A",
+          "explanation": "The previous sentence introduces Tropical Storm Arthur."
+        },
+        {
+          "id": "r024-q06",
+          "type": "句意理解題",
+          "question": "What does Ms. Chen mean when she says a storm image is not just a beautiful picture?",
+          "options": ["It can also provide useful safety information.", "It should never be shown in class.", "It is only useful for artists.", "It always predicts the exact future."],
+          "answer": "A",
+          "explanation": "She connects the image to understanding dangerous weather."
+        },
+        {
+          "id": "r024-q07",
+          "type": "圖表閱讀題",
+          "question": "According to the Weather Board, what was the main risk?",
+          "options": ["Heavy rain and flash flooding.", "Strong earthquakes.", "A long drought.", "Snow on mountain roads."],
+          "answer": "A",
+          "explanation": "The board lists heavy rain and flash flooding as the main risk."
+        },
+        {
+          "id": "r024-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which image clue helped show colder cloud tops? Brief answer: Why might this clue matter?",
+          "options": ["Brightness-temperature view.", "A lunch menu.", "A bus timetable.", "A sports score chart."],
+          "answer": "A",
+          "sample_brief_answer": "It may matter because colder cloud tops can help weather experts notice stronger storm clouds.",
+          "explanation": "The Weather Board identifies brightness temperature as the clue."
+        }
+      ]
+    },
+    {
+      "id": "r025",
+      "title": "Twin Satellites for Space Weather",
+      "topic": "太空天氣、GPS、衛星任務",
+      "source_type": "官方資料改寫",
+      "source": "NASA news release; https://www.nasa.gov/news-release/nasa-mission-to-study-space-weather-impacts-of-earths-atmosphere/; accessed 2026-06-22",
+      "usage": "依 NASA 2026-06-18 DAPHNE 任務新聞稿改寫科普閱讀，保留任務全稱、Phase B、雙衛星、GPS/低軌衛星與 2027 confirmation review 等資訊，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "NASA selected a mission concept called DAPHNE, the Dynamic Atmosphere-Ionosphere Explorer, to move into Phase B. This stage includes planning and design for flight and mission operations. DAPHNE would use two identical satellites to study how changes in Earth’s lower atmosphere can affect the upper atmosphere, where space weather appears. Better space weather prediction can help protect GPS signals, low Earth orbit satellites, and astronauts. Before launch plans become final, the mission must pass a confirmation review in 2027. If confirmed, it would launch no earlier than 2029."
+        },
+        {
+          "label": "Mission Card",
+          "text": "Name: DAPHNE | Tools: twin satellites | Studies: lower atmosphere, upper atmosphere, ionosphere and thermosphere | Possible benefit: better prediction for GPS, satellites, and space travelers"
+        }
+      ],
+      "questions": [
+        {
+          "id": "r025-q01",
+          "type": "主旨題",
+          "question": "What is the passage mainly about?",
+          "options": ["A NASA mission concept that may improve space weather prediction.", "A school plan to cancel science class.", "A new restaurant using two kitchens.", "A weather report about only rain and snow."],
+          "answer": "A",
+          "explanation": "The passage explains DAPHNE and its purpose."
+        },
+        {
+          "id": "r025-q02",
+          "type": "細節題",
+          "question": "What would DAPHNE use to collect data?",
+          "options": ["Two identical satellites.", "One ocean ship.", "A classroom telescope only.", "A weather balloon from a gym."],
+          "answer": "A",
+          "explanation": "The passage says DAPHNE would use two identical satellites."
+        },
+        {
+          "id": "r025-q03",
+          "type": "推論題",
+          "question": "Why are GPS signals mentioned in the passage?",
+          "options": ["They can be affected by space weather.", "They are used only on Mars.", "They are a type of food supply.", "They replace all satellites."],
+          "answer": "A",
+          "explanation": "The passage links better prediction to protecting GPS signals."
+        },
+        {
+          "id": "r025-q04",
+          "type": "字彙題",
+          "question": "What does \"confirmation\" most likely mean in \"confirmation review\"?",
+          "options": ["official checking before approval", "a celebration after lunch", "a picture of clouds", "a list of student names"],
+          "answer": "A",
+          "explanation": "A confirmation review checks whether the mission can proceed."
+        },
+        {
+          "id": "r025-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"This stage\" refer to?",
+          "options": ["Phase B", "GPS", "Earth’s lower atmosphere", "the year 2029"],
+          "answer": "A",
+          "explanation": "The phrase follows the sentence about Phase B."
+        },
+        {
+          "id": "r025-q06",
+          "type": "句意理解題",
+          "question": "What does the sentence about Earth’s lower and upper atmosphere suggest?",
+          "options": ["Weather near Earth and space weather can be connected.", "Only astronauts can feel wind.", "The lower atmosphere never changes.", "Satellites cannot study Earth."],
+          "answer": "A",
+          "explanation": "DAPHNE studies how lower-atmosphere changes affect the upper atmosphere."
+        },
+        {
+          "id": "r025-q07",
+          "type": "段落排序",
+          "question": "Which order matches the mission process in Passage A?",
+          "options": ["Move into Phase B → pass a 2027 confirmation review → launch no earlier than 2029", "Launch no earlier than 2029 → move into Phase B → pass a 2027 confirmation review", "Pass a 2027 review → launch in 2026 → begin planning after launch", "Study fishery losses → build a Mars camera → cancel the satellite mission"],
+          "answer": "A",
+          "explanation": "Passage A says DAPHNE moved into Phase B, must pass a 2027 review, and would launch no earlier than 2029."
+        },
+        {
+          "id": "r025-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "When is the confirmation review planned? Brief answer: Why is a review useful before launch?",
+          "options": ["2027", "2026", "2029", "2035"],
+          "answer": "A",
+          "sample_brief_answer": "A review is useful because it checks progress, plans, and resources before a costly mission continues.",
+          "explanation": "Passage A states the review is in 2027."
+        }
+      ]
+    },
+    {
+      "id": "r026",
+      "title": "Dust Devils on Mars",
+      "topic": "火星觀測、行星科學、影像判讀",
+      "source_type": "官方資料改寫",
+      "source": "ESA Mars Express article; https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Dozens_of_dust_devils_hidden_in_plain_sight; accessed 2026-06-22",
+      "usage": "依 ESA 2026-06-17 Mars Express 文章改寫科普閱讀，保留 Mamers Valles、dust devils、最高約 8 公里、45 m/s、High Resolution Stereo Camera 多視角影像等事實，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "ESA’s Mars Express spacecraft captured part of Mamers Valles on Mars and found many dust devils hidden in the image. Dust devils form when sunny ground warms the air above it, causing the air to spin upward and lift dust. Similar whirlwinds can happen in dry places on Earth, but Martian dust devils may grow much larger. ESA explains that some can rise up to about eight kilometers and move at high speeds. Mars Express can notice them because its camera combines several views taken one after another. If the ground stays still, the views match. If dust is moving, the moving part stands out."
+        },
+        {
+          "label": "Observation Notes",
+          "text": "Place: Mamers Valles, Mars | Spacecraft: Mars Express | Camera method: combines sequential views | Clue: moving dust appears as small marks with trailing shadows"
+        }
+      ],
+      "questions": [
+        {
+          "id": "r026-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Mars Express used images to reveal many dust devils on Mars.", "ESA built a new school on Mars.", "Dust devils happen only in oceans.", "Mamers Valles is a city on Earth."],
+          "answer": "A",
+          "explanation": "The passage centers on Mars Express observing dust devils."
+        },
+        {
+          "id": "r026-q02",
+          "type": "細節題",
+          "question": "Where were the dust devils observed?",
+          "options": ["Mamers Valles on Mars.", "The U.S. Gulf Coast.", "A school library.", "A fishing port in Alaska."],
+          "answer": "A",
+          "explanation": "Both passages name Mamers Valles on Mars."
+        },
+        {
+          "id": "r026-q03",
+          "type": "推論題",
+          "question": "Why does combining several views help Mars Express find dust devils?",
+          "options": ["Moving dust stands out when the views do not perfectly match.", "It turns Mars into Earth.", "It removes all shadows from the image.", "It makes the spacecraft fly lower every day."],
+          "answer": "A",
+          "explanation": "The passage says moving parts stand out when sequential views are combined."
+        },
+        {
+          "id": "r026-q04",
+          "type": "字彙題",
+          "question": "What does \"whirlwinds\" most likely mean?",
+          "options": ["spinning columns of air", "quiet pools of water", "large pieces of metal", "flat maps"],
+          "answer": "A",
+          "explanation": "Dust devils are described as air spinning upward."
+        },
+        {
+          "id": "r026-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"them\" refer to in \"can notice them\"?",
+          "options": ["dust devils", "schools", "camera channels", "dry places on Earth"],
+          "answer": "A",
+          "explanation": "The previous sentences discuss Martian dust devils."
+        },
+        {
+          "id": "r026-q06",
+          "type": "句意理解題",
+          "question": "What does \"the moving part stands out\" mean?",
+          "options": ["Scientists can more easily see what changed between views.", "The whole planet becomes invisible.", "The dust stops moving immediately.", "The camera refuses to take pictures."],
+          "answer": "A",
+          "explanation": "A moving feature is easier to identify against still ground."
+        },
+        {
+          "id": "r026-q07",
+          "type": "圖表閱讀題",
+          "question": "According to the Observation Notes, what clue may show moving dust?",
+          "options": ["Small marks with trailing shadows.", "A red lunch ticket.", "A list of ocean fish.", "A GPS password."],
+          "answer": "A",
+          "explanation": "The notes list this as the image clue."
+        },
+        {
+          "id": "r026-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "What causes dust devils to form? Brief answer: Why is this useful for scientists studying Mars?",
+          "options": ["Sunny ground warms air and makes it spin upward.", "Rain freezes into glass.", "A satellite drops sand on Mars.", "Fish swim across the surface."],
+          "answer": "A",
+          "sample_brief_answer": "It is useful because dust movement affects the Martian surface and can reveal active weather patterns.",
+          "explanation": "Passage A gives the cause."
+        }
+      ]
+    },
+    {
+      "id": "r027",
+      "title": "Help After Fishery Disasters",
+      "topic": "海洋資源、災害復原、公共資金",
+      "source_type": "官方資料改寫",
+      "source": "NOAA news release; https://www.noaa.gov/news-release/us-department-of-commerce-allocates-1236m-in-fishery-disaster-funding-to-alaska-oregon-california; accessed 2026-06-22",
+      "usage": "依 NOAA 2026-06-17 新聞稿改寫公共政策閱讀，保留 U.S. Department of Commerce、123.6 million dollars、Alaska/Oregon/California/Squaxin Island Tribe 與 fishery disaster funding 等資訊，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "The U.S. Department of Commerce announced 123.6 million dollars in fishery disaster funding through NOAA. The money was allocated to help several places, including Alaska, Oregon, California, and the Squaxin Island Tribe. A fishery disaster can hurt workers, families, seafood businesses, and communities that depend on healthy ocean resources. The funding does not simply mean giving out cash at random. Local plans must show how the money will support recovery, improve resilience, or reduce future risk. In class, students discussed why public funds often come with rules: the goal is to make help fair, useful, and connected to a real problem."
+        },
+        {
+          "label": "Funding Table",
+          "text": "Agency role: NOAA supports the fishery disaster process | Total amount: 123.6 million dollars | Recipients named: Alaska, Oregon, California, Squaxin Island Tribe | Purpose: recovery and resilience after fishery losses"
+        }
+      ],
+      "questions": [
+        {
+          "id": "r027-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["NOAA-related funding can help communities recover from fishery disasters.", "Fishing communities never need support.", "The passage explains how to cook seafood.", "The Department of Commerce opened a new school club."],
+          "answer": "A",
+          "explanation": "The passage explains funding for fishery disaster recovery."
+        },
+        {
+          "id": "r027-q02",
+          "type": "細節題",
+          "question": "How much funding was announced?",
+          "options": ["123.6 million dollars.", "12 dollars.", "8 kilometers.", "250 million dollars."],
+          "answer": "A",
+          "explanation": "Both passages state the amount."
+        },
+        {
+          "id": "r027-q03",
+          "type": "推論題",
+          "question": "Why might local plans be required before money is used?",
+          "options": ["To show how the money will solve real recovery needs.", "To make the process more random.", "To stop all fishing forever.", "To replace science with guessing."],
+          "answer": "A",
+          "explanation": "The passage says plans connect funds to recovery and risk reduction."
+        },
+        {
+          "id": "r027-q04",
+          "type": "字彙題",
+          "question": "What does \"allocated\" most likely mean?",
+          "options": ["officially set aside for a purpose", "hidden under the ocean", "lost in a storm", "changed into a map"],
+          "answer": "A",
+          "explanation": "The money was set aside for named places and uses."
+        },
+        {
+          "id": "r027-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"The money\" refer to?",
+          "options": ["the 123.6 million dollars in fishery disaster funding", "students’ lunch money", "a satellite mission budget", "a book club prize"],
+          "answer": "A",
+          "explanation": "The previous sentence names the funding amount."
+        },
+        {
+          "id": "r027-q06",
+          "type": "句意理解題",
+          "question": "What does the sentence about not giving out cash at random suggest?",
+          "options": ["Public recovery funds usually need clear plans and rules.", "NOAA refuses to help any community.", "Students should not discuss public issues.", "Fishery disasters are always easy to fix."],
+          "answer": "A",
+          "explanation": "The sentence contrasts random giving with planned support."
+        },
+        {
+          "id": "r027-q07",
+          "type": "圖表閱讀題",
+          "question": "Which recipient is named in the Funding Table?",
+          "options": ["Squaxin Island Tribe.", "Mars Express.", "DAPHNE.", "Tropical Storm Arthur."],
+          "answer": "A",
+          "explanation": "The table lists Squaxin Island Tribe as a recipient."
+        },
+        {
+          "id": "r027-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which purpose best matches the funding? Brief answer: Name one group that could be affected by a fishery disaster.",
+          "options": ["Recovery and resilience after fishery losses.", "Building a Mars camera.", "Selecting a spelling bee champion.", "Buying classroom comics."],
+          "answer": "A",
+          "sample_brief_answer": "Workers, families, seafood businesses, or coastal communities could be affected.",
+          "explanation": "The table lists recovery and resilience as the purpose."
+        }
+      ]
+    },
+    {
+      "id": "r028",
+      "title": "New Care Guidelines for Dangerous Viruses",
+      "topic": "公共衛生、臨床照護、疾病防治",
+      "source_type": "官方資料改寫",
+      "source": "WHO news release; https://www.who.int/news/item/17-06-2026-who-issues-comprehensive-guidelines-on-filovirus-disease--including-ebola-and-marburg-disease; accessed 2026-06-22",
+      "usage": "依 WHO 2026-06-17 filovirus disease 指南新聞稿改寫公共衛生閱讀，保留 Ebola/Marburg、16 recommendations、early supportive care、dehydration/shock/laboratory tests/after-care 等資訊，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "WHO released comprehensive guidelines for clinical care of filovirus disease, including Ebola and Marburg disease. These illnesses can be very dangerous during outbreaks, so health workers need clear steps for patient care. The guidelines include 16 evidence-based recommendations. Several recommendations focus on early supportive care, such as monitoring patients, treating dehydration, responding to shock, using laboratory tests, and planning after-care for survivors. A public health teacher explained the idea with a simple comparison: medicine is not only about one miracle drug. During an outbreak, organized care, trained workers, and enough supplies can also save lives."
+        },
+        {
+          "label": "Care Checklist",
+          "text": "Guideline source: WHO | Disease group: filovirus disease | Examples: Ebola and Marburg disease | Key idea: early supportive care | Recommended actions: monitor, rehydrate, treat shock, test, follow up"
+        }
+      ],
+      "questions": [
+        {
+          "id": "r028-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["WHO issued guidelines to help health workers care for filovirus disease patients.", "WHO opened a new space mission.", "The passage explains a fishing contest.", "Ebola and Marburg are types of weather."],
+          "answer": "A",
+          "explanation": "The passage focuses on WHO clinical care guidelines."
+        },
+        {
+          "id": "r028-q02",
+          "type": "細節題",
+          "question": "How many evidence-based recommendations are mentioned?",
+          "options": ["16", "8", "123.6 million", "2029"],
+          "answer": "A",
+          "explanation": "Passage A states that the guidelines include 16 recommendations."
+        },
+        {
+          "id": "r028-q03",
+          "type": "推論題",
+          "question": "Why does the teacher say medicine is not only about one miracle drug?",
+          "options": ["Because organized supportive care can also help save lives.", "Because health workers should avoid training.", "Because patients never need monitoring.", "Because outbreaks are solved by pictures only."],
+          "answer": "A",
+          "explanation": "The next sentence lists organized care, workers, and supplies."
+        },
+        {
+          "id": "r028-q04",
+          "type": "字彙題",
+          "question": "What does \"comprehensive\" most likely mean?",
+          "options": ["covering many important parts", "very short and careless", "only for one person", "written as a poem"],
+          "answer": "A",
+          "explanation": "The guidelines cover many parts of patient care."
+        },
+        {
+          "id": "r028-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"These illnesses\" refer to?",
+          "options": ["Ebola and Marburg disease / filovirus disease", "GPS and satellites", "dust devils", "fishery losses"],
+          "answer": "A",
+          "explanation": "The previous sentence names filovirus diseases including Ebola and Marburg."
+        },
+        {
+          "id": "r028-q06",
+          "type": "句意理解題",
+          "question": "What does \"early supportive care\" mean in this passage?",
+          "options": ["Helping patients quickly with monitoring, fluids, tests, and follow-up care.", "Waiting until every patient is fully recovered before acting.", "Using only one machine for all problems.", "Studying storms from space."],
+          "answer": "A",
+          "explanation": "The passage lists supportive actions such as rehydration and monitoring."
+        },
+        {
+          "id": "r028-q07",
+          "type": "多文本整合題",
+          "question": "Which option matches the Care Checklist?",
+          "options": ["WHO - filovirus disease - early supportive care", "NASA - fishery disaster - after-care", "ESA - blood donation - GPS", "NOAA - Mars dust - clinical care"],
+          "answer": "A",
+          "explanation": "The checklist clearly connects WHO with filovirus disease and supportive care."
+        },
+        {
+          "id": "r028-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which action is included in the Care Checklist? Brief answer: Why might follow-up care matter for survivors?",
+          "options": ["Follow up.", "Launch a twin satellite.", "Measure storm clouds only.", "Allocate fishery funds."],
+          "answer": "A",
+          "sample_brief_answer": "Follow-up care can help survivors recover, watch for later problems, and receive continued support.",
+          "explanation": "The checklist includes follow up."
+        }
+      ]
+    },
+    {
+      "id": "r029",
+      "title": "Student Ideas for Future Moon Landers",
+      "topic": "太空探索、學生競賽、生命維持系統",
+      "source_type": "官方資料改寫",
+      "source": "NASA news article; https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-announces-winners-for-2026-human-lander-challenge/; accessed 2026-06-29",
+      "usage": "依 NASA 2026-06-26 Human Lander Challenge 文章改寫學生版閱讀，保留 2026 challenge、environmental control and life support systems、Marshall/Huntsville、June 23-25 finalist gathering、top prizes 與 Artemis 背景，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "NASA announced the top teams in the 2026 Human Lander Challenge, a student competition about future crewed lunar landers. The teams studied environmental control and life support systems, which help astronauts breathe, drink safe water, and stay at a safe temperature during long missions. Finalists met near NASA’s Marshall Space Flight Center in Huntsville, Alabama, from June 23 to 25. They shared technical presentations and poster ideas with judges and other students. The overall winning team came from California Polytechnic State University, while Purdue University and Embry-Riddle Aeronautical University, Daytona Beach, also received top awards. NASA said competitions like this can build problem-solving skills for the Artemis program and future missions beyond the Moon."
+        },
+        {
+          "label": "Award Notes",
+          "text": "Event: 2026 Human Lander Challenge | Place: Huntsville, Alabama | Focus: life support for lunar landers | Finalist event: June 23-25 | Top prize: 10,000 dollars | Main skill: systems-level engineering thinking"
+        }
+      ],
+      "questions": [
+        {
+          "id": "r029-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["NASA used a student challenge to encourage ideas for future lunar lander life support.", "NASA opened a new cafeteria in Huntsville.", "Students competed to design school uniforms.", "Artemis is a program about ocean fishing."],
+          "answer": "A",
+          "explanation": "The passage focuses on the Human Lander Challenge and life support ideas for lunar landers."
+        },
+        {
+          "id": "r029-q02",
+          "type": "細節題",
+          "question": "Where did the finalist event take place?",
+          "options": ["Near NASA’s Marshall Space Flight Center in Huntsville, Alabama.", "At a Mars base.", "In a school library in California.", "At a fishing port in Oregon."],
+          "answer": "A",
+          "explanation": "The passage gives Huntsville, Alabama, near Marshall Space Flight Center."
+        },
+        {
+          "id": "r029-q03",
+          "type": "推論題",
+          "question": "Why are life support systems important for crewed lunar landers?",
+          "options": ["Astronauts need air, water, and safe temperatures during missions.", "They make posters more colorful.", "They help rockets avoid all testing.", "They replace the need for teamwork."],
+          "answer": "A",
+          "explanation": "The passage explains that these systems support breathing, drinking water, and temperature control."
+        },
+        {
+          "id": "r029-q04",
+          "type": "字彙題",
+          "question": "What does \"finalists\" most likely mean?",
+          "options": ["teams that reached the last stage of a competition", "people who never entered the event", "tools used to cool water", "rockets that cannot fly"],
+          "answer": "A",
+          "explanation": "The finalists gave final presentations and competed for awards."
+        },
+        {
+          "id": "r029-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"They\" refer to in \"They shared technical presentations\"?",
+          "options": ["the finalist teams", "future astronauts", "safe temperatures", "lunar rocks"],
+          "answer": "A",
+          "explanation": "The previous sentence mentions the finalist teams."
+        },
+        {
+          "id": "r029-q06",
+          "type": "句意理解題",
+          "question": "What does \"systems-level engineering thinking\" suggest in the Award Notes?",
+          "options": ["Students must think about how many parts work together.", "Students only need to draw one small part.", "Teams should ignore safety.", "Awards are chosen at random."],
+          "answer": "A",
+          "explanation": "Systems-level thinking means considering connected parts of a whole system."
+        },
+        {
+          "id": "r029-q07",
+          "type": "圖表閱讀題",
+          "question": "According to the Award Notes, what was the focus of the event?",
+          "options": ["Life support for lunar landers.", "Ocean disaster funding.", "Mars dust storms only.", "School lunch choices."],
+          "answer": "A",
+          "explanation": "The notes list life support for lunar landers as the focus."
+        },
+        {
+          "id": "r029-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which team received the overall top award? Brief answer: Name one skill students could practice in this challenge.",
+          "options": ["California Polytechnic State University", "Rocket Lab", "ESA Euclid team", "Squaxin Island Tribe"],
+          "answer": "A",
+          "sample_brief_answer": "Students could practice problem solving, systems thinking, or technical communication.",
+          "explanation": "Passage A names California Polytechnic State University as the overall winner."
+        }
+      ]
+    },
+    {
+      "id": "r030",
+      "title": "A Space Gas Pump Problem",
+      "topic": "太空工程、低溫燃料、在軌補給",
+      "source_type": "官方資料改寫",
+      "source": "NASA news article; https://www.nasa.gov/directorates/stmd/tech-demo-missions-program/cryogenic-fluid-management-cfm/nasa-tests-new-refuel-device-for-future-in-space-refueling-missions/; accessed 2026-06-29",
+      "usage": "依 NASA 2026-06-26 cryocoupler 測試文章改寫工程閱讀，保留 in-space refueling、cryocoupler、orbital propellant depots、liquid hydrogen/liquid oxygen、L3Harris 與 NASA Marshall 測試等資訊，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Future spacecraft may need to refuel in Earth orbit before traveling farther into space. NASA is testing a device called a cryocoupler, which would help a spacecraft connect to an orbital propellant depot. A depot would work somewhat like a gas station in space. The problem is difficult because some rocket propellants, such as liquid hydrogen and liquid oxygen, must stay extremely cold. If the connection leaks or warms too much, the spacecraft could lose fuel or performance. NASA’s Marshall Space Flight Center and L3Harris tested a developmental cryocoupler on the ground to study how it connects, seals, transfers very cold fluids, and disconnects."
+        },
+        {
+          "label": "Engineering Steps",
+          "text": "1. Store super-cold propellant safely. 2. Connect the cryocoupler to the spacecraft. 3. Transfer fuel without major loss. 4. Disconnect and prepare for another use."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r030-q01",
+          "type": "主旨題",
+          "question": "What is Passage A mainly about?",
+          "options": ["NASA is testing a device that may help spacecraft refuel in orbit.", "NASA is building a school bus for astronauts.", "Liquid oxygen is used to make posters.", "Spacecraft can never be refueled."],
+          "answer": "A",
+          "explanation": "The passage centers on cryocoupler testing for future in-space refueling."
+        },
+        {
+          "id": "r030-q02",
+          "type": "細節題",
+          "question": "What is a cryocoupler supposed to help a spacecraft do?",
+          "options": ["Connect to an orbital propellant depot.", "Take photos of the Milky Way.", "Choose contest winners.", "Measure school lunch lines."],
+          "answer": "A",
+          "explanation": "The passage says a cryocoupler helps connect to a propellant depot."
+        },
+        {
+          "id": "r030-q03",
+          "type": "推論題",
+          "question": "Why is transferring cryogenic propellant difficult?",
+          "options": ["The fuel must stay extremely cold and the connection must not leak.", "It only works in warm classrooms.", "The spacecraft must land in an ocean first.", "The fuel is made of paper."],
+          "answer": "A",
+          "explanation": "The passage explains the cold-temperature and leakage challenges."
+        },
+        {
+          "id": "r030-q04",
+          "type": "字彙題",
+          "question": "What does \"depot\" most likely mean in this passage?",
+          "options": ["a place where supplies are stored and used", "a person who studies stars", "a type of school test", "a broken rocket part"],
+          "answer": "A",
+          "explanation": "The depot is compared to a gas station where propellant is available."
+        },
+        {
+          "id": "r030-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"how it connects, seals, transfers very cold fluids, and disconnects\"?",
+          "options": ["the developmental cryocoupler", "Earth orbit", "liquid oxygen only", "a poster session"],
+          "answer": "A",
+          "explanation": "The sentence describes the cryocoupler being tested."
+        },
+        {
+          "id": "r030-q06",
+          "type": "句意理解題",
+          "question": "What does the comparison to a gas station in space help readers understand?",
+          "options": ["A spacecraft might stop at a place in orbit to get more propellant.", "Astronauts will drive cars on the Moon.", "Gas stations can float without technology.", "Rockets use the same fuel as cars."],
+          "answer": "A",
+          "explanation": "The comparison explains the purpose of an orbital propellant depot."
+        },
+        {
+          "id": "r030-q07",
+          "type": "段落排序",
+          "question": "Which order matches the Engineering Steps?",
+          "options": ["Store propellant → connect → transfer fuel → disconnect", "Disconnect → transfer fuel → store propellant → connect", "Connect → ignore sealing → lose fuel → begin planning", "Transfer fuel → build a galaxy image → choose awards → disconnect"],
+          "answer": "A",
+          "explanation": "The listed steps follow storage, connection, transfer, and disconnection."
+        },
+        {
+          "id": "r030-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which organization worked with NASA Marshall on the test? Brief answer: Why might reusable connecting and disconnecting matter?",
+          "options": ["L3Harris", "Euclid", "California Polytechnic State University", "Amazon Leo"],
+          "answer": "A",
+          "sample_brief_answer": "It matters because a refueling system may need to serve more than one spacecraft or be used many times.",
+          "explanation": "Passage A names L3Harris."
+        }
+      ]
+    },
+    {
+      "id": "r031",
+      "title": "Small Satellites for Clouds and Sunlight",
+      "topic": "地球科學、太陽能量、發射服務",
+      "source_type": "官方資料改寫",
+      "source": "NASA news article; https://www.nasa.gov/missions/tsis-2/nasa-selects-rocket-lab-to-launch-sun-earth-science-missions/; accessed 2026-06-29",
+      "usage": "依 NASA 2026-06-25 Rocket Lab 發射服務公告改寫地球科學閱讀，保留 PolSIR、TSIS-2、VADR、Electron、Mahia New Zealand、兩顆 16U CubeSats、雲冰與太陽能量輸入等資訊，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "NASA selected Rocket Lab to launch two science efforts: PolSIR and TSIS-2. PolSIR will use two small CubeSats to study ice clouds high above tropical and subtropical regions. By watching how cloud ice changes during the day, scientists hope to improve weather prediction and understand how clouds affect sunlight and heat. TSIS-2 will measure the Sun’s energy input to Earth, information that helps scientists study weather, seasons, ocean currents, and climate patterns. Both launches are planned on Electron rockets from Launch Complex 1 in Mahia, New Zealand. NASA made the selections through its VADR launch services contract."
+        },
+        {
+          "label": "Mission Table",
+          "text": "PolSIR | two 16U CubeSats | no earlier than June 2027 | studies high ice clouds. TSIS-2 | one satellite | early 2027 | measures solar energy reaching Earth."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r031-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["NASA selected Rocket Lab to launch missions that study clouds and solar energy.", "Rocket Lab will teach a cooking class.", "PolSIR is a Mars dust camera.", "TSIS-2 will choose student contest winners."],
+          "answer": "A",
+          "explanation": "The passage explains two NASA science launch selections."
+        },
+        {
+          "id": "r031-q02",
+          "type": "細節題",
+          "question": "What will PolSIR study?",
+          "options": ["Ice clouds high above tropical and subtropical regions.", "Fishery funding in Alaska.", "School reading corners.", "Ariane 6 boosters."],
+          "answer": "A",
+          "explanation": "Passage A states PolSIR’s cloud focus."
+        },
+        {
+          "id": "r031-q03",
+          "type": "推論題",
+          "question": "Why might PolSIR data help weather prediction?",
+          "options": ["Cloud ice changes can affect sunlight, heat, and storm patterns.", "CubeSats can write homework answers.", "New Zealand has no weather.", "Solar energy cannot be measured from space."],
+          "answer": "A",
+          "explanation": "The passage links cloud ice with heat, sunlight, and weather prediction."
+        },
+        {
+          "id": "r031-q04",
+          "type": "字彙題",
+          "question": "What does \"input\" mean in \"the Sun’s energy input to Earth\"?",
+          "options": ["energy that comes into a system", "a list of contest names", "a blocked doorway", "a type of lunch"],
+          "answer": "A",
+          "explanation": "The phrase refers to solar energy reaching Earth."
+        },
+        {
+          "id": "r031-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"Both launches\" refer to?",
+          "options": ["the PolSIR and TSIS-2 launches", "two school field trips", "two Mars dust devils", "two fishery plans"],
+          "answer": "A",
+          "explanation": "The previous sentences describe the two NASA science efforts."
+        },
+        {
+          "id": "r031-q06",
+          "type": "句意理解題",
+          "question": "What does the sentence about weather, seasons, ocean currents, and climate patterns suggest?",
+          "options": ["Solar energy data can support many kinds of Earth science.", "TSIS-2 only studies one classroom.", "Ocean currents are not connected to Earth systems.", "Weather prediction does not use data."],
+          "answer": "A",
+          "explanation": "The sentence lists several Earth science uses for solar energy measurements."
+        },
+        {
+          "id": "r031-q07",
+          "type": "多文本整合題",
+          "question": "Which statement is supported by both Passage A and the Mission Table?",
+          "options": ["PolSIR uses two CubeSats to study high ice clouds.", "TSIS-2 uses two CubeSats to study Mars.", "Both missions launch from Huntsville, Alabama.", "PolSIR measures only ocean fish."],
+          "answer": "A",
+          "explanation": "Both texts connect PolSIR with two CubeSats and high ice clouds."
+        },
+        {
+          "id": "r031-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Where are the Electron launches planned? Brief answer: Why is a mission table useful for readers?",
+          "options": ["Mahia, New Zealand", "Mamers Valles", "Huntsville, Alabama", "The Milky Way’s center"],
+          "answer": "A",
+          "sample_brief_answer": "A table helps readers quickly compare mission names, dates, spacecraft, and goals.",
+          "explanation": "Passage A says the launches are from Mahia, New Zealand."
+        }
+      ]
+    },
+    {
+      "id": "r032",
+      "title": "Euclid Looks at the Milky Way’s Busy Center",
+      "topic": "天文觀測、銀河系、系外行星搜尋",
+      "source_type": "官方資料改寫",
+      "source": "ESA article; https://www.esa.int/Science_Exploration/Space_Science/Euclid/ESA_s_Euclid_captures_the_Milky_Way_s_crowded_heart; accessed 2026-06-29",
+      "usage": "依 ESA 2026-06-24 Euclid 文章改寫天文閱讀，保留 visible-light Milky Way centre image、more than 60 million stars、23 March 2025、about 26 hours、nine pointings、microlensing 與與 Hubble 視野比較等資訊，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "ESA’s Euclid mission created a very large visible-light image of the center of the Milky Way. The region is crowded with more than 60 million stars, but Euclid can still separate many individual points of light. The image was captured on March 23, 2025, in about 26 hours and was made from nine camera pointings. Each pointing covered an area larger than the full Moon in the sky. Scientists are interested in this image because tiny changes in starlight can help them find and confirm exoplanets through a method called microlensing. Although Euclid was designed to study faraway galaxies, this special look at our own galaxy shows how one telescope can support more than one kind of science."
+        },
+        {
+          "label": "Observation Facts",
+          "text": "Object: Milky Way galactic bulge | Telescope: Euclid | Image type: visible light | Stars: more than 60 million | Time needed: about 26 hours | Main science use: microlensing planet search"
+        }
+      ],
+      "questions": [
+        {
+          "id": "r032-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Euclid made a detailed image of the Milky Way’s crowded center that can help planet studies.", "Euclid measured fishery disaster funding.", "ESA launched a school lunch survey.", "The Milky Way has no stars."],
+          "answer": "A",
+          "explanation": "The passage focuses on Euclid’s image and its scientific use."
+        },
+        {
+          "id": "r032-q02",
+          "type": "細節題",
+          "question": "How many stars are mentioned in the image?",
+          "options": ["More than 60 million.", "36.", "12.", "Two 16U CubeSats."],
+          "answer": "A",
+          "explanation": "Both texts state more than 60 million stars."
+        },
+        {
+          "id": "r032-q03",
+          "type": "推論題",
+          "question": "Why is it impressive that Euclid can separate many points of light in this region?",
+          "options": ["The center of the Milky Way is extremely crowded with stars.", "The camera was pointed at an empty sky.", "Visible light cannot show stars.", "Microlensing means counting rockets."],
+          "answer": "A",
+          "explanation": "The passage describes the region as crowded with many stars."
+        },
+        {
+          "id": "r032-q04",
+          "type": "字彙題",
+          "question": "What does \"crowded\" most likely mean in this passage?",
+          "options": ["filled with many things close together", "completely empty", "easy to clean", "closed to visitors"],
+          "answer": "A",
+          "explanation": "The region contains more than 60 million stars."
+        },
+        {
+          "id": "r032-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"this image\" refer to?",
+          "options": ["Euclid’s visible-light image of the Milky Way center", "a picture of a lunar lander", "a weather chart", "a cryocoupler test"],
+          "answer": "A",
+          "explanation": "The previous sentences describe Euclid’s image."
+        },
+        {
+          "id": "r032-q06",
+          "type": "句意理解題",
+          "question": "What does the last sentence suggest about Euclid?",
+          "options": ["A telescope built for one main job can still help other scientific questions.", "Euclid can only study one planet.", "Studying our galaxy is useless.", "Faraway galaxies are the same as school contests."],
+          "answer": "A",
+          "explanation": "The sentence says Euclid can support more than one kind of science."
+        },
+        {
+          "id": "r032-q07",
+          "type": "圖表閱讀題",
+          "question": "According to the Observation Facts, what is the main science use named for this image?",
+          "options": ["Microlensing planet search.", "Rocket refueling.", "Public health care.", "Fishery recovery."],
+          "answer": "A",
+          "explanation": "The facts list microlensing planet search."
+        },
+        {
+          "id": "r032-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "How many camera pointings made the image? Brief answer: Why might scientists need a large image for this study?",
+          "options": ["Nine", "Two", "Thirty-six", "Sixty-eight"],
+          "answer": "A",
+          "sample_brief_answer": "A large image lets scientists observe many stars and look for tiny brightness changes across a wide area.",
+          "explanation": "Passage A says the image was made from nine pointings."
+        }
+      ]
+    },
+    {
+      "id": "r033",
+      "title": "Ariane 6 Carries More Satellites",
+      "topic": "歐洲太空運輸、火箭升級、低軌衛星",
+      "source_type": "官方資料改寫",
+      "source": "ESA press release; https://www.esa.int/Newsroom/Press_Releases/Ariane_6_launches_with_more_powerful_boosters_a_new_record_for_Europe; accessed 2026-06-29",
+      "usage": "依 ESA 2026-06-17 Ariane 6 press release 改寫太空運輸閱讀，保留 VA269、French Guiana、36 Amazon Leo satellites、P160C boosters、14 tonnes more propellant each、up to 15% performance increase、European launcher cargo record 等資訊，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "On June 17, 2026, Europe’s Ariane 6 rocket launched flight VA269 from Europe’s Spaceport in French Guiana. It carried 36 Amazon Leo satellites to orbit. This version of Ariane 6 used four upgraded P160C boosters. Each booster held 14 tonnes more propellant than the earlier P120C version, giving the rocket more power. ESA said the upgraded boosters can raise Ariane 6 performance by up to 15 percent and add about 2 tonnes to low-Earth orbit capacity. Because of this stronger version, the launch set a new European launcher record for the most cargo taken to space in one flight. ESA leaders described Ariane 6 as a modular launcher because it can fly in different versions for different missions."
+        },
+        {
+          "label": "Launch Card",
+          "text": "Flight: VA269 | Date: 17 June 2026 | Launch site: Europe’s Spaceport, French Guiana | Payload: 36 Amazon Leo satellites | Upgrade: four P160C boosters | Result: new European cargo record"
+        }
+      ],
+      "questions": [
+        {
+          "id": "r033-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["An upgraded Ariane 6 launched 36 satellites and set a European cargo record.", "Ariane 6 found a new planet near the Milky Way.", "ESA started a school reading challenge.", "The P160C booster is a public health guideline."],
+          "answer": "A",
+          "explanation": "The passage focuses on the upgraded Ariane 6 launch and record."
+        },
+        {
+          "id": "r033-q02",
+          "type": "細節題",
+          "question": "How many Amazon Leo satellites were carried?",
+          "options": ["36", "14", "15", "60 million"],
+          "answer": "A",
+          "explanation": "Both passages name 36 satellites."
+        },
+        {
+          "id": "r033-q03",
+          "type": "推論題",
+          "question": "Why did the upgraded boosters help Ariane 6 carry more cargo?",
+          "options": ["They held more propellant and gave the rocket more performance.", "They made the satellites lighter by magic.", "They turned the rocket into a telescope.", "They removed the need for a launch site."],
+          "answer": "A",
+          "explanation": "The passage connects more propellant with higher performance and capacity."
+        },
+        {
+          "id": "r033-q04",
+          "type": "字彙題",
+          "question": "What does \"modular\" most likely mean in this passage?",
+          "options": ["built so different versions or parts can be used", "unable to change", "made only for one classroom", "covered with stars"],
+          "answer": "A",
+          "explanation": "ESA describes Ariane 6 as able to fly in different versions."
+        },
+        {
+          "id": "r033-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"It\" refer to in \"It carried 36 Amazon Leo satellites to orbit\"?",
+          "options": ["Europe’s Ariane 6 rocket", "the Milky Way", "a cryocoupler", "the VADR contract"],
+          "answer": "A",
+          "explanation": "The previous sentence names Ariane 6."
+        },
+        {
+          "id": "r033-q06",
+          "type": "句意理解題",
+          "question": "What does \"new European launcher record\" mean here?",
+          "options": ["No European launcher had taken that much cargo to space in one flight before.", "The rocket played a new song during launch.", "Europe stopped launching satellites.", "The launch happened without any payload."],
+          "answer": "A",
+          "explanation": "The record is for the most cargo taken to space in one flight by a European launcher."
+        },
+        {
+          "id": "r033-q07",
+          "type": "多文本整合題",
+          "question": "Which detail appears in both Passage A and the Launch Card?",
+          "options": ["The payload was 36 Amazon Leo satellites.", "Euclid captured more than 60 million stars.", "PolSIR uses two CubeSats.", "The Human Lander Challenge had a 10,000 dollar prize."],
+          "answer": "A",
+          "explanation": "Both texts include the 36 Amazon Leo satellites."
+        },
+        {
+          "id": "r033-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Where did VA269 launch from? Brief answer: Why might a modular rocket be useful?",
+          "options": ["Europe’s Spaceport in French Guiana", "Mahia, New Zealand", "Huntsville, Alabama", "The Milky Way’s center"],
+          "answer": "A",
+          "sample_brief_answer": "A modular rocket can be adjusted for different payloads or mission needs.",
+          "explanation": "The launch card gives Europe’s Spaceport in French Guiana."
+        }
+      ]
+    },
+    {
+      "id": "r034",
+      "title": "A Blanket Around Earth",
+      "topic": "氣候科學、溫室效應、圖表閱讀",
+      "source_type": "官方資料改寫",
+      "source": "NASA Science; https://science.nasa.gov/climate-change/faq/what-is-the-greenhouse-effect/; accessed 2026-07-06",
+      "usage": "依 NASA 對 greenhouse effect 的官方說明改寫學生版氣候科學閱讀，保留太陽能量、部分熱被大氣留住、溫室氣體與適度保溫有助生命等概念，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Earth receives energy from the Sun. Some sunlight warms the ground and oceans. Later, Earth sends part of that energy back toward space as heat. Certain gases in the atmosphere slow some of this escaping heat, so the air near the ground stays warmer. This natural process is called the greenhouse effect. Without it, Earth would be much colder. However, when people add more heat-trapping gases by burning coal, oil, and gas, the blanket around Earth becomes thicker. Then more heat stays near the surface, and the average temperature can rise. Scientists study this process to explain why small changes in the atmosphere can affect weather, oceans, farms, and daily life."
+        },
+        {
+          "label": "Science Note",
+          "text": "Energy path: Sunlight reaches Earth -> land and oceans warm -> Earth gives off heat -> greenhouse gases hold some heat -> more gases can hold more heat."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r034-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["The greenhouse effect helps keep Earth warm, but extra heat-trapping gases can raise temperatures.", "The Sun never affects Earth.", "All gases escape into space immediately.", "Weather and climate are exactly the same thing."],
+          "answer": "A",
+          "explanation": "The passage explains the natural greenhouse effect and the problem of adding more heat-trapping gases."
+        },
+        {
+          "id": "r034-q02",
+          "type": "細節題",
+          "question": "What happens after land and oceans warm?",
+          "options": ["Earth sends part of the energy back toward space as heat.", "The Moon disappears.", "All sunlight becomes ice.", "The atmosphere stops moving."],
+          "answer": "A",
+          "explanation": "The passage says Earth later sends part of that energy back toward space as heat."
+        },
+        {
+          "id": "r034-q03",
+          "type": "推論題",
+          "question": "Why does the passage compare the atmosphere to a blanket?",
+          "options": ["Because both can help keep heat from leaving quickly.", "Because the atmosphere is made of cloth.", "Because blankets create sunlight.", "Because gases are always cold."],
+          "answer": "A",
+          "explanation": "The comparison helps readers understand how gases slow escaping heat."
+        },
+        {
+          "id": "r034-q04",
+          "type": "字彙題",
+          "question": "What does \"escaping\" most likely mean in the passage?",
+          "options": ["leaving a place", "getting heavier", "becoming silent", "turning into rain"],
+          "answer": "A",
+          "explanation": "Escaping heat means heat leaving Earth toward space."
+        },
+        {
+          "id": "r034-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"Without it, Earth would be much colder\"?",
+          "options": ["the natural greenhouse effect", "coal", "daily life", "the ocean floor"],
+          "answer": "A",
+          "explanation": "The previous sentence names the greenhouse effect."
+        },
+        {
+          "id": "r034-q06",
+          "type": "句意理解題",
+          "question": "What does \"the blanket around Earth becomes thicker\" mean here?",
+          "options": ["More heat-trapping gases are added to the atmosphere.", "People put real blankets in the sky.", "Earth becomes smaller.", "The Sun becomes weaker."],
+          "answer": "A",
+          "explanation": "The sentence describes adding more gases that hold heat."
+        },
+        {
+          "id": "r034-q07",
+          "type": "圖表閱讀題",
+          "question": "According to the Science Note, which step comes right after land and oceans warm?",
+          "options": ["Earth gives off heat.", "Greenhouse gases disappear.", "Coal turns into sunlight.", "Farms stop needing water."],
+          "answer": "A",
+          "explanation": "The note lists Earth giving off heat after land and oceans warm."
+        },
+        {
+          "id": "r034-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which human activity does the passage name as adding heat-trapping gases? Brief answer: Why can a small atmospheric change matter?",
+          "options": ["Burning coal, oil, and gas.", "Reading books after school.", "Watching the Moon change shape.", "Swimming away from shore."],
+          "answer": "A",
+          "sample_brief_answer": "A small change can matter because the atmosphere affects how much heat stays near Earth, which can influence oceans, weather, and daily life.",
+          "explanation": "The passage directly names burning fossil fuels."
+        }
+      ]
+    },
+    {
+      "id": "r035",
+      "title": "When the Water Pulls Away",
+      "topic": "海邊安全、離岸流、公告判讀",
+      "source_type": "官方資料改寫",
+      "source": "NOAA National Ocean Service; https://oceanservice.noaa.gov/facts/ripcurrent.html; accessed 2026-07-06",
+      "usage": "依 NOAA National Ocean Service 對 rip current 的官方說明改寫海邊安全閱讀，保留離岸流速度可很快、會把人帶離岸邊、不要逆流直游、應平行岸邊游出水流等重點，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "On a windy afternoon, a lifeguard noticed a narrow line of choppy water moving away from the beach. She raised a yellow flag and used a speaker to warn swimmers. The moving water was a rip current. A rip current is not a wave that pulls people under the sea. It is a strong, narrow current that can carry swimmers away from shore. Fighting straight against it can make a person tired quickly. Beach safety teachers tell swimmers to stay calm, float if they need rest, and swim parallel to the beach until they are out of the current. Then they can swim back toward land. The lifeguard also reminded visitors to check warning flags before entering the water."
+        },
+        {
+          "label": "Beach Sign",
+          "text": "If caught in a rip current: 1. Do not fight the current. 2. Float or tread water. 3. Swim parallel to shore when possible. 4. Wave and call for help if needed."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r035-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Rip currents are dangerous moving water, and swimmers should know how to respond safely.", "All beaches are closed on windy afternoons.", "Yellow flags mean swimmers should race each other.", "Lifeguards only watch boats."],
+          "answer": "A",
+          "explanation": "The passage explains rip current danger and safety actions."
+        },
+        {
+          "id": "r035-q02",
+          "type": "細節題",
+          "question": "What did the lifeguard notice?",
+          "options": ["A narrow line of choppy water moving away from the beach.", "A snowstorm over the ocean.", "A broken classroom window.", "A rocket launch near the shore."],
+          "answer": "A",
+          "explanation": "The first sentence describes the choppy water moving away from the beach."
+        },
+        {
+          "id": "r035-q03",
+          "type": "推論題",
+          "question": "Why is fighting straight against a rip current risky?",
+          "options": ["It can make a swimmer tired before they escape.", "It always pushes swimmers onto dry sand.", "It turns the water into ice.", "It makes warning flags invisible."],
+          "answer": "A",
+          "explanation": "The passage says fighting the current can make a person tired quickly."
+        },
+        {
+          "id": "r035-q04",
+          "type": "字彙題",
+          "question": "What does \"parallel\" most likely mean in \"swim parallel to the beach\"?",
+          "options": ["moving in the same direction along the beach", "moving straight down", "moving in a circle around a flag", "moving only at night"],
+          "answer": "A",
+          "explanation": "Swimming parallel means swimming along the shore rather than directly toward it."
+        },
+        {
+          "id": "r035-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"Fighting straight against it\"?",
+          "options": ["the rip current", "the speaker", "the yellow flag", "the beach sign"],
+          "answer": "A",
+          "explanation": "The previous sentence describes the rip current."
+        },
+        {
+          "id": "r035-q06",
+          "type": "句意理解題",
+          "question": "What does \"A rip current is not a wave that pulls people under the sea\" mean?",
+          "options": ["The main danger is being carried away from shore, not being pulled underwater like a wave.", "Rip currents are safe swimming lanes.", "Waves and currents are always the same.", "The sea has no moving water."],
+          "answer": "A",
+          "explanation": "The next sentence explains that the current carries swimmers away from shore."
+        },
+        {
+          "id": "r035-q07",
+          "type": "多文本整合題",
+          "question": "Which advice appears in both Passage A and the Beach Sign?",
+          "options": ["Swim parallel to the beach or shore.", "Run on wet rocks.", "Ignore warning flags.", "Dive under every wave."],
+          "answer": "A",
+          "explanation": "Both texts tell swimmers to move parallel to shore to leave the current."
+        },
+        {
+          "id": "r035-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "According to the Beach Sign, what should a swimmer do if they need help? Brief answer: Why should visitors check flags before swimming?",
+          "options": ["Wave and call for help.", "Swim farther away quietly.", "Take off their shoes.", "Look for the Moon."],
+          "answer": "A",
+          "sample_brief_answer": "Flags give quick safety information about water conditions, so visitors can avoid danger before entering the water.",
+          "explanation": "The sign says to wave and call for help if needed."
+        }
+      ]
+    },
+    {
+      "id": "r036",
+      "title": "A Safe Lunch Box Plan",
+      "topic": "食品安全、健康生活、步驟排序",
+      "source_type": "官方資料改寫",
+      "source": "World Health Organization; https://www.who.int/news-room/questions-and-answers/item/food-safety; accessed 2026-07-06",
+      "usage": "依 WHO food safety 問答與食品安全原則改寫校園午餐閱讀，保留保持清潔、生熟分開、徹底煮熟、保持安全溫度、使用安全水與食材等概念，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Mina wanted to bring fried rice to school for a club picnic. Her father helped her make a safe lunch box plan. First, they washed their hands and cleaned the cutting board. Next, they kept raw chicken away from cooked rice and vegetables. After that, Mina’s father cooked the chicken until it was fully done. They packed the food in a clean box and placed it in a cooler bag because the picnic would not start until noon. Mina also brought clean drinking water. At school, she told her friends that food safety is not only a restaurant rule. It is a daily habit that helps prevent stomachaches and illness."
+        },
+        {
+          "label": "Five Safety Keys",
+          "text": "Keep clean | Separate raw and cooked food | Cook food thoroughly | Keep food at safe temperatures | Use safe water and safe ingredients"
+        }
+      ],
+      "questions": [
+        {
+          "id": "r036-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Mina uses simple food safety habits to prepare a school picnic lunch.", "Mina cancels her club picnic.", "Fried rice can only be eaten in restaurants.", "Clean water is never needed for food."],
+          "answer": "A",
+          "explanation": "The passage follows Mina and her father preparing food safely."
+        },
+        {
+          "id": "r036-q02",
+          "type": "細節題",
+          "question": "Why did they use a cooler bag?",
+          "options": ["The picnic would not start until noon.", "The rice was too heavy.", "The club required blue bags.", "The chicken was still raw."],
+          "answer": "A",
+          "explanation": "The passage says they used a cooler bag because the picnic would start later."
+        },
+        {
+          "id": "r036-q03",
+          "type": "推論題",
+          "question": "Why did they keep raw chicken away from cooked rice and vegetables?",
+          "options": ["To avoid spreading unsafe germs from raw food to ready-to-eat food.", "To make the lunch box look smaller.", "To cool the water faster.", "To change rice into chicken."],
+          "answer": "A",
+          "explanation": "Separating raw and cooked food is a food safety habit."
+        },
+        {
+          "id": "r036-q04",
+          "type": "字彙題",
+          "question": "What does \"thoroughly\" most likely mean in \"Cook food thoroughly\"?",
+          "options": ["completely and carefully", "only on the outside", "without heat", "as quickly as possible with no checking"],
+          "answer": "A",
+          "explanation": "The passage says the chicken was cooked until fully done."
+        },
+        {
+          "id": "r036-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"It is a daily habit\"?",
+          "options": ["food safety", "the club picnic", "the cooler bag", "fried rice"],
+          "answer": "A",
+          "explanation": "The previous sentence names food safety."
+        },
+        {
+          "id": "r036-q06",
+          "type": "句意理解題",
+          "question": "What does \"food safety is not only a restaurant rule\" suggest?",
+          "options": ["Students and families should also use safe food habits at home and school.", "Only restaurant workers need clean hands.", "Picnic food cannot be safe.", "Rules disappear outside restaurants."],
+          "answer": "A",
+          "explanation": "Mina connects food safety to daily habits."
+        },
+        {
+          "id": "r036-q07",
+          "type": "段落排序",
+          "question": "Which order best matches Mina’s lunch box plan?",
+          "options": ["Wash and clean -> separate raw chicken -> cook chicken fully -> pack in a cooler bag.", "Pack in a cooler bag -> buy raw chicken -> forget clean water -> cook at school.", "Cook rice -> touch raw chicken -> skip washing -> eat later.", "Start the picnic -> wash hands -> cook chicken -> separate food."],
+          "answer": "A",
+          "explanation": "This order follows the steps in Passage A."
+        },
+        {
+          "id": "r036-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which safety key matches using a cooler bag? Brief answer: Name one food safety habit you can use at home.",
+          "options": ["Keep food at safe temperatures.", "Use unsafe water.", "Mix raw and cooked food.", "Keep hands dirty."],
+          "answer": "A",
+          "sample_brief_answer": "I can wash my hands before cooking and keep raw meat away from cooked food.",
+          "explanation": "A cooler bag helps keep food at a safer temperature before eating."
+        }
+      ]
+    },
+    {
+      "id": "r037",
+      "title": "Why the Moon Changes Shape",
+      "topic": "月相、天文觀察、流程理解",
+      "source_type": "官方資料改寫",
+      "source": "NASA Science; https://science.nasa.gov/moon/moon-phases/; accessed 2026-07-06",
+      "usage": "依 NASA Moon Phases 說明改寫天文觀察閱讀，保留月球不發光、反射太陽光、月相取決於太陽-地球-月球位置、約一個月循環等概念，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Every evening for a month, Jay drew the Moon in his notebook. At first, he saw only a thin bright curve. A week later, half of the Moon looked bright. Later, the bright part grew into a round full Moon. After that, it seemed to shrink again. His science teacher explained that the Moon does not make its own light. It reflects sunlight. As the Moon travels around Earth, people on Earth see different amounts of the sunlit half. These changing views are called moon phases. The Moon itself is not changing shape like clay. Instead, the Sun, Earth, and Moon are changing positions. That is why careful drawings over many nights can show a pattern."
+        },
+        {
+          "label": "Observation Chart",
+          "text": "New Moon: little or no bright part seen | First Quarter: half bright | Full Moon: round bright disk | Last Quarter: half bright again before the cycle continues"
+        }
+      ],
+      "questions": [
+        {
+          "id": "r037-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Moon phases happen because we see different amounts of the Moon’s sunlit half.", "The Moon changes into clay each night.", "The Moon makes all sunlight by itself.", "Jay only draws clouds."],
+          "answer": "A",
+          "explanation": "The passage explains why the Moon appears to change shape."
+        },
+        {
+          "id": "r037-q02",
+          "type": "細節題",
+          "question": "What did Jay do every evening for a month?",
+          "options": ["He drew the Moon in his notebook.", "He measured rip currents.", "He packed fried rice.", "He visited a space station."],
+          "answer": "A",
+          "explanation": "The first sentence says Jay drew the Moon each evening."
+        },
+        {
+          "id": "r037-q03",
+          "type": "推論題",
+          "question": "Why are careful drawings over many nights useful?",
+          "options": ["They help reveal the repeating pattern of moon phases.", "They make the Moon brighter.", "They stop Earth from moving.", "They prove the Moon is made of paper."],
+          "answer": "A",
+          "explanation": "The passage says drawings can show a pattern."
+        },
+        {
+          "id": "r037-q04",
+          "type": "字彙題",
+          "question": "What does \"reflects\" most likely mean in \"It reflects sunlight\"?",
+          "options": ["sends back light from another source", "creates food", "hides under water", "breaks into pieces"],
+          "answer": "A",
+          "explanation": "The Moon does not make its own light; it sends back sunlight."
+        },
+        {
+          "id": "r037-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"After that, it seemed to shrink again\"?",
+          "options": ["the bright part of the Moon", "Jay’s notebook", "the science teacher", "Earth’s ocean"],
+          "answer": "A",
+          "explanation": "The previous sentence describes the bright part growing into a full Moon."
+        },
+        {
+          "id": "r037-q06",
+          "type": "句意理解題",
+          "question": "What does \"The Moon itself is not changing shape like clay\" mean?",
+          "options": ["The Moon only appears to change shape from our view on Earth.", "The Moon is soft and easy to bend.", "The Moon becomes smaller every month.", "Clay controls sunlight."],
+          "answer": "A",
+          "explanation": "The next sentence explains that positions change, not the Moon’s real shape."
+        },
+        {
+          "id": "r037-q07",
+          "type": "圖表閱讀題",
+          "question": "According to the Observation Chart, which phase shows a round bright disk?",
+          "options": ["Full Moon", "New Moon", "First Quarter", "Last Quarter"],
+          "answer": "A",
+          "explanation": "The chart lists Full Moon as a round bright disk."
+        },
+        {
+          "id": "r037-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which three objects’ positions help create moon phases? Brief answer: Why does the Moon look bright?",
+          "options": ["The Sun, Earth, and Moon.", "Mars, Venus, and clouds.", "A beach, a flag, and a speaker.", "A cooler, a lunch box, and rice."],
+          "answer": "A",
+          "sample_brief_answer": "The Moon looks bright because it reflects sunlight.",
+          "explanation": "The passage names the Sun, Earth, and Moon as the changing positions."
+        }
+      ]
+    },
+    {
+      "id": "r038",
+      "title": "A Laboratory Above Earth",
+      "topic": "國際太空站、科學實驗、國際合作",
+      "source_type": "官方資料改寫",
+      "source": "European Space Agency; https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/International_Space_Station; accessed 2026-07-06",
+      "usage": "依 ESA International Space Station 官方頁面改寫國際太空站閱讀，保留太空站作為科學與技術平台、人在軌道生活工作、國際合作與歐洲參與等概念，不直接複製原文。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "The International Space Station, or ISS, is a large laboratory that travels around Earth. Astronauts live and work there for months at a time. Because the station is in orbit, many experiments can be done in microgravity, a condition where objects seem to float. Scientists use this special environment to study materials, the human body, plants, technology, and Earth from space. The ISS is also an example of international cooperation. Space agencies from different regions provide modules, spacecraft, experiments, and trained crews. Europe contributes through the European Space Agency, and European astronauts have taken part in missions on the station. For students, the ISS shows that science is not only about one country or one subject. It connects engineering, health, teamwork, and curiosity."
+        },
+        {
+          "label": "Mission Card",
+          "text": "Place: low Earth orbit | Main role: research laboratory | Special condition: microgravity | People: astronauts live and work onboard | Big idea: science and international cooperation"
+        }
+      ],
+      "questions": [
+        {
+          "id": "r038-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["The ISS is an orbiting laboratory where astronauts work on science through international cooperation.", "The ISS is a beach warning sign.", "The ISS is a lunch box cooler.", "The ISS is a phase of the Moon."],
+          "answer": "A",
+          "explanation": "The passage focuses on the station as a laboratory and cooperation project."
+        },
+        {
+          "id": "r038-q02",
+          "type": "細節題",
+          "question": "How long can astronauts live and work on the ISS according to the passage?",
+          "options": ["For months at a time.", "Only five minutes.", "Exactly one school lunch period.", "Only during a full Moon."],
+          "answer": "A",
+          "explanation": "The passage says astronauts live and work there for months at a time."
+        },
+        {
+          "id": "r038-q03",
+          "type": "推論題",
+          "question": "Why is microgravity useful for scientists?",
+          "options": ["It lets them study things in a special condition where objects seem to float.", "It makes all experiments unnecessary.", "It stops astronauts from working.", "It turns plants into rocks."],
+          "answer": "A",
+          "explanation": "The passage describes microgravity as a special environment for experiments."
+        },
+        {
+          "id": "r038-q04",
+          "type": "字彙題",
+          "question": "What does \"cooperation\" most likely mean?",
+          "options": ["working together", "hiding information", "moving alone", "making noise"],
+          "answer": "A",
+          "explanation": "The passage says different space agencies provide parts, experiments, and crews."
+        },
+        {
+          "id": "r038-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"there\" refer to in \"Astronauts live and work there\"?",
+          "options": ["the International Space Station", "a school classroom", "a beach", "a food market"],
+          "answer": "A",
+          "explanation": "The previous sentence names the ISS."
+        },
+        {
+          "id": "r038-q06",
+          "type": "句意理解題",
+          "question": "What does the final sentence suggest?",
+          "options": ["The ISS can help students see links among many fields and people.", "Science belongs to only one school subject.", "Teamwork is not needed in space.", "Curiosity stops engineering."],
+          "answer": "A",
+          "explanation": "The final sentence connects engineering, health, teamwork, and curiosity."
+        },
+        {
+          "id": "r038-q07",
+          "type": "多文本整合題",
+          "question": "Which detail appears in both Passage A and the Mission Card?",
+          "options": ["Astronauts live and work onboard the station.", "Rip currents move away from shore.", "Food should be kept at safe temperatures.", "The Moon reflects sunlight."],
+          "answer": "A",
+          "explanation": "Both texts mention astronauts living and working on the ISS."
+        },
+        {
+          "id": "r038-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "According to the Mission Card, what is the ISS’s main role? Brief answer: Give one reason the ISS needs teamwork.",
+          "options": ["Research laboratory.", "Beach flag.", "Fried rice recipe.", "Weather balloon."],
+          "answer": "A",
+          "sample_brief_answer": "It needs teamwork because different agencies provide spacecraft, experiments, modules, and trained crews.",
+          "explanation": "The Mission Card names research laboratory as the main role."
+        }
+      ]
+    },
+    {
+      "id": "r039",
+      "title": "A Heat Plan for Soccer Practice",
+      "topic": "天氣安全、戶外活動、公告判讀",
+      "source_type": "官方資料改寫",
+      "source": "National Weather Service: Heat Safety Tips and Resources",
+      "usage": "依 NWS heat safety 官方資訊改寫，保留高溫風險、補水、休息、陰涼處與熱相關疾病警訊等概念。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "The soccer team at East River School had practice on a very hot afternoon. Before students ran onto the field, Coach Ana changed the plan. She moved the hardest drills to the first twenty minutes, placed water bottles near the goal, and added short rest breaks under a tree. She also told students to watch for warning signs such as dizziness, headache, or feeling very weak. \"Winning a game is never more important than staying safe,\" she said. Some players wanted to keep running without stopping, but the coach reminded them that heat can become dangerous before people notice it."
+        },
+        {
+          "label": "Practice Notice",
+          "text": "Heat Plan: 3:30 warm-up; 3:50 skill drills; 4:10 water and shade break; 4:20 light passing game; 4:40 stop practice if any player feels sick. Bring a full water bottle and wear light clothes."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r039-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["A coach changes practice to protect students from heat.", "A team learns a new song before a game.", "A school cancels all sports for the year.", "Students build a new soccer field."],
+          "answer": "A",
+          "explanation": "The passage focuses on making soccer practice safer in hot weather."
+        },
+        {
+          "id": "r039-q02",
+          "type": "細節題",
+          "question": "Where did Coach Ana add rest breaks?",
+          "options": ["Under a tree.", "Inside a library.", "On a bus.", "Beside a swimming pool."],
+          "answer": "A",
+          "explanation": "The passage says she added short rest breaks under a tree."
+        },
+        {
+          "id": "r039-q03",
+          "type": "推論題",
+          "question": "Why did the coach move the hardest drills to the first twenty minutes?",
+          "options": ["The early part of practice was likely safer than doing hard work later.", "She wanted students to skip warm-up.", "The players had no water bottles.", "The field was closed after twenty minutes."],
+          "answer": "A",
+          "explanation": "In heat, doing hard exercise for too long can increase risk, so the plan reduces danger."
+        },
+        {
+          "id": "r039-q04",
+          "type": "字彙題",
+          "question": "What does \"warning signs\" most likely mean in Passage A?",
+          "options": ["body clues that something may be wrong", "posters for a school play", "rules for scoring goals", "names of soccer teams"],
+          "answer": "A",
+          "explanation": "Dizziness and headache are clues that heat may be affecting a person."
+        },
+        {
+          "id": "r039-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"them\" refer to in the last sentence?",
+          "options": ["some players", "water bottles", "warning signs", "soccer goals"],
+          "answer": "A",
+          "explanation": "The previous clause mentions some players who wanted to keep running."
+        },
+        {
+          "id": "r039-q06",
+          "type": "句意理解題",
+          "question": "What does Coach Ana mean by saying, \"Winning a game is never more important than staying safe\"?",
+          "options": ["Health should come before competition.", "The team should never play soccer.", "Only winners need water.", "Safety matters only after the game."],
+          "answer": "A",
+          "explanation": "The sentence puts student safety above sports results."
+        },
+        {
+          "id": "r039-q07",
+          "type": "多文本整合題",
+          "question": "Which action is mentioned in both Passage A and the Practice Notice?",
+          "options": ["Taking a water and shade break.", "Buying new soccer shoes.", "Watching a video in class.", "Traveling to another school."],
+          "answer": "A",
+          "explanation": "Both texts mention water and shade or rest breaks."
+        },
+        {
+          "id": "r039-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "According to the Practice Notice, what should players bring? Brief answer: Give one reason the coach may stop practice early.",
+          "options": ["A full water bottle.", "A winter coat.", "A science textbook.", "A lunch ticket."],
+          "answer": "A",
+          "sample_brief_answer": "She may stop practice early if a player feels sick or shows signs of heat illness.",
+          "explanation": "The notice tells players to bring a full water bottle and says practice may stop if anyone feels sick."
+        }
+      ]
+    },
+    {
+      "id": "r040",
+      "title": "Colors in the Air",
+      "topic": "空氣品質、圖表閱讀、健康生活",
+      "source_type": "官方資料改寫",
+      "source": "AirNow.gov: AQI Basics",
+      "usage": "依 AirNow AQI Basics 官方資訊改寫，保留 AQI 色階、數字越高污染越嚴重、敏感族群與戶外活動調整等概念。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Mia checked the air quality index before riding her bike to school. The map did not use long sentences. It used colors and numbers. Green meant the air was good for most people. Yellow meant the air was acceptable, but some very sensitive people might need to be careful. Orange meant that people with asthma or other breathing problems should reduce long outdoor activity. Mia's younger brother has asthma, so she showed the map to her father. They decided that he would walk slowly to school and play indoors during lunch."
+        },
+        {
+          "label": "AQI Card",
+          "text": "Green: 0-50, good. Yellow: 51-100, moderate. Orange: 101-150, unhealthy for sensitive groups. Red: 151-200, unhealthy. Purple: 201-300, very unhealthy."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r040-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["An AQI map helps a family choose safer outdoor activities.", "A family paints their classroom walls.", "Mia loses her bicycle after school.", "A teacher gives a math test about colors."],
+          "answer": "A",
+          "explanation": "The passage shows how Mia uses the AQI map to adjust plans."
+        },
+        {
+          "id": "r040-q02",
+          "type": "細節題",
+          "question": "Who in Mia's family has asthma?",
+          "options": ["Her younger brother.", "Her father.", "Her teacher.", "Her friend."],
+          "answer": "A",
+          "explanation": "The passage says Mia's younger brother has asthma."
+        },
+        {
+          "id": "r040-q03",
+          "type": "推論題",
+          "question": "Why did Mia show the map to her father?",
+          "options": ["She wanted to help protect her brother's health.", "She wanted to choose a new bike color.", "She forgot the way to school.", "She needed help with painting."],
+          "answer": "A",
+          "explanation": "Because her brother has asthma, the family used the AQI map to make a safer plan."
+        },
+        {
+          "id": "r040-q04",
+          "type": "字彙題",
+          "question": "What does \"moderate\" most likely mean on the AQI Card?",
+          "options": ["not the best, but not the worst", "impossible to understand", "always very dangerous", "only about temperature"],
+          "answer": "A",
+          "explanation": "Yellow is between green and orange, so it means a middle level."
+        },
+        {
+          "id": "r040-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"It\" refer to in \"It used colors and numbers\"?",
+          "options": ["the map", "Mia's bike", "the school", "her brother"],
+          "answer": "A",
+          "explanation": "The previous sentence says the map did not use long sentences."
+        },
+        {
+          "id": "r040-q06",
+          "type": "句意理解題",
+          "question": "What does the family's decision show?",
+          "options": ["People can change activities when air quality is not ideal.", "AQI colors are used only for art class.", "Asthma never affects outdoor plans.", "Red is safer than green on the AQI scale."],
+          "answer": "A",
+          "explanation": "They choose slower walking and indoor play to lower risk."
+        },
+        {
+          "id": "r040-q07",
+          "type": "圖表閱讀題",
+          "question": "According to the AQI Card, which color means 101-150?",
+          "options": ["Orange.", "Green.", "Purple.", "Yellow."],
+          "answer": "A",
+          "explanation": "The card lists Orange as 101-150."
+        },
+        {
+          "id": "r040-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which AQI level is best for most people? Brief answer: What might a sensitive student do on an orange day?",
+          "options": ["Green.", "Orange.", "Red.", "Purple."],
+          "answer": "A",
+          "sample_brief_answer": "A sensitive student might reduce long outdoor activity or play indoors.",
+          "explanation": "Green means good air quality for most people."
+        }
+      ]
+    },
+    {
+      "id": "r041",
+      "title": "Why Explore the Deep Ocean?",
+      "topic": "海洋探索、科學研究、段落排序",
+      "source_type": "官方資料改寫",
+      "source": "NOAA Ocean Exploration: Why do we explore the ocean?",
+      "usage": "依 NOAA Ocean Exploration 官方說明改寫，保留深海仍有許多未知、探索可幫助理解地球、資源、安全與保護海洋等概念。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Our class watched a video from a ship that sent a small robot into deep water. The robot carried lights and cameras because sunlight cannot reach many deep places. On the screen, students saw strange animals, rocks, and clouds of sand. Mr. Park explained that ocean exploration is not just about finding amazing pictures. Scientists collect information that can help people understand Earth's systems, protect habitats, and make better decisions about ocean resources. The ocean covers a large part of our planet, but many areas are still not well known."
+        },
+        {
+          "label": "Step Cards",
+          "text": "A. Scientists choose a question. B. A ship or robot collects observations. C. Researchers study the data. D. The results help people learn or make decisions."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r041-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Ocean exploration helps people learn about deep parts of Earth.", "Students should never watch science videos.", "All ocean animals live near sunlight.", "Robots are used only to clean classrooms."],
+          "answer": "A",
+          "explanation": "The passage explains why exploring the deep ocean is useful."
+        },
+        {
+          "id": "r041-q02",
+          "type": "細節題",
+          "question": "Why did the robot carry lights?",
+          "options": ["Sunlight cannot reach many deep places.", "The classroom was too dark.", "The robot was going to a concert.", "The ship had no cameras."],
+          "answer": "A",
+          "explanation": "The passage says sunlight cannot reach many deep places."
+        },
+        {
+          "id": "r041-q03",
+          "type": "推論題",
+          "question": "Why might scientists use robots instead of only sending people into deep water?",
+          "options": ["Robots can safely observe places that are hard for people to reach.", "Robots understand English better than scientists.", "People do not like ocean pictures.", "Deep water has no scientific value."],
+          "answer": "A",
+          "explanation": "Deep places are difficult, dark, and not easy for people to reach directly."
+        },
+        {
+          "id": "r041-q04",
+          "type": "字彙題",
+          "question": "What does \"habitats\" most likely mean?",
+          "options": ["natural homes of plants and animals", "kinds of school uniforms", "lists of homework", "ways to cook food"],
+          "answer": "A",
+          "explanation": "The passage discusses protecting ocean places where living things are found."
+        },
+        {
+          "id": "r041-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"that\" refer to in \"information that can help people understand Earth's systems\"?",
+          "options": ["information", "a ship", "a classroom", "sunlight"],
+          "answer": "A",
+          "explanation": "The clause describes the information scientists collect."
+        },
+        {
+          "id": "r041-q06",
+          "type": "句意理解題",
+          "question": "What does Mr. Park mean by saying exploration is not just about amazing pictures?",
+          "options": ["The pictures are useful, but the data and decisions also matter.", "Pictures from the ocean are never interesting.", "Students should only draw ocean animals.", "Scientists do not use cameras."],
+          "answer": "A",
+          "explanation": "He explains that exploration supports knowledge, protection, and decisions."
+        },
+        {
+          "id": "r041-q07",
+          "type": "段落排序",
+          "question": "According to the Step Cards, which order best shows a simple exploration process?",
+          "options": ["A -> B -> C -> D", "D -> C -> B -> A", "B -> A -> D -> C", "C -> D -> A -> B"],
+          "answer": "A",
+          "explanation": "Scientists start with a question, collect observations, study data, and use results."
+        },
+        {
+          "id": "r041-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "What does the robot collect? Brief answer: Name one way ocean exploration can help people.",
+          "options": ["Observations.", "Lunch menus.", "Soccer scores.", "Movie tickets."],
+          "answer": "A",
+          "sample_brief_answer": "It can help people protect habitats or make better decisions about ocean resources.",
+          "explanation": "The Step Cards say a ship or robot collects observations."
+        }
+      ]
+    },
+    {
+      "id": "r042",
+      "title": "Moving More, Sitting Less",
+      "topic": "健康生活、運動習慣、資訊整合",
+      "source_type": "官方資料改寫",
+      "source": "World Health Organization: Physical activity",
+      "usage": "依 WHO physical activity fact sheet 改寫學生版健康閱讀，保留規律身體活動有助健康、久坐需減少、不同年齡可用適合自己的方式增加活動量等概念。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Jin used to sit after school for three hours and then complain that he felt tired. His aunt, a nurse, did not tell him to become an athlete. She suggested a small plan: walk home twice a week, stretch for five minutes after homework, and play basketball with friends on Saturday. Jin was surprised that physical activity did not have to mean a long race or a difficult gym class. It could be walking, playing, dancing, or doing active chores. After two weeks, he still enjoyed games on his tablet, but he also noticed that short movement breaks helped him feel more awake."
+        },
+        {
+          "label": "Activity Log",
+          "text": "Monday: walked home, 18 minutes. Tuesday: no activity break. Wednesday: stretched, 5 minutes. Thursday: helped carry recycling, 10 minutes. Saturday: basketball, 35 minutes."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r042-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Small kinds of physical activity can help a student move more.", "Jin becomes a professional basketball player.", "A nurse tells Jin to stop all hobbies.", "Tablet games are the only way to feel awake."],
+          "answer": "A",
+          "explanation": "The passage shows Jin adding simple activities to his week."
+        },
+        {
+          "id": "r042-q02",
+          "type": "細節題",
+          "question": "Who suggested the small activity plan?",
+          "options": ["Jin's aunt.", "Jin's coach.", "A bus driver.", "A tablet game designer."],
+          "answer": "A",
+          "explanation": "The passage says his aunt, a nurse, suggested the plan."
+        },
+        {
+          "id": "r042-q03",
+          "type": "推論題",
+          "question": "Why was Jin surprised?",
+          "options": ["He learned that activity could include simple daily movement.", "He thought walking home was impossible.", "He had never seen a basketball.", "He wanted more homework."],
+          "answer": "A",
+          "explanation": "He realized physical activity could be walking, playing, dancing, or chores."
+        },
+        {
+          "id": "r042-q04",
+          "type": "字彙題",
+          "question": "What does \"chores\" most likely mean?",
+          "options": ["small jobs at home", "music concerts", "school vacations", "computer passwords"],
+          "answer": "A",
+          "explanation": "Carrying recycling is an example of an active chore."
+        },
+        {
+          "id": "r042-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"It\" refer to in \"It could be walking, playing, dancing\"?",
+          "options": ["physical activity", "a long race", "homework", "a tablet"],
+          "answer": "A",
+          "explanation": "The previous sentence discusses physical activity."
+        },
+        {
+          "id": "r042-q06",
+          "type": "句意理解題",
+          "question": "What does the aunt's advice suggest?",
+          "options": ["Students can begin with realistic activities instead of extreme exercise.", "Only athletes need movement.", "Sitting all day is always healthy.", "Exercise must happen only in a gym."],
+          "answer": "A",
+          "explanation": "Her plan uses short, simple activities that fit Jin's life."
+        },
+        {
+          "id": "r042-q07",
+          "type": "圖表閱讀題",
+          "question": "According to the Activity Log, when did Jin play basketball?",
+          "options": ["Saturday.", "Monday.", "Tuesday.", "Thursday."],
+          "answer": "A",
+          "explanation": "The log lists basketball on Saturday for 35 minutes."
+        },
+        {
+          "id": "r042-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which activity took 18 minutes? Brief answer: What is one simple movement break Jin tried?",
+          "options": ["Walking home.", "Playing basketball.", "Stretching.", "Carrying recycling."],
+          "answer": "A",
+          "sample_brief_answer": "He stretched for five minutes or helped carry recycling.",
+          "explanation": "The Activity Log says Monday's walk home took 18 minutes."
+        }
+      ]
+    },
+    {
+      "id": "r043",
+      "title": "Looking at an Eclipse Safely",
+      "topic": "天文觀察、安全規則、多文本整合",
+      "source_type": "官方資料改寫",
+      "source": "NASA Science: Eclipse Viewing Safety",
+      "usage": "依 NASA eclipse viewing safety 官方資訊改寫，保留不可直接看太陽、需使用合格太陽觀測眼鏡或間接觀測、普通太陽眼鏡不安全等概念。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "The science club planned to watch a solar eclipse from the school yard. Mr. Chen first collected the students' regular sunglasses and placed them in a box. Some students laughed, but he explained that ordinary sunglasses are not made for looking at the Sun. The club used special eclipse glasses and also built a simple pinhole viewer from cardboard. With the viewer, students did not look at the Sun directly. They watched a small image of the Sun appear on white paper. The event felt exciting because everyone could enjoy it without risking their eyes."
+        },
+        {
+          "label": "Safety Rules",
+          "text": "1. Do not look directly at the Sun without proper solar viewing protection. 2. Regular sunglasses are not eclipse glasses. 3. A pinhole viewer lets you watch an image of the Sun indirectly. 4. Stop using damaged viewing glasses."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r043-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Students learn safe ways to watch a solar eclipse.", "Students buy new sunglasses for a fashion show.", "A club cancels science class forever.", "Mr. Chen teaches students how to draw cartoons."],
+          "answer": "A",
+          "explanation": "The passage focuses on eclipse safety methods."
+        },
+        {
+          "id": "r043-q02",
+          "type": "細節題",
+          "question": "What did Mr. Chen collect first?",
+          "options": ["The students' regular sunglasses.", "Their science notebooks.", "White paper tickets.", "The club's basketballs."],
+          "answer": "A",
+          "explanation": "The passage says he collected regular sunglasses and put them in a box."
+        },
+        {
+          "id": "r043-q03",
+          "type": "推論題",
+          "question": "Why did Mr. Chen collect the regular sunglasses?",
+          "options": ["He wanted to prevent students from using unsafe eye protection.", "He wanted to sell the sunglasses.", "He needed cardboard for a viewer.", "He did not want students to go outside."],
+          "answer": "A",
+          "explanation": "He explains ordinary sunglasses are not safe for looking at the Sun."
+        },
+        {
+          "id": "r043-q04",
+          "type": "字彙題",
+          "question": "What does \"indirectly\" most likely mean in the Safety Rules?",
+          "options": ["without looking straight at something", "very loudly", "after midnight", "with no paper"],
+          "answer": "A",
+          "explanation": "A pinhole viewer lets students see an image instead of looking straight at the Sun."
+        },
+        {
+          "id": "r043-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"them\" refer to in \"placed them in a box\"?",
+          "options": ["regular sunglasses", "eclipse glasses", "cardboard viewers", "white papers"],
+          "answer": "A",
+          "explanation": "The sentence says he collected the students' regular sunglasses."
+        },
+        {
+          "id": "r043-q06",
+          "type": "句意理解題",
+          "question": "What does the final sentence suggest?",
+          "options": ["Safety rules helped students enjoy the event.", "The eclipse was boring for everyone.", "Students should ignore science rules.", "Eye safety stopped all learning."],
+          "answer": "A",
+          "explanation": "The final sentence says students enjoyed the event without risking their eyes."
+        },
+        {
+          "id": "r043-q07",
+          "type": "多文本整合題",
+          "question": "Which idea appears in both Passage A and the Safety Rules?",
+          "options": ["Regular sunglasses are not safe for eclipse viewing.", "Every student must buy a telescope.", "The eclipse happens every week.", "The club watches the Moon indoors."],
+          "answer": "A",
+          "explanation": "Both texts warn that regular sunglasses are not proper eclipse protection."
+        },
+        {
+          "id": "r043-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "What can a pinhole viewer show? Brief answer: Name one unsafe action from the Safety Rules.",
+          "options": ["An image of the Sun.", "A list of homework.", "A weather report.", "A school lunch menu."],
+          "answer": "A",
+          "sample_brief_answer": "Looking directly at the Sun without proper solar viewing protection is unsafe.",
+          "explanation": "The rules say a pinhole viewer lets people watch an image of the Sun indirectly."
+        }
+      ]
+    },
+    {
+      "id": "r044",
+      "title": "The Cooling Center Plan",
+      "topic": "高溫安全、社區公告、公共資訊判讀",
+      "source_type": "官方資料改寫",
+      "source": "National Weather Service: Heat Safety Tips and Resources",
+      "usage": "依 NWS heat safety 官方資料改寫社區高溫安全短文與公告，保留高溫可能造成健康風險、需照顧易受影響族群、避免把兒童或寵物留在車內等概念。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "During a very hot week, Maple Town opened the school gym as a cooling center. The mayor asked volunteers to call older neighbors, families with young children, and people who lived alone. At the center, visitors could drink water, rest under fans, and charge their phones. The town also sent a short warning: never leave children or pets inside a parked car, even for a few minutes. Lina first thought heat safety was only about feeling uncomfortable. After helping at the center, she understood that heat can make some health problems worse and that checking on others can be part of staying safe."
+        },
+        {
+          "label": "Notice",
+          "text": "Cooling Center Hours: Monday to Friday, 10:00 a.m.-6:00 p.m. Bring a water bottle if you can. Volunteers will make check-in calls at 2:00 p.m. each day."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r044-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["A town uses a cooling center and neighbor checks to respond to extreme heat.", "A school gym closes because no one needs it.", "Lina learns how to repair electric fans.", "The mayor cancels all phone calls in town."],
+          "answer": "A",
+          "explanation": "The passage focuses on heat safety actions in the community."
+        },
+        {
+          "id": "r044-q02",
+          "type": "細節題",
+          "question": "Where did Maple Town open the cooling center?",
+          "options": ["In the school gym.", "At the train station.", "Inside a supermarket.", "Beside a river."],
+          "answer": "A",
+          "explanation": "The first sentence says the school gym became a cooling center."
+        },
+        {
+          "id": "r044-q03",
+          "type": "推論題",
+          "question": "Why did volunteers call older neighbors and people living alone?",
+          "options": ["They might need help during extreme heat.", "They were selling fans door to door.", "They wanted everyone to attend a concert.", "They needed people to teach math."],
+          "answer": "A",
+          "explanation": "The calls help check on people who may be more affected by heat."
+        },
+        {
+          "id": "r044-q04",
+          "type": "字彙題",
+          "question": "What does \"charge\" mean in the Notice context?",
+          "options": ["put power into a phone battery", "ask someone to pay money", "run quickly toward a place", "accuse someone of a mistake"],
+          "answer": "A",
+          "explanation": "Visitors can charge their phones at the center, meaning add battery power."
+        },
+        {
+          "id": "r044-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"she\" refer to in the final sentence?",
+          "options": ["Lina", "the mayor", "an older neighbor", "a young child"],
+          "answer": "A",
+          "explanation": "The previous sentence names Lina as the person who learned from helping."
+        },
+        {
+          "id": "r044-q06",
+          "type": "句意理解題",
+          "question": "What does Lina understand by the end of the passage?",
+          "options": ["Heat safety includes caring for people who may be at higher risk.", "Hot weather is never serious.", "Only athletes need to drink water.", "Cooling centers are used only in winter."],
+          "answer": "A",
+          "explanation": "The final sentence links heat risk with checking on others."
+        },
+        {
+          "id": "r044-q07",
+          "type": "圖表閱讀題",
+          "question": "According to the Notice, when do volunteers make check-in calls?",
+          "options": ["At 2:00 p.m.", "At 6:00 a.m.", "At 10:00 p.m.", "Only on Saturday."],
+          "answer": "A",
+          "explanation": "The Notice says calls happen at 2:00 p.m. each day."
+        },
+        {
+          "id": "r044-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which action is warned against in Passage A? Brief answer: Name one service offered at the cooling center.",
+          "options": ["Leaving children or pets inside a parked car.", "Opening windows at night.", "Calling friends after dinner.", "Bringing a water bottle."],
+          "answer": "A",
+          "sample_brief_answer": "Visitors can drink water, rest under fans, or charge phones.",
+          "explanation": "The warning says not to leave children or pets in a parked car."
+        }
+      ]
+    },
+    {
+      "id": "r045",
+      "title": "The No-Waste Lunch Week",
+      "topic": "環境教育、食物浪費、計畫與表格閱讀",
+      "source_type": "官方資料改寫",
+      "source": "US EPA: Preventing Wasted Food At Home",
+      "usage": "依 EPA reducing wasted food at home 官方頁面改寫學生版環境閱讀，保留美國約三分之一食物未被食用、規劃餐點、先檢查冰箱與保存剩食等概念。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Class 8B started a No-Waste Lunch Week after learning that a large amount of food is never eaten. Their teacher did not ask everyone to bring tiny lunches. Instead, students learned to plan better. Before shopping, they checked what was already in the refrigerator. They wrote a simple menu, packed only the amount they could finish, and saved clean leftovers for the next day. By Friday, the trash bin beside their classroom was not empty, but it was much lighter. The class learned that preventing waste can begin before food reaches the lunch box."
+        },
+        {
+          "label": "Lunch Check Table",
+          "text": "Monday: 12 unfinished sandwiches. Wednesday: 5 unfinished sandwiches. Friday: 2 unfinished sandwiches. Best student idea: label leftovers with the date."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r045-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Students reduce lunch waste by planning and using leftovers wisely.", "Students stop eating lunch at school.", "A teacher asks students to buy more food every day.", "Class 8B studies only cooking history."],
+          "answer": "A",
+          "explanation": "The passage describes practical ways to prevent food waste."
+        },
+        {
+          "id": "r045-q02",
+          "type": "細節題",
+          "question": "What did students check before shopping?",
+          "options": ["What was already in the refrigerator.", "The weather on another planet.", "The price of movie tickets.", "The number of desks in class."],
+          "answer": "A",
+          "explanation": "The passage says they checked the refrigerator before shopping."
+        },
+        {
+          "id": "r045-q03",
+          "type": "推論題",
+          "question": "Why did the trash bin become much lighter by Friday?",
+          "options": ["Students threw away less food.", "The trash bin was moved outside.", "No one ate lunch that week.", "The school bought a new bin."],
+          "answer": "A",
+          "explanation": "The project reduced unfinished food, so less went into the bin."
+        },
+        {
+          "id": "r045-q04",
+          "type": "字彙題",
+          "question": "What does \"leftovers\" most likely mean?",
+          "options": ["food that remains after a meal", "new chairs for the classroom", "a type of notebook", "homework that is late"],
+          "answer": "A",
+          "explanation": "The students saved clean leftovers for the next day."
+        },
+        {
+          "id": "r045-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"it was much lighter\"?",
+          "options": ["the trash bin", "the lunch box", "the refrigerator", "the menu"],
+          "answer": "A",
+          "explanation": "The sentence says the trash bin was not empty but was lighter."
+        },
+        {
+          "id": "r045-q06",
+          "type": "句意理解題",
+          "question": "What does \"preventing waste can begin before food reaches the lunch box\" mean?",
+          "options": ["Planning and shopping choices can reduce waste later.", "Lunch boxes make food disappear.", "Students should never cook at home.", "Waste only happens after Friday."],
+          "answer": "A",
+          "explanation": "The passage emphasizes planning before packing lunch."
+        },
+        {
+          "id": "r045-q07",
+          "type": "圖表閱讀題",
+          "question": "According to the Lunch Check Table, how many unfinished sandwiches were recorded on Friday?",
+          "options": ["2", "5", "12", "20"],
+          "answer": "A",
+          "explanation": "The table lists 2 unfinished sandwiches on Friday."
+        },
+        {
+          "id": "r045-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which student idea helps people remember when food was saved? Brief answer: Name one planning step from Passage A.",
+          "options": ["Label leftovers with the date.", "Throw away all fruit peels.", "Buy lunch without a list.", "Hide food under a desk."],
+          "answer": "A",
+          "sample_brief_answer": "They checked the refrigerator, wrote a menu, or packed only what they could finish.",
+          "explanation": "The table says the best idea was labeling leftovers with the date."
+        }
+      ]
+    },
+    {
+      "id": "r046",
+      "title": "Tiny Plastic, Big Questions",
+      "topic": "海洋保育、微塑膠、分類與推論",
+      "source_type": "官方資料改寫",
+      "source": "NOAA Marine Debris Program: Microplastics",
+      "usage": "依 NOAA Marine Debris Program 微塑膠頁面改寫短文，保留 primary/secondary microplastics、塑膠碎裂來源、海灘清理與源頭減量等概念。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "After a beach cleanup, Mei found many bright plastic pieces smaller than a grain of rice. Her group learned that tiny plastic pieces can come from two paths. Some are made small on purpose, such as plastic pellets used to make larger products. Others begin as bottles, bags, or toys and break apart after sunlight, heat, wind, and waves make the plastic weak. The students could not remove every tiny piece from the sand, so their report suggested two actions: pick up larger trash before it breaks and use fewer single-use plastic items at school events."
+        },
+        {
+          "label": "Sort Cards",
+          "text": "Card 1: plastic pellet used in a factory. Card 2: bottle cap broken by waves. Card 3: foam cup pieces found near a picnic table. Card 4: reusable water station at sports day."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r046-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Tiny plastic pieces can come from different sources, so prevention matters.", "Plastic pieces are easy to count perfectly.", "Mei opens a toy shop near the beach.", "Students learn that all beach sand is plastic."],
+          "answer": "A",
+          "explanation": "The passage explains sources of microplastics and prevention ideas."
+        },
+        {
+          "id": "r046-q02",
+          "type": "細節題",
+          "question": "What did Mei find after the beach cleanup?",
+          "options": ["Many bright plastic pieces smaller than a grain of rice.", "A large ship engine.", "A box of library books.", "A new sports uniform."],
+          "answer": "A",
+          "explanation": "The first sentence describes the tiny pieces she found."
+        },
+        {
+          "id": "r046-q03",
+          "type": "推論題",
+          "question": "Why did the students suggest picking up larger trash early?",
+          "options": ["Large plastic can break into smaller pieces later.", "Large trash becomes school supplies overnight.", "Beach trash always disappears by itself.", "Waves turn plastic into fresh water."],
+          "answer": "A",
+          "explanation": "The passage says bottles, bags, and toys can break apart over time."
+        },
+        {
+          "id": "r046-q04",
+          "type": "字彙題",
+          "question": "What does \"single-use\" most likely mean?",
+          "options": ["made to be used once and then thrown away", "used by only one teacher forever", "too heavy to carry", "found only in deep space"],
+          "answer": "A",
+          "explanation": "Single-use plastic items are contrasted with prevention and waste reduction."
+        },
+        {
+          "id": "r046-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"Others\" refer to in the sentence about bottles, bags, or toys?",
+          "options": ["tiny plastic pieces from a second path", "the students in Mei’s group", "the waves at the beach", "school events"],
+          "answer": "A",
+          "explanation": "The previous sentence introduces two paths for tiny plastic pieces."
+        },
+        {
+          "id": "r046-q06",
+          "type": "句意理解題",
+          "question": "What does the report suggest about microplastics?",
+          "options": ["It is better to prevent plastic waste before it becomes tiny.", "The best solution is to ignore small pieces.", "Factories should make more plastic pellets for beaches.", "Students can clean all sand perfectly in one day."],
+          "answer": "A",
+          "explanation": "The suggested actions focus on prevention and reducing plastic use."
+        },
+        {
+          "id": "r046-q07",
+          "type": "多文本整合題",
+          "question": "Which Sort Card is the best example of preventing future plastic waste?",
+          "options": ["Card 4: reusable water station at sports day.", "Card 1: plastic pellet used in a factory.", "Card 2: bottle cap broken by waves.", "Card 3: foam cup pieces found near a picnic table."],
+          "answer": "A",
+          "explanation": "A reusable water station reduces the need for single-use plastic."
+        },
+        {
+          "id": "r046-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which card is closest to a primary microplastic example? Brief answer: Give one source of secondary microplastics.",
+          "options": ["Card 1.", "Card 2.", "Card 3.", "Card 4."],
+          "answer": "A",
+          "sample_brief_answer": "A bottle, bag, toy, cap, or foam cup can break into smaller pieces.",
+          "explanation": "A plastic pellet made small for manufacturing is closest to a primary microplastic example."
+        }
+      ]
+    },
+    {
+      "id": "r047",
+      "title": "Mina Changes Her Passwords",
+      "topic": "數位安全、強密碼、生活決策",
+      "source_type": "官方資料改寫",
+      "source": "CISA Secure Our World: Use Strong Passwords",
+      "usage": "依 CISA 強密碼官方建議改寫校園數位安全短文，保留密碼應 long、random、unique，可用 password manager，避免生日與寵物名等易猜資訊。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "Mina used the same short password for her game account, school email, and photo app. It included her dog’s name and birthday, so she could remember it easily. During Digital Safety Week, a speaker compared weak passwords to a locked door with the key still in the lock. Mina changed her plan. She made each important account use a different password. The new passwords were longer and not based on personal facts. She also asked her parents about using a password manager, so she would not need to memorize every random string."
+        },
+        {
+          "label": "Password Notes",
+          "text": "Old password clue: pet name + birthday. New rule: long + random + unique. Tool to consider: password manager. Account list: school email, game account, photo app."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r047-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["Mina learns to replace weak repeated passwords with stronger ones.", "Mina teaches her dog to use email.", "A speaker tells students to stop using all accounts.", "The school cancels Digital Safety Week."],
+          "answer": "A",
+          "explanation": "The passage shows Mina changing weak password habits."
+        },
+        {
+          "id": "r047-q02",
+          "type": "細節題",
+          "question": "What personal facts did Mina’s old password include?",
+          "options": ["Her dog’s name and birthday.", "Her teacher’s address.", "A train number and city map.", "A science formula."],
+          "answer": "A",
+          "explanation": "The passage says the old password included her dog’s name and birthday."
+        },
+        {
+          "id": "r047-q03",
+          "type": "推論題",
+          "question": "Why might using the same password for many accounts be risky?",
+          "options": ["One stolen password could help someone enter several accounts.", "It makes every account too colorful.", "It prevents Mina from taking photos.", "It makes passwords impossible to type."],
+          "answer": "A",
+          "explanation": "If the same password is reused, one problem can affect multiple accounts."
+        },
+        {
+          "id": "r047-q04",
+          "type": "字彙題",
+          "question": "What does \"unique\" most likely mean in the Password Notes?",
+          "options": ["different from the others", "written only in red", "easy for strangers to guess", "shorter than two letters"],
+          "answer": "A",
+          "explanation": "Unique passwords are different for each account."
+        },
+        {
+          "id": "r047-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"it\" refer to in \"she could remember it easily\"?",
+          "options": ["her old password", "her dog", "the speaker", "Digital Safety Week"],
+          "answer": "A",
+          "explanation": "The sentence describes Mina’s old password and why it was easy to remember."
+        },
+        {
+          "id": "r047-q06",
+          "type": "句意理解題",
+          "question": "What does the speaker’s door comparison suggest?",
+          "options": ["A password can look protective but still be unsafe if it is easy to guess.", "Every door at school needs a new color.", "Keys are better than computers for all learning.", "Students should keep passwords on a desk."],
+          "answer": "A",
+          "explanation": "The comparison warns that weak passwords do not protect accounts well."
+        },
+        {
+          "id": "r047-q07",
+          "type": "多文本整合題",
+          "question": "Which Password Notes rule matches Mina’s new plan in Passage A?",
+          "options": ["long + random + unique", "pet name + birthday", "same password everywhere", "share with classmates"],
+          "answer": "A",
+          "explanation": "The passage says her new passwords were longer, not personal, and different."
+        },
+        {
+          "id": "r047-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "Which tool might help Mina manage many passwords? Brief answer: Name one account from the notes.",
+          "options": ["A password manager.", "A lunch box.", "A weather radio.", "A beach bucket."],
+          "answer": "A",
+          "sample_brief_answer": "One account is school email, the game account, or the photo app.",
+          "explanation": "The passage and notes both mention a password manager."
+        }
+      ]
+    },
+    {
+      "id": "r048",
+      "title": "A Laboratory Above Earth",
+      "topic": "太空站、國際合作、研究平台",
+      "source_type": "官方資料改寫",
+      "source": "NASA: International Space Station reference page",
+      "usage": "依 NASA International Space Station reference page 改寫科普閱讀，保留太空站是國際合作研究平台、2000 年起持續有人居住、微重力實驗室、足球場大小與 2030 年前後研究任務等概念。",
+      "passages": [
+        {
+          "label": "Passage A",
+          "text": "When Leo heard the words space station, he imagined a quiet hotel above Earth. His science teacher gave the class a better picture: the International Space Station is an orbiting research laboratory built through international cooperation. Since people first began living there continuously in 2000, astronauts and partners from many countries have used the station for experiments that are difficult to do on Earth. In microgravity, objects and fluids behave differently, so researchers can test technology, study health, and learn more about living in space. Leo wrote in his notebook, \"It is not a hotel; it is a classroom, workshop, and laboratory above Earth.\""
+        },
+        {
+          "label": "Fact Box",
+          "text": "First continuous crew: 2000. Main role: research platform in space. Size comparison: about the size of a football field. Visitors: astronauts and space travelers from many countries."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r048-q01",
+          "type": "主旨題",
+          "question": "What is the main idea of Passage A?",
+          "options": ["The International Space Station is a cooperative research laboratory above Earth.", "Leo books a vacation hotel in space.", "Astronauts stop doing science after 2000.", "A teacher asks students to play football in class."],
+          "answer": "A",
+          "explanation": "The passage explains the station as a research platform, not a hotel."
+        },
+        {
+          "id": "r048-q02",
+          "type": "細節題",
+          "question": "When did people begin living continuously on the station?",
+          "options": ["In 2000.", "In 1980.", "In 2015.", "In 2035."],
+          "answer": "A",
+          "explanation": "Both the passage and Fact Box mention 2000."
+        },
+        {
+          "id": "r048-q03",
+          "type": "推論題",
+          "question": "Why are some experiments useful to do on the station?",
+          "options": ["Microgravity lets researchers observe things that behave differently from on Earth.", "The station has no teachers.", "All experiments need a football field.", "Earth has no laboratories."],
+          "answer": "A",
+          "explanation": "The passage says objects and fluids behave differently in microgravity."
+        },
+        {
+          "id": "r048-q04",
+          "type": "字彙題",
+          "question": "What does \"cooperation\" most likely mean?",
+          "options": ["working together", "moving alone", "hiding information", "ending a project"],
+          "answer": "A",
+          "explanation": "The station is built and used by international partners."
+        },
+        {
+          "id": "r048-q05",
+          "type": "代名詞指涉題",
+          "question": "What does \"there\" refer to in \"living there continuously\"?",
+          "options": ["the International Space Station", "Leo’s classroom", "a football field", "Earth’s oceans"],
+          "answer": "A",
+          "explanation": "The sentence is about people living on the station."
+        },
+        {
+          "id": "r048-q06",
+          "type": "句意理解題",
+          "question": "What does Leo mean by calling the station a classroom, workshop, and laboratory?",
+          "options": ["People learn, build, and study there.", "The station is only for sleeping.", "Students take regular school buses there.", "The station is a sports stadium."],
+          "answer": "A",
+          "explanation": "His description summarizes learning, technology work, and research."
+        },
+        {
+          "id": "r048-q07",
+          "type": "段落排序",
+          "question": "Which order best matches the ideas in Passage A?",
+          "options": ["Leo imagines a hotel -> teacher explains the station -> experiments in microgravity -> Leo writes a new idea.", "Experiments in microgravity -> Leo writes a new idea -> teacher cancels class -> Leo imagines a hotel.", "Teacher explains the station -> football game begins -> Leo sleeps -> astronauts leave Earth forever.", "Leo writes a new idea -> station is built underwater -> class starts a beach cleanup -> hotel opens."],
+          "answer": "A",
+          "explanation": "This option follows the passage from misunderstanding to corrected understanding."
+        },
+        {
+          "id": "r048-q08",
+          "type": "混合題：選擇 + 簡答",
+          "question": "According to the Fact Box, what is the station about the size of? Brief answer: Name one kind of work researchers can do there.",
+          "options": ["A football field.", "A lunch box.", "A city bus ticket.", "A plastic pellet."],
+          "answer": "A",
+          "sample_brief_answer": "Researchers can test technology, study health, or learn about living in space.",
+          "explanation": "The Fact Box gives the football field size comparison."
         }
       ]
     }
